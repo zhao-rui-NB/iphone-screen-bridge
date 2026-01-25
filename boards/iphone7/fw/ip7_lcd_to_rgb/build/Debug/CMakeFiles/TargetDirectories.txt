@@ -1,0 +1,6 @@
+C:/Users/rui/Desktop/iphone_screen/stm32/ip7_lcd_to_rgb/build/Debug/CMakeFiles/ip7_lcd_to_rgb.dir
+C:/Users/rui/Desktop/iphone_screen/stm32/ip7_lcd_to_rgb/build/Debug/CMakeFiles/edit_cache.dir
+C:/Users/rui/Desktop/iphone_screen/stm32/ip7_lcd_to_rgb/build/Debug/CMakeFiles/rebuild_cache.dir
+C:/Users/rui/Desktop/iphone_screen/stm32/ip7_lcd_to_rgb/build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
+C:/Users/rui/Desktop/iphone_screen/stm32/ip7_lcd_to_rgb/build/Debug/cmake/stm32cubemx/CMakeFiles/edit_cache.dir
+C:/Users/rui/Desktop/iphone_screen/stm32/ip7_lcd_to_rgb/build/Debug/cmake/stm32cubemx/CMakeFiles/rebuild_cache.dir

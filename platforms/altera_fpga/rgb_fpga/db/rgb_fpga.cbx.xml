@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="rgb_fpga">
+		<CBX_INST_ENTRY INSTANCE_NAME="|rgb_fpga|DisplaySignal:display_signal|lpm_divide:Div1" CBX_FILE_NAME="lpm_divide_0jm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|rgb_fpga|DisplaySignal:display_signal|lpm_divide:Div3" CBX_FILE_NAME="lpm_divide_bkm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|rgb_fpga|DisplaySignal:display_signal|lpm_divide:Mod0" CBX_FILE_NAME="lpm_divide_3bm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|rgb_fpga|DisplaySignal:display_signal|lpm_divide:Mod2" CBX_FILE_NAME="lpm_divide_4bm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|rgb_fpga|DisplaySignal:display_signal|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_0jm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|rgb_fpga|DisplaySignal:display_signal|lpm_divide:Mod1" CBX_FILE_NAME="lpm_divide_3bm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|rgb_fpga|pll:pll_70m|altpll:altpll_component" CBX_FILE_NAME="pll_altpll.v"/>
+	</PROJECT>
+</LOG_ROOT>
