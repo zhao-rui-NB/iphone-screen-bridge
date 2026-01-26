@@ -25,7 +25,7 @@
 
 
 void ADV7611_Init();
-
+void ADV7611_Print_Debug_Status();
 
 
 

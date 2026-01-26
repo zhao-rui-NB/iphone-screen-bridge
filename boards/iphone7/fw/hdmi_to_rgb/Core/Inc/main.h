@@ -57,9 +57,13 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define LCD_BL_Pin GPIO_PIN_5
+#define BTN1_Pin GPIO_PIN_3
+#define BTN1_GPIO_Port GPIOA
+#define BTN2_Pin GPIO_PIN_4
+#define BTN2_GPIO_Port GPIOA
+#define LCD_BL_Pin GPIO_PIN_6
 #define LCD_BL_GPIO_Port GPIOA
-#define LCD_RESET_Pin GPIO_PIN_6
+#define LCD_RESET_Pin GPIO_PIN_7
 #define LCD_RESET_GPIO_Port GPIOA
 #define ADV7611_INT_Pin GPIO_PIN_0
 #define ADV7611_INT_GPIO_Port GPIOB
