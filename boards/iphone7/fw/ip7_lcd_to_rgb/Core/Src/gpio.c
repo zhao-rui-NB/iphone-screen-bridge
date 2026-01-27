@@ -50,7 +50,7 @@ void MX_GPIO_Init(void)
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOA, TOUCH_CS_Pin|SPI1_RESET_Pin, GPIO_PIN_SET);
+  HAL_GPIO_WritePin(GPIOA, TOUCH_CS_Pin|SPI1_RESET_Pin|UPLINK_INT_Pin, GPIO_PIN_SET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(SSD2828_CS_GPIO_Port, SSD2828_CS_Pin, GPIO_PIN_SET);
@@ -64,12 +64,19 @@ void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(TOUCH_INT_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : TOUCH_CS_Pin SPI1_RESET_Pin */
-  GPIO_InitStruct.Pin = TOUCH_CS_Pin|SPI1_RESET_Pin;
+  /*Configure GPIO pin : TOUCH_CS_Pin */
+  GPIO_InitStruct.Pin = TOUCH_CS_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_PULLUP;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
+  HAL_GPIO_Init(TOUCH_CS_GPIO_Port, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : SPI1_RESET_Pin */
+  GPIO_InitStruct.Pin = SPI1_RESET_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
-  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+  HAL_GPIO_Init(SPI1_RESET_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pins : SSD2828_CS_Pin SSD2828_SHUT_Pin SSD2828_DC_Pin */
   GPIO_InitStruct.Pin = SSD2828_CS_Pin|SSD2828_SHUT_Pin|SSD2828_DC_Pin;
@@ -77,6 +84,13 @@ void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : UPLINK_INT_Pin */
+  GPIO_InitStruct.Pin = UPLINK_INT_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(UPLINK_INT_GPIO_Port, &GPIO_InitStruct);
 
 }
 

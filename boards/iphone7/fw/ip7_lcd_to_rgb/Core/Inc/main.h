@@ -69,6 +69,16 @@ void Error_Handler(void);
 #define SSD2828_SHUT_GPIO_Port GPIOB
 #define SSD2828_DC_Pin GPIO_PIN_11
 #define SSD2828_DC_GPIO_Port GPIOB
+#define UPLINK_CS_Pin GPIO_PIN_12
+#define UPLINK_CS_GPIO_Port GPIOB
+#define UPLINK_SCK_Pin GPIO_PIN_13
+#define UPLINK_SCK_GPIO_Port GPIOB
+#define UPLINK_MISO_Pin GPIO_PIN_14
+#define UPLINK_MISO_GPIO_Port GPIOB
+#define UPLINK_MOSI_Pin GPIO_PIN_15
+#define UPLINK_MOSI_GPIO_Port GPIOB
+#define UPLINK_INT_Pin GPIO_PIN_8
+#define UPLINK_INT_GPIO_Port GPIOA
 
 /* USER CODE BEGIN Private defines */
 

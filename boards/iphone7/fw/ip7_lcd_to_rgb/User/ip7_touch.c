@@ -1,6 +1,62 @@
+/*
+ * iPhone 7 Touch Controller Driver
+ * 
+ * 數據流向與函數流程:
+ * ================================================================================
+ * 
+ * [觸摸控制器] --SPI--> [STM32] --SPI DMA--> [上位機]
+ * 
+ * 主要流程:
+ * --------
+ * 1. 初始化階段:
+ *    ip7_touch_init()
+ *      └─> 發送初始化命令序列到觸摸控制器
+ * 
+ * 2. 運行階段 (Main Loop):
+ *    ip7_touch_poll()                         // 輪詢觸摸中斷
+ *      ├─> 檢測 INT 引腳下降沿
+ *      ├─> ip7_touch_read_data()              // 讀取原始數據
+ *      │     ├─> 發送查詢命令 (0xEB 0x01/0x02)
+ *      │     └─> 讀取觸摸數據到 spi_buffer
+ *      │
+ *      └─> ip7_touch_process_packet()         // 處理封包
+ *            ├─> ip7_touch_validate_packet()  // 驗證校驗和
+ *            │     ├─> 檢查 header checksum
+ *            │     └─> 檢查 packet checksum
+ *            │
+ *            ├─> 解析觸摸狀態和觸摸點
+ *            │     ├─> touch_state_t (手指數量、掃描計數等)
+ *            │     └─> touch_point_t[] (座標、ID、狀態)
+ *            │
+ *            └─> ip7_touch_send_to_host()     // 發送給上位機
+ *                  ├─> 封裝成 spi_touch_packet_t
+ *                  ├─> 計算 CRC-8
+ *                  ├─> 拉低 UPLINK_INT 通知上位機
+ *                  └─> 啟動 SPI2 DMA 傳輸
+ * 
+ * 3. DMA 完成回調:
+ *    HAL_SPI_TxCpltCallback()
+ *      └─> 拉高 UPLINK_INT, 清除 transfer_busy
+ * 
+ * 數據格式:
+ * --------
+ * 觸摸控制器 → STM32:
+ *   [Header(5B)] + [State(24B)] + [Points(30B×5)] + [Checksum(2B)]
+ * 
+ * STM32 → 上位機:
+ *   [0xAA] + [finger_count] + [scan_count(4B)] + [reserved(2B)]
+ *   + [Point×5 (6B each)] + [CRC] + [0x55]
+ * 
+ ================================================================================
+ */
+
 #include "ip7_touch.h"
 
+#include <stdio.h>
 #include <string.h>
+#include "spi.h"
+#include "stm32f1xx_hal.h"
+
 
 typedef struct {
     CommandType type;
@@ -57,8 +113,13 @@ const SpiCommand touch_init_cmds[] = {
     {NORMAL, 16, (const uint8_t[]){0xe3, 0x73, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x56, 0x01}},
 };
 
-uint8_t spi_buffer[400];
 int read_serid = 0;
+uint8_t spi_buffer[400];
+
+// 單一緩衝區用於上位機讀取
+static spi_touch_packet_t uplink_buffer;
+static volatile uint8_t transfer_busy = 0;  // DMA 傳輸忙標記
+
 
 void ip7_touch_spi_write(const uint8_t* data, uint16_t len){
     TOUCH_CS_LOW();
@@ -104,43 +165,213 @@ void ip7_touch_init(void){
 }
 
 
+// ========== Forward Declarations ==========
+static void ip7_touch_process_packet(void);
+static void ip7_touch_send_to_host(touch_state_t *state, touch_point_t *points[]);
 
-void ip7_touch_read_data(){
-    static uint8_t type_toggle = 0; // 0 for type 1, 1 for type 2
 
-    if(HAL_GPIO_ReadPin(TOUCH_INT_GPIO_Port, TOUCH_INT_Pin) == GPIO_PIN_RESET) { // 檢查觸控中斷
-        uint8_t cmd0[16] = {0xeb, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xec, 0x00};
-        uint8_t cmd1[16] = {0xeb, 0x02, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xed, 0x00};
-        uint8_t cmd_reply[16] = {0};
-        if (type_toggle) {
-            ip7_touch_spi_rx_tx(cmd0, cmd_reply, 16);
-        } else {
-            ip7_touch_spi_rx_tx(cmd1, cmd_reply, 16);
-        }
-        type_toggle = !type_toggle; // 切換類型
-
-        memset(spi_buffer, 0xA5, 16); // 清空 SPI 緩衝區，填充 A5
-
-        // read the data from the touch driver
-        uint16_t read_size;
-        read_size = cmd_reply[2]<<8 | cmd_reply[1];
-        read_size += 5;
-        read_size = (read_size + 3) & ~3; // 向上對齊到 4 的倍數
-
-        ip7_touch_spi_rx(spi_buffer, read_size); // 讀取數據
-        
-        uint8_t p_start_index = 33;
-        uint16_t x_pos = (spi_buffer[p_start_index] | (spi_buffer[p_start_index + 1] << 8));
-        uint16_t y_pos = (spi_buffer[p_start_index + 2] | (spi_buffer[p_start_index + 3] << 8));
+// 讀取觸摸數據到 spi_buffer
+static uint8_t ip7_touch_read_data(uint8_t cmd_type) {
+    uint8_t cmd0[16] = {0xeb, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xec, 0x00};
+    uint8_t cmd1[16] = {0xeb, 0x02, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xed, 0x00};
+    uint8_t cmd_reply[16] = {0};
     
-        printf("[%d] Read %d bytes\t", read_serid++, read_size);
-        printf("Touch detected at X: %d, Y: %d\n", x_pos, y_pos);
+    // 查詢數據大小
+    if (cmd_type == 0) {
+        ip7_touch_spi_rx_tx(cmd0, cmd_reply, 16);
+    } else {
+        ip7_touch_spi_rx_tx(cmd1, cmd_reply, 16);
+    }
+    
+    uint16_t read_size = cmd_reply[2] << 8 | cmd_reply[1];
+    read_size += 5;
+    read_size = (read_size + 3) & ~3; // 向上對齊到 4 的倍數
+    
+    // 讀取數據
+    memset(spi_buffer, 0xA5, 16);
+    ip7_touch_spi_rx(spi_buffer, read_size);
+    
+    printf("[%d] %d b\t", read_serid++, read_size);
+    return 1;
+}
+
+// 輪詢觸摸中斷並處理觸摸事件
+void ip7_touch_poll() {
+    static uint8_t waiting_int_release = 0;
+    static uint8_t type_toggle = 0;
+
+    if (!waiting_int_release && HAL_GPIO_ReadPin(TOUCH_INT_GPIO_Port, TOUCH_INT_Pin) == GPIO_PIN_RESET) {
+        waiting_int_release = 1;
+        
+        // 讀取觸摸數據
+        ip7_touch_read_data(type_toggle);
+        type_toggle = !type_toggle;
+        
+        // 處理數據
+        ip7_touch_process_packet();
+    } 
+    else if (waiting_int_release && HAL_GPIO_ReadPin(TOUCH_INT_GPIO_Port, TOUCH_INT_Pin) == GPIO_PIN_SET) {
+        waiting_int_release = 0;
     }
 }
 
 
+// 驗證封包完整性
+static uint8_t ip7_touch_validate_packet() {
+    touch_header_t *hdr = (touch_header_t *)spi_buffer;
+    
+    // 驗證 header checksum
+    uint8_t hdr_sum = 0;
+    for (uint8_t i = 0; i < 4; i++) {
+        hdr_sum += ((uint8_t*)hdr)[i];
+    }
+    uint8_t calc_hdr_cs = (uint8_t)(~hdr_sum + 1);
+    if (calc_hdr_cs != hdr->hdr_checksum) {
+        printf(" [Header CS Error: 0x%02X]\t", calc_hdr_cs);
+        return 0;
+    }
+    
+    // 驗證 packet checksum
+    uint16_t total_len = sizeof(touch_header_t) + hdr->length;
+    uint32_t pkt_sum = 0;
+    for (uint16_t i = 0; i < total_len - 2; i++) {
+        pkt_sum += spi_buffer[i];
+    }
+    uint16_t calc_pkt_cs = (uint16_t)((pkt_sum - 0x0200) & 0xFFFF);
+    uint16_t recv_pkt_cs = spi_buffer[total_len - 2] | (spi_buffer[total_len - 1] << 8);
+    if (calc_pkt_cs != recv_pkt_cs) {
+        printf(" [Packet CS Error: 0x%04X]\t", calc_pkt_cs);
+        return 0;
+    }
+    
+    return 1;
+}
+
+// 處理接收到的觸摸數據封包
+static void ip7_touch_process_packet() {
+    // 驗證封包
+    if (!ip7_touch_validate_packet()) {
+        printf("\n");
+        return;
+    }
+    
+    // 解析數據
+    touch_state_t *state = (touch_state_t *)(spi_buffer + sizeof(touch_header_t));
+    uint8_t finger_count = state->finger_count;
+    
+    touch_point_t *points[TOUCH_MAX_POINTS];
+    for (uint8_t i = 0; i < TOUCH_MAX_POINTS; i++) {
+        points[i] = (touch_point_t *)(spi_buffer + sizeof(touch_header_t) + 
+                                      sizeof(touch_state_t) + i * sizeof(touch_point_t));
+    }
+    
+    // 打印調試信息
+    printf(" Fingers: %d\t", finger_count);
+    // for (uint8_t i = 0; i < finger_count; i++) {
+    //     touch_point_t *pt = points[i];
+    //     printf("P%d[ID:%d X:%d Y:%d ST:%d] ", i, pt->finger_id, pt->x, pt->y, pt->distance_state);
+    // }
+    
+    // 發送給上位機
+    ip7_touch_send_to_host(state, points);
+    
+    printf("\n");
+}
+
+// CRC-8 計算
+static uint8_t calc_crc8(const uint8_t *data, uint16_t len) {
+    uint8_t crc = 0xFF;
+    for (uint16_t i = 0; i < len; i++) {
+        crc ^= data[i];
+        for (uint8_t j = 0; j < 8; j++) {
+            if (crc & 0x80)
+                crc = (crc << 1) ^ 0x31;
+            else
+                crc <<= 1;
+        }
+    }
+    return crc;
+}
+
+// 將觸摸數據發送給上位機
+static void ip7_touch_send_to_host(touch_state_t *state, touch_point_t *points[]) {
+
+    // if not finish yet force reset transfer 
+    if (transfer_busy) {
+        transfer_busy = 0;
+        HAL_GPIO_WritePin(UPLINK_INT_GPIO_Port, UPLINK_INT_Pin, GPIO_PIN_SET);  // 拉高
+        // stop ongoing DMA
+        HAL_SPI_DMAStop(&hspi2);
+        printf("[Transfer busy, resetting]\n");
+    }
+    
+    // 使用單一緩衝區
+    spi_touch_packet_t *packet = &uplink_buffer;
+    
+    // 清空封包
+    // memset(packet, 0, sizeof(spi_touch_packet_t));
+    
+    // 填充 header
+    packet->magic = 0xAA;
+    packet->finger_count = state->finger_count;
+    packet->scan_count = state->scan_count;
+    
+    if(state->finger_count < 1 || state->finger_count > 5) {
+        printf("[Invalid finger count: %d]\n", state->finger_count);
+        state->finger_count = 0; // 保護
+    }
 
 
+    // 填充觸摸點數據（固定5個槽位）
+    for (uint8_t i = 0; i < 5; i++) {
+        if (i < state->finger_count) {
+            touch_point_t *pt = points[i];
+            packet->points[i].finger_id = pt->finger_id;
+            packet->points[i].x = pt->x;
+            packet->points[i].y = pt->y;
+            packet->points[i].contact_state = pt->distance_state;
+        } else {
+            // 無效槽位標記為 0xFF
+            packet->points[i].finger_id = 0xFF;
+            packet->points[i].x = 0;
+            packet->points[i].y = 0;
+            packet->points[i].contact_state = 0;
+        }
+    }
+    
+    // 計算 CRC（不包含 crc 和 end_marker）
+    packet->crc = calc_crc8((uint8_t*)packet, 38);
+    
+    // 結束標記
+    packet->end_marker = 0x55;
+    
+    // 觸發 INT 引腳通知上位機
+    // HAL_GPIO_WritePin(UPLINK_INT_GPIO_Port, UPLINK_INT_Pin, GPIO_PIN_RESET);  // 拉低表示有數據
+    
+    // 啟動 DMA 傳輸
+    transfer_busy = 1;
+    if (HAL_SPI_Transmit_DMA(&hspi2, (uint8_t*)&uplink_buffer, sizeof(spi_touch_packet_t)) != HAL_OK) {
+        // DMA 啟動失敗，重置狀態
+        transfer_busy = 0;
+        // HAL_GPIO_WritePin(UPLINK_INT_GPIO_Port, UPLINK_INT_Pin, GPIO_PIN_SET);  // 拉高
+    } 
+    else {
+        HAL_Delay(1);  // 確保 DMA 啟動穩定
+        // 成功啟動 DMA 傳輸，拉低 INT 引腳
+        HAL_GPIO_WritePin(UPLINK_INT_GPIO_Port, UPLINK_INT_Pin, GPIO_PIN_RESET);  // 拉低表示有數據
+    }
+}
+
+// DMA 傳輸完成回調（需要在 stm32f1xx_it.c 中調用）
+void HAL_SPI_TxCpltCallback(SPI_HandleTypeDef *hspi) {
+    if (hspi->Instance == SPI2) {
+        // DMA 傳輸完成
+        transfer_busy = 0;
+        
+        // 拉高 INT 引腳
+        HAL_GPIO_WritePin(UPLINK_INT_GPIO_Port, UPLINK_INT_Pin, GPIO_PIN_SET);
+    }
+}
 
 
 

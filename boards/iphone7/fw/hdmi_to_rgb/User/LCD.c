@@ -1,5 +1,9 @@
 #include <stdio.h>
+#include <string.h>
 #include "main.h"
+#include "spi.h"
+#include "stm32f1xx_hal_gpio.h"
+#include "stm32f1xx_hal_spi.h"
 #include "tim.h"
 #include "LCD.h"
 
@@ -17,10 +21,23 @@ ButtonState btn2_state = {0};
 volatile uint8_t bl_duty = 40;
 
 void lcd_reset() {
+    // test SPI
+    HAL_GPIO_WritePin(SCREEN_SPI2_CS_GPIO_Port, SCREEN_SPI2_CS_Pin, GPIO_PIN_RESET);
+    HAL_Delay(10);
+    HAL_GPIO_WritePin(SCREEN_SPI2_CS_GPIO_Port, SCREEN_SPI2_CS_Pin, GPIO_PIN_SET);
+    HAL_Delay(10);
+
     HAL_GPIO_WritePin(LCD_RESET_GPIO_Port, LCD_RESET_Pin, GPIO_PIN_SET);
     HAL_Delay(10);
     HAL_GPIO_WritePin(LCD_RESET_GPIO_Port, LCD_RESET_Pin, GPIO_PIN_RESET);
     HAL_Delay(10);
+
+    // 消除spi控制器殘留狀態
+    uint8_t tx_data = 0x66;
+    uint8_t rx_data = 0;
+    HAL_GPIO_WritePin(SCREEN_SPI2_CS_GPIO_Port, SCREEN_SPI2_CS_Pin, GPIO_PIN_RESET);
+    HAL_SPI_TransmitReceive(&hspi2, &tx_data, &rx_data, 1, HAL_MAX_DELAY);
+    HAL_GPIO_WritePin(SCREEN_SPI2_CS_GPIO_Port, SCREEN_SPI2_CS_Pin, GPIO_PIN_SET);
 }
 
 void set_bl_duty(uint8_t duty) {
@@ -104,6 +121,123 @@ void lcd_check_buttons() {
 }
 
 
+// touch 
+
+
+// 接收緩衝區和狀態
+static spi_touch_packet_t touch_rx_buffer;
+static uint8_t dummy_tx_buffer[sizeof(spi_touch_packet_t)] = {0};  // 發送假數據產生時鐘
+static volatile uint8_t touch_data_ready = 0;
+static volatile uint8_t spi_receiving = 0;
+
+volatile uint8_t need_read_touch = 0; 
+
+
+// CRC-8 計算函數（與 slave 端相同）
+static uint8_t calc_crc8(const uint8_t *data, uint16_t len) {
+    uint8_t crc = 0xFF;
+    for (uint16_t i = 0; i < len; i++) {
+        crc ^= data[i];
+        for (uint8_t j = 0; j < 8; j++) {
+            if (crc & 0x80)
+                crc = (crc << 1) ^ 0x31;
+            else
+                crc <<= 1;
+        }
+    }
+    return crc;
+}
+
+// 驗證並處理接收到的觸控數據
+static void process_touch_data(void) {
+    spi_touch_packet_t *packet = &touch_rx_buffer;
+    
+    // 驗證 magic 和 end_marker
+    if (packet->magic != 0xAA || packet->end_marker != 0x55) {
+        printf("[Touch] Invalid packet markers: magic=0x%02X, end=0x%02X\n", 
+               packet->magic, packet->end_marker);
+        return;
+    }
+    
+    // 驗證 CRC（不包含 crc 和 end_marker）
+    uint8_t calculated_crc = calc_crc8((uint8_t*)packet, 38);
+    if (calculated_crc != packet->crc) {
+        printf("[Touch] CRC mismatch: calc=0x%02X, recv=0x%02X\n", 
+               calculated_crc, packet->crc);
+        return;
+    }
+    
+    // 數據有效，處理觸控信息
+    printf("[Touch] fingers=%d\t", packet->finger_count);
+    
+    // for (uint8_t i = 0; i < packet->finger_count && i < TOUCH_MAX_POINTS; i++) {
+    //     if (packet->points[i].finger_id != 0xFF) {
+    //         printf("  [%d] id=%d, x=%d, y=%d, state=%d",
+    //                i,
+    //                packet->points[i].finger_id,
+    //                packet->points[i].x,
+    //                packet->points[i].y,
+    //                packet->points[i].contact_state);
+    //     }
+    // }
+
+    printf("\n");
+}
+
+// GPIO 中斷回調 - 當 INT 引腳變為低電平時觸發
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
+    if (GPIO_Pin == SCREEN_SPI2_INT_Pin && !spi_receiving) {
+        need_read_touch = 1;
+    }
+}
+// SPI 接收完成回調
+void HAL_SPI_TxRxCpltCallback(SPI_HandleTypeDef *hspi) {
+    if (hspi->Instance == SPI2) {
+        // 拉高 CS 結束傳輸
+        HAL_GPIO_WritePin(SCREEN_SPI2_CS_GPIO_Port, SCREEN_SPI2_CS_Pin, GPIO_PIN_SET);
+        spi_receiving = 0;
+        touch_data_ready = 1;
+    }
+}
+
+// SPI 接收錯誤回調
+void HAL_SPI_ErrorCallback(SPI_HandleTypeDef *hspi) {
+    if (hspi->Instance == SPI2) {
+        // 拉高 CS 結束傳輸
+        HAL_GPIO_WritePin(SCREEN_SPI2_CS_GPIO_Port, SCREEN_SPI2_CS_Pin, GPIO_PIN_SET);
+        
+        spi_receiving = 0;
+        printf("[Touch] SPI receive error: 0x%08X\n", (unsigned int)hspi->ErrorCode);
+    }
+}
+
+// 在主循環中調用此函數以處理接收到的觸控數據
+void lcd_process_touch(void) {
+    // 檢查是否需要啟動接收
+    if (need_read_touch && !spi_receiving) {
+        need_read_touch = 0;
+        
+        // 清空接收緩衝
+        memset(&touch_rx_buffer, 0, sizeof(spi_touch_packet_t));
+        
+        // 拉低 CS 開始傳輸
+        HAL_GPIO_WritePin(SCREEN_SPI2_CS_GPIO_Port, SCREEN_SPI2_CS_Pin, GPIO_PIN_RESET);
+        for(volatile int i = 0; i < 200; i++);  // 短暫延遲確保 CS 穩定
+        // 啟動 DMA 同時收發
+        spi_receiving = 1;
+        if (HAL_SPI_TransmitReceive_DMA(&hspi2, dummy_tx_buffer, (uint8_t*)&touch_rx_buffer, sizeof(spi_touch_packet_t)) != HAL_OK) {
+            spi_receiving = 0;
+            HAL_GPIO_WritePin(SCREEN_SPI2_CS_GPIO_Port, SCREEN_SPI2_CS_Pin, GPIO_PIN_SET);
+            printf("[Touch] Failed to start SPI: State=%d, Err=0x%08X\n", hspi2.State, (unsigned int)hspi2.ErrorCode);
+        }
+    }
+    
+    // 處理接收完成的數據
+    if (touch_data_ready) {
+        touch_data_ready = 0;
+        process_touch_data();
+    }
+}
 
 
 
