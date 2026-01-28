@@ -4,7 +4,7 @@
  * 數據流向與函數流程:
  * ================================================================================
  * 
- * [觸摸控制器] --SPI--> [STM32] --SPI DMA--> [上位機]
+ * [觸摸控制器] --SPI--> [STM32] --SPI--> [上位機]
  * 
  * 主要流程:
  * --------
@@ -32,11 +32,8 @@
  *                  ├─> 封裝成 spi_touch_packet_t
  *                  ├─> 計算 CRC-8
  *                  ├─> 拉低 UPLINK_INT 通知上位機
- *                  └─> 啟動 SPI2 DMA 傳輸
- * 
- * 3. DMA 完成回調:
- *    HAL_SPI_TxCpltCallback()
- *      └─> 拉高 UPLINK_INT, 清除 transfer_busy
+ *                  ├─> 啟動 SPI2 輪詢傳輸
+ *                  └─> 傳輸完成後拉高 UPLINK_INT
  * 
  * 數據格式:
  * --------
@@ -52,6 +49,7 @@
 
 #include "ip7_touch.h"
 
+#include <stdint.h>
 #include <stdio.h>
 #include <string.h>
 #include "spi.h"
@@ -117,8 +115,8 @@ int read_serid = 0;
 uint8_t spi_buffer[400];
 
 // 單一緩衝區用於上位機讀取
-static spi_touch_packet_t uplink_buffer;
-static volatile uint8_t transfer_busy = 0;  // DMA 傳輸忙標記
+// spi_touch_packet_t uplink_buffer;
+uint8_t uplink_data_buffer[100];
 
 
 void ip7_touch_spi_write(const uint8_t* data, uint16_t len){
@@ -266,7 +264,7 @@ static void ip7_touch_process_packet() {
     }
     
     // 打印調試信息
-    printf(" Fingers: %d\t", finger_count);
+    printf(" P:%d\t", finger_count);
     // for (uint8_t i = 0; i < finger_count; i++) {
     //     touch_point_t *pt = points[i];
     //     printf("P%d[ID:%d X:%d Y:%d ST:%d] ", i, pt->finger_id, pt->x, pt->y, pt->distance_state);
@@ -295,21 +293,9 @@ static uint8_t calc_crc8(const uint8_t *data, uint16_t len) {
 
 // 將觸摸數據發送給上位機
 static void ip7_touch_send_to_host(touch_state_t *state, touch_point_t *points[]) {
-
-    // if not finish yet force reset transfer 
-    if (transfer_busy) {
-        transfer_busy = 0;
-        HAL_GPIO_WritePin(UPLINK_INT_GPIO_Port, UPLINK_INT_Pin, GPIO_PIN_SET);  // 拉高
-        // stop ongoing DMA
-        HAL_SPI_DMAStop(&hspi2);
-        printf("[Transfer busy, resetting]\n");
-    }
-    
     // 使用單一緩衝區
-    spi_touch_packet_t *packet = &uplink_buffer;
-    
-    // 清空封包
-    // memset(packet, 0, sizeof(spi_touch_packet_t));
+    // spi_touch_packet_t *packet = &uplink_buffer;
+    spi_touch_packet_t *packet = (spi_touch_packet_t *)uplink_data_buffer;
     
     // 填充 header
     packet->magic = 0xAA;
@@ -320,7 +306,6 @@ static void ip7_touch_send_to_host(touch_state_t *state, touch_point_t *points[]
         printf("[Invalid finger count: %d]\n", state->finger_count);
         state->finger_count = 0; // 保護
     }
-
 
     // 填充觸摸點數據（固定5個槽位）
     for (uint8_t i = 0; i < 5; i++) {
@@ -345,33 +330,18 @@ static void ip7_touch_send_to_host(touch_state_t *state, touch_point_t *points[]
     // 結束標記
     packet->end_marker = 0x55;
     
-    // 觸發 INT 引腳通知上位機
-    // HAL_GPIO_WritePin(UPLINK_INT_GPIO_Port, UPLINK_INT_Pin, GPIO_PIN_RESET);  // 拉低表示有數據
+    // 拉低 INT 引腳通知上位機有數據
+    HAL_GPIO_WritePin(UPLINK_INT_GPIO_Port, UPLINK_INT_Pin, GPIO_PIN_RESET);
     
-    // 啟動 DMA 傳輸
-    transfer_busy = 1;
-    if (HAL_SPI_Transmit_DMA(&hspi2, (uint8_t*)&uplink_buffer, sizeof(spi_touch_packet_t)) != HAL_OK) {
-        // DMA 啟動失敗，重置狀態
-        transfer_busy = 0;
-        // HAL_GPIO_WritePin(UPLINK_INT_GPIO_Port, UPLINK_INT_Pin, GPIO_PIN_SET);  // 拉高
-    } 
-    else {
-        HAL_Delay(1);  // 確保 DMA 啟動穩定
-        // 成功啟動 DMA 傳輸，拉低 INT 引腳
-        HAL_GPIO_WritePin(UPLINK_INT_GPIO_Port, UPLINK_INT_Pin, GPIO_PIN_RESET);  // 拉低表示有數據
+    // 使用輪詢模式傳輸（Slave 模式會等待 Master 的時鐘）
+    HAL_StatusTypeDef status = HAL_SPI_Transmit(&hspi2, uplink_data_buffer, sizeof(spi_touch_packet_t), 100);
+    
+    // 傳輸完成後拉高 INT 引腳
+    HAL_GPIO_WritePin(UPLINK_INT_GPIO_Port, UPLINK_INT_Pin, GPIO_PIN_SET);
+    
+    if (status != HAL_OK) {
+        printf("[SPI2 Transmit Error: %d]\n", status);
     }
 }
-
-// DMA 傳輸完成回調（需要在 stm32f1xx_it.c 中調用）
-void HAL_SPI_TxCpltCallback(SPI_HandleTypeDef *hspi) {
-    if (hspi->Instance == SPI2) {
-        // DMA 傳輸完成
-        transfer_busy = 0;
-        
-        // 拉高 INT 引腳
-        HAL_GPIO_WritePin(UPLINK_INT_GPIO_Port, UPLINK_INT_Pin, GPIO_PIN_SET);
-    }
-}
-
 
 
