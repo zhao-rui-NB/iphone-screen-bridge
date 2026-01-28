@@ -217,7 +217,7 @@ void ADV7611_Init(){
     ADV7611_write_reg(ADV7611_IO_ADDR, 0x0C, 0x42); // Power up part
     ADV7611_write_reg(ADV7611_IO_ADDR, 0x14, 0x7F); // Max Drive Strength
     // ADV7611_write_reg(ADV7611_IO_ADDR, 0x15, 0x80); // Disable Tristate of Pins
-    ADV7611_write_reg(ADV7611_IO_ADDR, 0x19, 0x95); // LLC DLL phase
+    ADV7611_write_reg(ADV7611_IO_ADDR, 0x19, (0x80 +  26 )   ); // LLC DLL phase
     ADV7611_write_reg(ADV7611_IO_ADDR, 0x33, 0x40); // LLC DLL enable
 
     // HDMI Map (0x68)
