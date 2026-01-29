@@ -80,6 +80,8 @@ void Error_Handler(void);
 #define SCREEN_SPI2_INT_Pin GPIO_PIN_8
 #define SCREEN_SPI2_INT_GPIO_Port GPIOA
 #define SCREEN_SPI2_INT_EXTI_IRQn EXTI9_5_IRQn
+#define USB_EN_Pin GPIO_PIN_3
+#define USB_EN_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 

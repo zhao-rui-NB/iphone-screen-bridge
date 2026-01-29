@@ -47,6 +47,9 @@ CMAKE_ASM_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 // MinSizeRel ...
 CMAKE_BUILD_TYPE:STRING=Debug
 
+//No help, variable specified on the command line.
+CMAKE_COMMAND:UNINITIALIZED=cube-cmake
+
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
 CMAKE_CXX_COMPILER_AR:FILEPATH=C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/arm-none-eabi-gcc-ar.exe
@@ -267,8 +270,6 @@ CMAKE_CACHE_MAJOR_VERSION:INTERNAL=4
 CMAKE_CACHE_MINOR_VERSION:INTERNAL=0
 //Patch version of cmake used to create the current loaded cache
 CMAKE_CACHE_PATCH_VERSION:INTERNAL=1
-//Path to CMake executable.
-CMAKE_COMMAND:INTERNAL=C:/Users/rui/AppData/Local/stm32cube/bundles/cmake/4.0.1+st.3/bin/cmake.exe
 //Path to cpack program executable.
 CMAKE_CPACK_COMMAND:INTERNAL=C:/Users/rui/AppData/Local/stm32cube/bundles/cmake/4.0.1+st.3/bin/cpack.exe
 //Path to ctest program executable.
