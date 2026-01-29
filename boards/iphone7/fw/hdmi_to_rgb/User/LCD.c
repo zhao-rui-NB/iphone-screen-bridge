@@ -167,20 +167,27 @@ static void process_touch_data(void) {
     }
     
     // 數據有效，處理觸控信息
-    printf("[T] P:%d\t", packet->finger_count);
+    // printf("[T] P:%d\t", packet->finger_count);
     
-    // for (uint8_t i = 0; i < packet->finger_count && i < TOUCH_MAX_POINTS; i++) {
-    //     if (packet->points[i].finger_id != 0xFF) {
-    //         printf("  [%d] id=%d, x=%d, y=%d, state=%d",
-    //                i,
-    //                packet->points[i].finger_id,
-    //                packet->points[i].x,
-    //                packet->points[i].y,
-    //                packet->points[i].contact_state);
-    //     }
-    // }
+    // // for (uint8_t i = 0; i < packet->finger_count && i < TOUCH_MAX_POINTS; i++) {
+    // //     if (packet->points[i].finger_id != 0xFF) {
+    // //         printf("  [%d] id=%d, x=%d, y=%d, state=%d",
+    // //                i,
+    // //                packet->points[i].finger_id,
+    // //                packet->points[i].x,
+    // //                packet->points[i].y,
+    // //                packet->points[i].contact_state);
+    // //     }
+    // // }
 
-    printf("\n");
+    // printf("\n");
+    // 原始值是 int16，需要轉換回來正確顯示
+    printf("[T] P:%d\t x: %d y: %d state: %d\n",
+           packet->finger_count,
+           (int16_t)packet->points[0].x,
+           (int16_t)packet->points[0].y,
+           packet->points[0].contact_state);
+
 }
 
 // GPIO 中斷回調 - 當 INT 引腳變為低電平時觸發
@@ -221,6 +228,12 @@ void lcd_process_touch(void) {
         need_read_touch = 0;
     }
 }
+
+// 獲取最新的觸控數據
+const spi_touch_packet_t* lcd_get_touch_data(void) {
+    return &touch_rx_buffer;
+}
+
 
 
 

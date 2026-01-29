@@ -27,8 +27,8 @@ typedef struct {
     // 固定5個點的空間，沒用到的填0
     struct {
         uint8_t  finger_id;     // 手指ID (0xFF表示無效)
-        uint16_t x;             // X座標
-        uint16_t y;             // Y座標  
+        int16_t x;             // X座標
+        int16_t y;             // Y座標  
         uint8_t  contact_state; // 狀態 (0=up, 1=down, 2=move)
     } points[TOUCH_MAX_POINTS];                // [8-37] 5×6=30 bytes
     
@@ -43,5 +43,8 @@ void lcd_check_buttons();
 void lcd_reset();
 void set_bl_duty(uint8_t duty);
 void lcd_process_touch(void);
+
+// 獲取最新的觸控數據
+const spi_touch_packet_t* lcd_get_touch_data(void);
 
 #endif /* _LCD_H_ */
