@@ -170,8 +170,8 @@ __ALIGN_BEGIN static uint8_t USBD_HID_CfgFSDesc[USB_HID_CONFIG_DESC_SIZ]  __ALIG
   0x00,         /*bCountryCode: Hardware target country*/
   0x01,         /*bNumDescriptors: Number of HID class descriptors to follow*/
   0x22,         /*bDescriptorType*/
-  HID_TOUCH_REPORT_DESC_SIZE,/*wItemLength: Total length of Report descriptor*/
-  0x00,
+  (HID_TOUCH_REPORT_DESC_SIZE & 0xFF),/*wItemLength: Total length of Report descriptor*/ //[rui] 修改為觸控描述符大小
+  (HID_TOUCH_REPORT_DESC_SIZE >> 8),
   /******************** Descriptor of Mouse endpoint ********************/
   /* 27 */
   0x07,          /*bLength: Endpoint Descriptor size*/
@@ -200,8 +200,8 @@ __ALIGN_BEGIN static uint8_t USBD_HID_Desc[USB_HID_DESC_SIZ]  __ALIGN_END  =
   0x00,         /*bCountryCode: Hardware target country*/
   0x01,         /*bNumDescriptors: Number of HID class descriptors to follow*/
   0x22,         /*bDescriptorType*/
-  HID_TOUCH_REPORT_DESC_SIZE,/*wItemLength: Total length of Report descriptor*/
-  0x00,
+  (HID_TOUCH_REPORT_DESC_SIZE & 0xFF),/*wItemLength: Total length of Report descriptor*/ //[rui] 修改為觸控描述符大小
+  (HID_TOUCH_REPORT_DESC_SIZE >> 8),
 };
 
 /* USB Standard Device Descriptor */
@@ -220,6 +220,7 @@ __ALIGN_BEGIN static uint8_t USBD_HID_DeviceQualifierDesc[USB_LEN_DEV_QUALIFIER_
 };
 
 //[rui] 原本的滑鼠描述符
+/*
 __ALIGN_BEGIN static uint8_t HID_MOUSE_ReportDesc[HID_MOUSE_REPORT_DESC_SIZE]  __ALIGN_END =
 {
   0x05,   0x01,
@@ -269,46 +270,207 @@ __ALIGN_BEGIN static uint8_t HID_MOUSE_ReportDesc[HID_MOUSE_REPORT_DESC_SIZE]  _
 
   0x01,   0xc0
 };
-
+*/
 
 //[rui] 不要用滑鼠描述符，改用觸控描述符
+// HID_TOUCH_ReportDesc 修改後需要更新 HID_TOUCH_REPORT_DESC_SIZE
 __ALIGN_BEGIN static uint8_t HID_TOUCH_ReportDesc[] __ALIGN_END =
 {
-  0x05, 0x0D,        // Usage Page (Digitizer)
-  0x09, 0x04,        // Usage (Touch Screen)
-  0xA1, 0x01,        // Collection (Application)
+    0x05, 0x0D,        // Usage Page (Digitizer)
+    0x09, 0x04,        // Usage (Touch Screen)
+    0xA1, 0x01,        // Collection (Application)
 
-  0x09, 0x22,        //   Usage (Finger)
-  0xA1, 0x00,        //   Collection (Physical)
+        0x09, 0x54,   // Usage (Contact Count)
+        0x75, 0x08,   // 1 byte
+        0x95, 0x01,   // 1 個
+        0x15, 0x00,   // min = 0
+        0x25, 0x05,   // max = 5
+        0x81, 0x02,   // Input (Data,Var,Abs)
 
-  0x09, 0x42,        //     Usage (Tip Switch)
-  0x15, 0x00,        //     Logical Min (0)
-  0x25, 0x01,        //     Logical Max (1)
-  0x75, 0x01,        //     Report Size (1)
-  0x95, 0x01,        //     Report Count (1)
-  0x81, 0x02,        //     Input (Data,Var,Abs)
 
-  0x09, 0x32,        //     Usage (In Range)
-  0x75, 0x01,
-  0x95, 0x01,
-  0x81, 0x02,        //     Input (Data,Var,Abs)
+        // ----- finger1 start -----
+        0x05, 0x0D,   // Usage Page (Digitizers)
+        0x09, 0x22,   // Usage (Finger)
+        0xA1, 0x02,   // Collection (Logical)
+            0x09, 0x42,   // Usage (Tip Switch)
+            0x09, 0x32,   // Usage (In Range)
+            0x15, 0x00,   // Logical Minimum (0)
+            0x25, 0x01,   // Logical Maximum (1)
+            0x75, 0x01,   // Report Size (1)
+            0x95, 0x02,   // Report Count (2)
+            0x81, 0x02,   // Input (Data,Var,Abs)
 
-  0x75, 0x06,        //     Padding
-  0x95, 0x01,
-  0x81, 0x03,        //     Input (Const,Var,Abs)
+            0x75, 0x01,   // Report Size (1)
+            0x95, 0x06,   // Report Count (6)
+            0x81, 0x03,   // Input (Const,Var,Abs)
 
-  0x05, 0x01,        //     Usage Page (Generic Desktop)
-  0x09, 0x30,        //     Usage (X)
-  0x09, 0x31,        //     Usage (Y)
-  0x16, 0x00, 0x00,  //     Logical Min (0)
-  0x26, 0xFF, 0x7F,  //     Logical Max (32767)
-  0x75, 0x10,        //     Report Size (16)
-  0x95, 0x02,        //     Report Count (2)
-  0x81, 0x02,        //     Input (Data,Var,Abs)
+            0x09, 0x51,   // Usage (Contact ID)
+            0x75, 0x08,   // Report Size (8)
+            0x95, 0x01,   // Report Count (1)
+            0x15, 0x00,   // Logical Minimum (0)
+            0x25, 0xFF,   // Logical Maximum (255)
+            0x81, 0x02,   // Input (Data,Var,Abs)
 
-  0xC0,              //   End Collection
-  0xC0               // End Collection
+            0x05, 0x01,   // Usage Page (Generic Desktop)
+            0x09, 0x30,   // Usage (X)
+            0x09, 0x31,   // Usage (Y)
+            0x16, 0x00, 0x00,   // Logical Minimum (0)
+            0x26, 0xFF, 0x7F,   // Logical Maximum (32767)
+            0x75, 0x10,         // Report Size (16)
+            0x95, 0x02,         // Report Count (2)
+            0x81, 0x02,         // Input (Data,Var,Abs)
+        0xC0,               // End Collection
+
+        // ----- finger2 start -----
+        0x05, 0x0D,   // Usage Page (Digitizers)
+        0x09, 0x22,   // Usage (Finger)
+        0xA1, 0x02,   // Collection (Logical)
+            0x09, 0x42,   // Usage (Tip Switch)
+            0x09, 0x32,   // Usage (In Range)
+            0x15, 0x00,   // Logical Minimum (0)
+            0x25, 0x01,   // Logical Maximum (1)
+            0x75, 0x01,   // Report Size (1)
+            0x95, 0x02,   // Report Count (2)
+            0x81, 0x02,   // Input (Data,Var,Abs)
+
+            0x75, 0x01,   // Report Size (1)
+            0x95, 0x06,   // Report Count (6)
+            0x81, 0x03,   // Input (Const,Var,Abs)
+
+            0x09, 0x51,   // Usage (Contact ID)
+            0x75, 0x08,   // Report Size (8)
+            0x95, 0x01,   // Report Count (1)
+            0x15, 0x00,   // Logical Minimum (0)
+            0x25, 0xFF,   // Logical Maximum (255)
+            0x81, 0x02,   // Input (Data,Var,Abs)
+
+            0x05, 0x01,   // Usage Page (Generic Desktop)
+            0x09, 0x30,   // Usage (X)
+            0x09, 0x31,   // Usage (Y)
+            0x16, 0x00, 0x00,   // Logical Minimum (0)
+            0x26, 0xFF, 0x7F,   // Logical Maximum (32767)
+            0x75, 0x10,         // Report Size (16)
+            0x95, 0x02,         // Report Count (2)
+            0x81, 0x02,         // Input (Data,Var,Abs)
+        0xC0,               // End Collection
+
+        // ----- finger3 start -----
+        0x05, 0x0D,   // Usage Page (Digitizers)
+        0x09, 0x22,   // Usage (Finger)
+        0xA1, 0x02,   // Collection (Logical)
+            0x09, 0x42,   // Usage (Tip Switch)
+            0x09, 0x32,   // Usage (In Range)
+            0x15, 0x00,   // Logical Minimum (0)
+            0x25, 0x01,   // Logical Maximum (1)
+            0x75, 0x01,   // Report Size (1)
+            0x95, 0x02,   // Report Count (2)
+            0x81, 0x02,   // Input (Data,Var,Abs)
+
+            0x75, 0x01,   // Report Size (1)
+            0x95, 0x06,   // Report Count (6)
+            0x81, 0x03,   // Input (Const,Var,Abs)
+
+            0x09, 0x51,   // Usage (Contact ID)
+            0x75, 0x08,   // Report Size (8)
+            0x95, 0x01,   // Report Count (1)
+            0x15, 0x00,   // Logical Minimum (0)
+            0x25, 0xFF,   // Logical Maximum (255)
+            0x81, 0x02,   // Input (Data,Var,Abs)
+
+            0x05, 0x01,   // Usage Page (Generic Desktop)
+            0x09, 0x30,   // Usage (X)
+            0x09, 0x31,   // Usage (Y)
+            0x16, 0x00, 0x00,   // Logical Minimum (0)
+            0x26, 0xFF, 0x7F,   // Logical Maximum (32767)
+            0x75, 0x10,         // Report Size (16)
+            0x95, 0x02,         // Report Count (2)
+            0x81, 0x02,         // Input (Data,Var,Abs)
+        0xC0,               // End Collection
+
+        // ----- finger4 start -----
+        0x05, 0x0D,   // Usage Page (Digitizers)
+        0x09, 0x22,   // Usage (Finger)
+        0xA1, 0x02,   // Collection (Logical)
+            0x09, 0x42,   // Usage (Tip Switch)
+            0x09, 0x32,   // Usage (In Range)
+            0x15, 0x00,   // Logical Minimum (0)
+            0x25, 0x01,   // Logical Maximum (1)
+            0x75, 0x01,   // Report Size (1)
+            0x95, 0x02,   // Report Count (2)
+            0x81, 0x02,   // Input (Data,Var,Abs)
+
+            0x75, 0x01,   // Report Size (1)
+            0x95, 0x06,   // Report Count (6)
+            0x81, 0x03,   // Input (Const,Var,Abs)
+
+            0x09, 0x51,   // Usage (Contact ID)
+            0x75, 0x08,   // Report Size (8)
+            0x95, 0x01,   // Report Count (1)
+            0x15, 0x00,   // Logical Minimum (0)
+            0x25, 0xFF,   // Logical Maximum (255)
+            0x81, 0x02,   // Input (Data,Var,Abs)
+
+            0x05, 0x01,   // Usage Page (Generic Desktop)
+            0x09, 0x30,   // Usage (X)
+            0x09, 0x31,   // Usage (Y)
+            0x16, 0x00, 0x00,   // Logical Minimum (0)
+            0x26, 0xFF, 0x7F,   // Logical Maximum (32767)
+            0x75, 0x10,         // Report Size (16)
+            0x95, 0x02,         // Report Count (2)
+            0x81, 0x02,         // Input (Data,Var,Abs)
+        0xC0,               // End Collection
+
+        // ----- finger5 start -----
+        0x05, 0x0D,   // Usage Page (Digitizers)
+        0x09, 0x22,   // Usage (Finger)
+        0xA1, 0x02,   // Collection (Logical)
+            0x09, 0x42,   // Usage (Tip Switch)
+            0x09, 0x32,   // Usage (In Range)
+            0x15, 0x00,   // Logical Minimum (0)
+            0x25, 0x01,   // Logical Maximum (1)
+            0x75, 0x01,   // Report Size (1)
+            0x95, 0x02,   // Report Count (2)
+            0x81, 0x02,   // Input (Data,Var,Abs)
+
+            0x75, 0x01,   // Report Size (1)
+            0x95, 0x06,   // Report Count (6)
+            0x81, 0x03,   // Input (Const,Var,Abs)
+
+            0x09, 0x51,   // Usage (Contact ID)
+            0x75, 0x08,   // Report Size (8)
+            0x95, 0x01,   // Report Count (1)
+            0x15, 0x00,   // Logical Minimum (0)
+            0x25, 0xFF,   // Logical Maximum (255)
+            0x81, 0x02,   // Input (Data,Var,Abs)
+
+            0x05, 0x01,   // Usage Page (Generic Desktop)
+            0x09, 0x30,   // Usage (X)
+            0x09, 0x31,   // Usage (Y)
+            0x16, 0x00, 0x00,   // Logical Minimum (0)
+            0x26, 0xFF, 0x7F,   // Logical Maximum (32767)
+            0x75, 0x10,         // Report Size (16)
+            0x95, 0x02,         // Report Count (2)
+            0x81, 0x02,         // Input (Data,Var,Abs)
+        0xC0,               // End Collection
+
+        // Contact Count Maximum Feature Report
+        0x05, 0x0D,        //   Usage Page (Digitizers)
+        0x09, 0x55,        //   Usage (Contact Count Maximum)
+        0x25, 0x7F,        //   Logical Maximum (127)
+        0x75, 0x08,        //   Report Size (8)
+        0x95, 0x01,        //   Report Count (1)
+        0xB1, 0x02,        //   Feature (Data,Var,Abs)
+
+    0xC0               // End Collection
 };
+
+// Feature Report: Contact Count Maximum
+#define MAX_CONTACT_COUNT 5  // 目前支援 5 個手指
+__ALIGN_BEGIN static uint8_t HID_Feature_Report[1] __ALIGN_END = {
+    MAX_CONTACT_COUNT  // Contact Count Maximum
+};
+
+
 
 /**
   * @}
@@ -402,6 +564,21 @@ static uint8_t  USBD_HID_Setup(USBD_HandleTypeDef *pdev,
 
         case HID_REQ_GET_IDLE:
           USBD_CtlSendData(pdev, (uint8_t *)(void *)&hhid->IdleState, 1U);
+          break;
+
+        case HID_REQ_GET_REPORT:
+          // Windows 查詢 Contact Count Maximum Feature Report
+          // wValue = (Report Type << 8) | Report ID
+          // Report Type: 1=Input, 2=Output, 3=Feature
+          if ((req->wValue >> 8) == 0x03)  // Feature Report
+          {
+            USBD_CtlSendData(pdev, (uint8_t *)HID_Feature_Report, sizeof(HID_Feature_Report));
+          }
+          else
+          {
+            USBD_CtlError(pdev, req);
+            ret = USBD_FAIL;
+          }
           break;
 
         default:

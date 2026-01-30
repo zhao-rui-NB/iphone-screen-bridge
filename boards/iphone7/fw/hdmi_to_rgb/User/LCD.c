@@ -126,7 +126,8 @@ void lcd_check_buttons() {
 
 
 // 接收緩衝區和狀態
-spi_touch_packet_t touch_rx_buffer;
+spi_touch_packet_t spi_touch_packet;
+touch_hid_report_t touch_hid_report;
 uint8_t dummy_tx_buffer[sizeof(spi_touch_packet_t)] = {0};  // 發送假數據產生時鐘
 
 volatile uint8_t need_read_touch = 0; 
@@ -149,7 +150,7 @@ static uint8_t calc_crc8(const uint8_t *data, uint16_t len) {
 
 // 驗證並處理接收到的觸控數據
 static void process_touch_data(void) {
-    spi_touch_packet_t *packet = &touch_rx_buffer;
+    spi_touch_packet_t *packet = &spi_touch_packet;
     
     // 驗證 magic 和 end_marker
     if (packet->magic != 0xAA || packet->end_marker != 0x55) {
@@ -167,26 +168,20 @@ static void process_touch_data(void) {
     }
     
     // 數據有效，處理觸控信息
-    // printf("[T] P:%d\t", packet->finger_count);
+    printf("[TP] P:%d\t", packet->finger_count);
     
-    // // for (uint8_t i = 0; i < packet->finger_count && i < TOUCH_MAX_POINTS; i++) {
-    // //     if (packet->points[i].finger_id != 0xFF) {
-    // //         printf("  [%d] id=%d, x=%d, y=%d, state=%d",
-    // //                i,
-    // //                packet->points[i].finger_id,
-    // //                packet->points[i].x,
-    // //                packet->points[i].y,
-    // //                packet->points[i].contact_state);
-    // //     }
-    // // }
+    for (uint8_t i = 0; i < packet->finger_count && i < TOUCH_MAX_POINTS; i++) {
+        if (packet->points[i].finger_id != 0xFF) {
+            printf("  [%d] id=%d, x=%d, y=%d, state=%d",
+                   i,
+                   packet->points[i].finger_id,
+                   packet->points[i].x,
+                   packet->points[i].y,
+                   packet->points[i].contact_state);
+        }
+    }
 
-    // printf("\n");
-    // 原始值是 int16，需要轉換回來正確顯示
-    printf("[T] P:%d\t x: %d y: %d state: %d\n",
-           packet->finger_count,
-           (int16_t)packet->points[0].x,
-           (int16_t)packet->points[0].y,
-           packet->points[0].contact_state);
+    printf("\n");
 
 }
 
@@ -203,7 +198,7 @@ void lcd_process_touch(void) {
     if (need_read_touch) {
         
         // 清空接收緩衝
-        memset(&touch_rx_buffer, 0, sizeof(spi_touch_packet_t));
+        memset(&spi_touch_packet, 0, sizeof(spi_touch_packet_t));
         
         // 拉低 CS 開始傳輸
         HAL_GPIO_WritePin(SCREEN_SPI2_CS_GPIO_Port, SCREEN_SPI2_CS_Pin, GPIO_PIN_RESET);
@@ -211,7 +206,7 @@ void lcd_process_touch(void) {
         for (volatile int i = 0; i < 100; i++);
         
         // 使用輪詢模式同時收發（阻塞式）
-        HAL_StatusTypeDef status = HAL_SPI_TransmitReceive(&hspi2, dummy_tx_buffer, (uint8_t*)&touch_rx_buffer, sizeof(spi_touch_packet_t), HAL_MAX_DELAY);
+        HAL_StatusTypeDef status = HAL_SPI_TransmitReceive(&hspi2, dummy_tx_buffer, (uint8_t*)&spi_touch_packet, sizeof(spi_touch_packet_t), HAL_MAX_DELAY);
         
         // 拉高 CS 結束傳輸
         // for (volatile int i = 0; i < 100; i++);
@@ -230,8 +225,61 @@ void lcd_process_touch(void) {
 }
 
 // 獲取最新的觸控數據
-const spi_touch_packet_t* lcd_get_touch_data(void) {
-    return &touch_rx_buffer;
+const spi_touch_packet_t* lcd_get_touch_data() {
+    return &spi_touch_packet;
+}
+
+int16_t map_coordinate(int16_t value, int16_t in_min, int16_t in_max, int16_t out_min, int16_t out_max) {
+    if (value < in_min) value = in_min;
+    if (value > in_max) value = in_max;
+    
+    return (value - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+}
+
+void map_coordinate_to_hid(uint16_t raw_x, uint16_t raw_y, uint16_t* hid_x, uint16_t* hid_y){
+    uint16_t mapped_x = map_coordinate(raw_x, TOUCH_RAW_MIN_X, TOUCH_RAW_MAX_X, 0, TOUCH_HID_MAX_X);
+    uint16_t mapped_y = map_coordinate(raw_y, TOUCH_RAW_MIN_Y, TOUCH_RAW_MAX_Y, TOUCH_HID_MAX_Y, 0);  // Y軸反轉
+    *hid_x = mapped_x;
+    *hid_y = mapped_y;
+}
+
+// 填充 HID 觸控報告
+void fill_touch_hid_report(spi_touch_packet_t* touch_data, touch_hid_report_t* touch_hid_report) {
+    memset(touch_hid_report, 0, sizeof(touch_hid_report_t));
+    
+    uint8_t active_count = 0;  // 實際按下的點數
+
+    for (uint8_t i = 0; i < MAX_REPORT_FINGERS; i++) {
+        // 檢查是否有對應的觸控數據
+        if (i < touch_data->finger_count && touch_data->points[i].finger_id != 0xFF) {
+            // 獲取原始座標
+            int16_t raw_x = (int16_t)touch_data->points[i].x;
+            int16_t raw_y = (int16_t)touch_data->points[i].y;
+            uint8_t contact = touch_data->points[i].contact_state;
+            
+            // 座標映射與校正
+            uint16_t mapped_x = map_coordinate(raw_x, TOUCH_RAW_MIN_X, TOUCH_RAW_MAX_X, 0, TOUCH_HID_MAX_X);
+            uint16_t mapped_y = map_coordinate(raw_y, TOUCH_RAW_MIN_Y, TOUCH_RAW_MAX_Y, TOUCH_HID_MAX_Y, 0);  // Y軸反轉
+            
+            if (contact != 0) {  // 按下或移動
+                touch_hid_report->points[i].fg_state = FG_TIP_SWITCH | FG_IN_RANGE;
+                touch_hid_report->points[i].fg_id = touch_data->points[i].finger_id;
+                touch_hid_report->points[i].x = mapped_x;
+                touch_hid_report->points[i].y = mapped_y;
+                active_count++;
+            } else {
+                // 觸控放開，狀態為 0，但仍需填充該位置
+                touch_hid_report->points[i].fg_state = 0;
+                touch_hid_report->points[i].fg_id = touch_data->points[i].finger_id;
+                touch_hid_report->points[i].x = 0;
+                touch_hid_report->points[i].y = 0;
+            }
+        }
+        // 否則保持默認值（全部為0）
+    }
+    
+    // 設置實際按下的觸控點數量
+    touch_hid_report->contant_count = active_count;
 }
 
 

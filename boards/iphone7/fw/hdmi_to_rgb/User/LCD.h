@@ -14,10 +14,27 @@
 // touch panel
 #define TOUCH_MAX_POINTS 5
 
+// HID 報告中最大支援的觸控點數
+#define MAX_REPORT_FINGERS 5
+#define FG_NONE          0x00
+#define FG_TIP_SWITCH    0x01
+#define FG_IN_RANGE      0x02
+
+
+
+// ===== 觸控校正參數 =====
+// 這些值需要根據實際測試調整
+#define TOUCH_RAW_MIN_X  -231      // 原始觸控 X 最小值
+#define TOUCH_RAW_MAX_X  5573      // 原始觸控 X 最大值
+#define TOUCH_RAW_MIN_Y  -312      // 原始觸控 Y 最小值（修正：MIN < MAX）
+#define TOUCH_RAW_MAX_Y  10116     // 原始觸控 Y 最大值
+
+#define TOUCH_HID_MAX_X  32767   // HID 報告 X 最大值（根據 HID 描述符：Logical Max = 32767）
+#define TOUCH_HID_MAX_Y  32767   // HID 報告 Y 最大值
 
 
 #pragma pack(push, 1)
-
+// SPI 觸控數據包結構
 typedef struct {
     uint8_t  magic;             // [0] 0xAA 起始標記
     uint8_t  finger_count;      // [1] 實際手指數量 (0-5)
@@ -39,12 +56,33 @@ typedef struct {
 #pragma pack(pop)
 
 
+#pragma pack(push, 1)
+// HID 觸控報告結構
+typedef struct {
+    uint8_t contant_count;      // 實際手指數量 (0-5)
+
+    struct {
+        uint8_t  fg_state;        // 狀態標誌位
+        uint8_t fg_id;           // 手指ID
+        uint16_t x;              // X座標
+        uint16_t y;              // Y座標
+    } points[MAX_REPORT_FINGERS];
+} touch_hid_report_t;
+#pragma pack(pop)
+
+
+extern spi_touch_packet_t spi_touch_packet;
+extern touch_hid_report_t touch_hid_report;
+
 void lcd_check_buttons();
 void lcd_reset();
 void set_bl_duty(uint8_t duty);
 void lcd_process_touch(void);
 
 // 獲取最新的觸控數據
-const spi_touch_packet_t* lcd_get_touch_data(void);
+const spi_touch_packet_t* lcd_get_touch_data();
+void map_coordinate_to_hid(uint16_t raw_x, uint16_t raw_y, uint16_t* hid_x, uint16_t* hid_y);
+void fill_touch_hid_report(spi_touch_packet_t* touch_data, touch_hid_report_t* touch_hid_report);
+
 
 #endif /* _LCD_H_ */
