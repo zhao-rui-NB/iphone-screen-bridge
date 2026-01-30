@@ -1,3 +1,4 @@
+#include <stdint.h>
 #include <stdio.h>
 #include <string.h>
 #include "main.h"
@@ -22,11 +23,6 @@ ButtonState btn2_state = {0};
 volatile uint8_t bl_duty = 40;
 
 void lcd_reset() {
-    // test SPI
-    // HAL_GPIO_WritePin(SCREEN_SPI2_CS_GPIO_Port, SCREEN_SPI2_CS_Pin, GPIO_PIN_RESET);
-    HAL_Delay(10);
-    // HAL_GPIO_WritePin(SCREEN_SPI2_CS_GPIO_Port, SCREEN_SPI2_CS_Pin, GPIO_PIN_SET);
-    HAL_Delay(10);
 
     HAL_GPIO_WritePin(LCD_RESET_GPIO_Port, LCD_RESET_Pin, GPIO_PIN_SET);
     HAL_Delay(10);
@@ -36,9 +32,7 @@ void lcd_reset() {
     // 消除spi控制器殘留狀態
     uint8_t tx_data = 0x66;
     uint8_t rx_data = 0;
-    // HAL_GPIO_WritePin(SCREEN_SPI2_CS_GPIO_Port, SCREEN_SPI2_CS_Pin, GPIO_PIN_RESET);
     HAL_SPI_TransmitReceive(&hspi2, &tx_data, &rx_data, 1, HAL_MAX_DELAY);
-    // HAL_GPIO_WritePin(SCREEN_SPI2_CS_GPIO_Port, SCREEN_SPI2_CS_Pin, GPIO_PIN_SET);
 }
 
 void set_bl_duty(uint8_t duty) {
@@ -166,10 +160,10 @@ static void process_touch_data(void) {
                calculated_crc, packet->crc);
         return;
     }
-    
+
+#if 0
     // 數據有效，處理觸控信息
     printf("[TP] P:%d\t", packet->finger_count);
-    
     for (uint8_t i = 0; i < packet->finger_count && i < TOUCH_MAX_POINTS; i++) {
         if (packet->points[i].finger_id != 0xFF) {
             printf("  [%d] id=%d, x=%d, y=%d, state=%d",
@@ -180,8 +174,8 @@ static void process_touch_data(void) {
                    packet->points[i].contact_state);
         }
     }
-
     printf("\n");
+#endif
 
 }
 
@@ -205,11 +199,7 @@ void lcd_process_touch(void) {
         // delay for cs setup time
         for (volatile int i = 0; i < 100; i++);
         
-        // 使用輪詢模式同時收發（阻塞式）
         HAL_StatusTypeDef status = HAL_SPI_TransmitReceive(&hspi2, dummy_tx_buffer, (uint8_t*)&spi_touch_packet, sizeof(spi_touch_packet_t), HAL_MAX_DELAY);
-        
-        // 拉高 CS 結束傳輸
-        // for (volatile int i = 0; i < 100; i++);
         
         if (status == HAL_OK) {
             // 傳輸成功，立即處理數據
@@ -221,6 +211,34 @@ void lcd_process_touch(void) {
         HAL_GPIO_WritePin(SCREEN_SPI2_CS_GPIO_Port, SCREEN_SPI2_CS_Pin, GPIO_PIN_SET);
         
         need_read_touch = 0;
+    }
+
+    // LED3,4 顯示觸控狀態 
+    // led low active
+    // 0 points: both off
+    // 1 point: LED3 off, LED4 on
+    // 2 points: LED3 on, LED4 off
+    // >2 points: both on
+
+    uint8_t active_points = 0;
+    for (uint8_t i = 0; i < spi_touch_packet.finger_count && i < TOUCH_MAX_POINTS; i++) {
+        if (spi_touch_packet.points[i].contact_state != 0 && spi_touch_packet.points[i].finger_id != 0xFF) {
+            active_points++;
+        }
+    }
+
+    if (active_points == 1) {
+        HAL_GPIO_WritePin(LED3_GPIO_Port, LED3_Pin, GPIO_PIN_SET);
+        HAL_GPIO_WritePin(LED4_GPIO_Port, LED4_Pin, GPIO_PIN_RESET);
+    } else if (active_points == 2) {
+        HAL_GPIO_WritePin(LED3_GPIO_Port, LED3_Pin, GPIO_PIN_RESET);
+        HAL_GPIO_WritePin(LED4_GPIO_Port, LED4_Pin, GPIO_PIN_SET);
+    } else if (active_points > 2) {
+        HAL_GPIO_WritePin(LED3_GPIO_Port, LED3_Pin, GPIO_PIN_RESET);
+        HAL_GPIO_WritePin(LED4_GPIO_Port, LED4_Pin, GPIO_PIN_RESET);
+    } else {
+        HAL_GPIO_WritePin(LED3_GPIO_Port, LED3_Pin, GPIO_PIN_SET);
+        HAL_GPIO_WritePin(LED4_GPIO_Port, LED4_Pin, GPIO_PIN_SET);
     }
 }
 

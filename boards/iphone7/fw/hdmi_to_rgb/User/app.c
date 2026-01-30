@@ -24,6 +24,9 @@ void app() {
     // set initial backlight duty cycle
     set_bl_duty(60);
 
+    // boot complete. turn on LED1
+    HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_RESET);
+
     static uint32_t last_report_time = 0;
     while(1){
         lcd_check_buttons();  // 在迴圈中持續檢查按鍵

@@ -82,6 +82,14 @@ void Error_Handler(void);
 #define SCREEN_SPI2_INT_EXTI_IRQn EXTI9_5_IRQn
 #define USB_EN_Pin GPIO_PIN_3
 #define USB_EN_GPIO_Port GPIOB
+#define LED4_Pin GPIO_PIN_4
+#define LED4_GPIO_Port GPIOB
+#define LED3_Pin GPIO_PIN_5
+#define LED3_GPIO_Port GPIOB
+#define LED2_Pin GPIO_PIN_6
+#define LED2_GPIO_Port GPIOB
+#define LED1_Pin GPIO_PIN_7
+#define LED1_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 
