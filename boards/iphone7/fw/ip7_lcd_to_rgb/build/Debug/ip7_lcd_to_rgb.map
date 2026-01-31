@@ -2284,7 +2284,7 @@ Discarded input sections
  .debug_macro   0x00000000      0x8ed CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/gpio.c.obj
  .debug_macro   0x00000000      0x28e CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/gpio.c.obj
  .debug_macro   0x00000000       0x83 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/gpio.c.obj
- .debug_macro   0x00000000       0x7c CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/gpio.c.obj
+ .debug_macro   0x00000000       0xac CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/gpio.c.obj
  .group         0x00000000        0xc CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/dma.c.obj
  .group         0x00000000        0xc CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/dma.c.obj
  .group         0x00000000        0xc CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/dma.c.obj
@@ -2363,7 +2363,7 @@ Discarded input sections
  .debug_macro   0x00000000      0x8ed CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/dma.c.obj
  .debug_macro   0x00000000      0x28e CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/dma.c.obj
  .debug_macro   0x00000000       0x83 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/dma.c.obj
- .debug_macro   0x00000000       0x7c CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/dma.c.obj
+ .debug_macro   0x00000000       0xac CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/dma.c.obj
  .group         0x00000000        0xc CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/spi.c.obj
  .group         0x00000000        0xc CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/spi.c.obj
  .group         0x00000000        0xc CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/spi.c.obj
@@ -2444,7 +2444,7 @@ Discarded input sections
  .debug_macro   0x00000000      0x8ed CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/spi.c.obj
  .debug_macro   0x00000000      0x28e CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/spi.c.obj
  .debug_macro   0x00000000       0x83 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/spi.c.obj
- .debug_macro   0x00000000       0x7c CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/spi.c.obj
+ .debug_macro   0x00000000       0xac CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/spi.c.obj
  .group         0x00000000        0xc CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/tim.c.obj
  .group         0x00000000        0xc CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/tim.c.obj
  .group         0x00000000        0xc CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/tim.c.obj
@@ -2525,7 +2525,7 @@ Discarded input sections
  .debug_macro   0x00000000      0x8ed CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/tim.c.obj
  .debug_macro   0x00000000      0x28e CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/tim.c.obj
  .debug_macro   0x00000000       0x83 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/tim.c.obj
- .debug_macro   0x00000000       0x7c CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/tim.c.obj
+ .debug_macro   0x00000000       0xac CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/tim.c.obj
  .group         0x00000000        0xc CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/usart.c.obj
  .group         0x00000000        0xc CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/usart.c.obj
  .group         0x00000000        0xc CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/usart.c.obj
@@ -2606,7 +2606,7 @@ Discarded input sections
  .debug_macro   0x00000000      0x8ed CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/usart.c.obj
  .debug_macro   0x00000000      0x28e CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/usart.c.obj
  .debug_macro   0x00000000       0x83 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/usart.c.obj
- .debug_macro   0x00000000       0x7c CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/usart.c.obj
+ .debug_macro   0x00000000       0xac CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/usart.c.obj
  .group         0x00000000        0xc CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/stm32f1xx_it.c.obj
  .group         0x00000000        0xc CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/stm32f1xx_it.c.obj
  .group         0x00000000        0xc CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/stm32f1xx_it.c.obj
@@ -2685,7 +2685,7 @@ Discarded input sections
  .debug_macro   0x00000000      0x8ed CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/stm32f1xx_it.c.obj
  .debug_macro   0x00000000      0x28e CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/stm32f1xx_it.c.obj
  .debug_macro   0x00000000       0x83 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/stm32f1xx_it.c.obj
- .debug_macro   0x00000000       0x7c CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/stm32f1xx_it.c.obj
+ .debug_macro   0x00000000       0xac CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/stm32f1xx_it.c.obj
  .group         0x00000000        0xc CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/stm32f1xx_hal_msp.c.obj
  .group         0x00000000        0xc CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/stm32f1xx_hal_msp.c.obj
  .group         0x00000000        0xc CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/stm32f1xx_hal_msp.c.obj
@@ -2764,7 +2764,7 @@ Discarded input sections
  .debug_macro   0x00000000      0x8ed CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/stm32f1xx_hal_msp.c.obj
  .debug_macro   0x00000000      0x28e CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/stm32f1xx_hal_msp.c.obj
  .debug_macro   0x00000000       0x83 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/stm32f1xx_hal_msp.c.obj
- .debug_macro   0x00000000       0x7c CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/stm32f1xx_hal_msp.c.obj
+ .debug_macro   0x00000000       0xac CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/stm32f1xx_hal_msp.c.obj
  .group         0x00000000        0xc CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/sysmem.c.obj
  .group         0x00000000        0xc CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/sysmem.c.obj
  .group         0x00000000        0xc CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/sysmem.c.obj
@@ -3012,7 +3012,7 @@ Discarded input sections
  .debug_macro   0x00000000      0x8ed CMakeFiles/ip7_lcd_to_rgb.dir/User/ssd2828.c.obj
  .debug_macro   0x00000000      0x28e CMakeFiles/ip7_lcd_to_rgb.dir/User/ssd2828.c.obj
  .debug_macro   0x00000000       0x83 CMakeFiles/ip7_lcd_to_rgb.dir/User/ssd2828.c.obj
- .debug_macro   0x00000000       0x7c CMakeFiles/ip7_lcd_to_rgb.dir/User/ssd2828.c.obj
+ .debug_macro   0x00000000       0xac CMakeFiles/ip7_lcd_to_rgb.dir/User/ssd2828.c.obj
  .group         0x00000000        0xc CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
  .group         0x00000000        0xc CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
  .group         0x00000000        0xc CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
@@ -3131,7 +3131,7 @@ Discarded input sections
  .debug_macro   0x00000000      0x8ed CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
  .debug_macro   0x00000000      0x28e CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
  .debug_macro   0x00000000       0x83 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
- .debug_macro   0x00000000       0x7c CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+ .debug_macro   0x00000000       0xac CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
  .debug_macro   0x00000000       0x3c CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
  .text          0x00000000        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-exit.o)
  .data          0x00000000        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-exit.o)
@@ -3459,7 +3459,7 @@ LOAD C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.
                 0x08000000                g_pfnVectors
                 0x0800010c                        . = ALIGN (0x4)
 
-.text           0x0800010c     0x5244
+.text           0x0800010c     0x5304
                 0x0800010c                        . = ALIGN (0x4)
  *(.text)
  .text          0x0800010c       0x40 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
@@ -3633,514 +3633,514 @@ LOAD C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.
                 0x08002fd8      0x11c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
  .text._write   0x080030f4       0x2c CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/main.c.obj
                 0x080030f4                _write
- .text.main     0x08003120       0x9c CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/main.c.obj
+ .text.main     0x08003120       0xa8 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/main.c.obj
                 0x08003120                main
  .text.SystemClock_Config
-                0x080031bc       0x8a CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/main.c.obj
-                0x080031bc                SystemClock_Config
+                0x080031c8       0x8a CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/main.c.obj
+                0x080031c8                SystemClock_Config
  .text.Error_Handler
-                0x08003246        0xc CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/main.c.obj
-                0x08003246                Error_Handler
- *fill*         0x08003252        0x2 
+                0x08003252        0xc CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/main.c.obj
+                0x08003252                Error_Handler
+ *fill*         0x0800325e        0x2 
  .text.MX_GPIO_Init
-                0x08003254      0x120 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/gpio.c.obj
-                0x08003254                MX_GPIO_Init
+                0x08003260      0x13c CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/gpio.c.obj
+                0x08003260                MX_GPIO_Init
  .text.MX_DMA_Init
-                0x08003374       0x4c CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/dma.c.obj
-                0x08003374                MX_DMA_Init
+                0x0800339c       0x4c CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/dma.c.obj
+                0x0800339c                MX_DMA_Init
  .text.MX_SPI1_Init
-                0x080033c0       0x6c CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/spi.c.obj
-                0x080033c0                MX_SPI1_Init
+                0x080033e8       0x6c CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/spi.c.obj
+                0x080033e8                MX_SPI1_Init
  .text.MX_SPI2_Init
-                0x0800342c       0x64 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/spi.c.obj
-                0x0800342c                MX_SPI2_Init
+                0x08003454       0x64 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/spi.c.obj
+                0x08003454                MX_SPI2_Init
  .text.HAL_SPI_MspInit
-                0x08003490      0x1c8 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/spi.c.obj
-                0x08003490                HAL_SPI_MspInit
+                0x080034b8      0x1c8 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/spi.c.obj
+                0x080034b8                HAL_SPI_MspInit
  .text.MX_TIM3_Init
-                0x08003658       0xf0 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/tim.c.obj
-                0x08003658                MX_TIM3_Init
+                0x08003680       0xf0 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/tim.c.obj
+                0x08003680                MX_TIM3_Init
  .text.HAL_TIM_Base_MspInit
-                0x08003748       0x3c CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/tim.c.obj
-                0x08003748                HAL_TIM_Base_MspInit
+                0x08003770       0x3c CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/tim.c.obj
+                0x08003770                HAL_TIM_Base_MspInit
  .text.HAL_TIM_MspPostInit
-                0x08003784       0x64 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/tim.c.obj
-                0x08003784                HAL_TIM_MspPostInit
+                0x080037ac       0x64 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/tim.c.obj
+                0x080037ac                HAL_TIM_MspPostInit
  .text.MX_USART1_UART_Init
-                0x080037e8       0x54 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/usart.c.obj
-                0x080037e8                MX_USART1_UART_Init
+                0x08003810       0x54 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/usart.c.obj
+                0x08003810                MX_USART1_UART_Init
  .text.HAL_UART_MspInit
-                0x0800383c       0x98 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/usart.c.obj
-                0x0800383c                HAL_UART_MspInit
+                0x08003864       0x98 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/usart.c.obj
+                0x08003864                HAL_UART_MspInit
  .text.NMI_Handler
-                0x080038d4        0x8 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/stm32f1xx_it.c.obj
-                0x080038d4                NMI_Handler
+                0x080038fc        0x8 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/stm32f1xx_it.c.obj
+                0x080038fc                NMI_Handler
  .text.HardFault_Handler
-                0x080038dc        0x8 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/stm32f1xx_it.c.obj
-                0x080038dc                HardFault_Handler
+                0x08003904        0x8 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08003904                HardFault_Handler
  .text.MemManage_Handler
-                0x080038e4        0x8 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/stm32f1xx_it.c.obj
-                0x080038e4                MemManage_Handler
+                0x0800390c        0x8 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/stm32f1xx_it.c.obj
+                0x0800390c                MemManage_Handler
  .text.BusFault_Handler
-                0x080038ec        0x8 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/stm32f1xx_it.c.obj
-                0x080038ec                BusFault_Handler
+                0x08003914        0x8 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08003914                BusFault_Handler
  .text.UsageFault_Handler
-                0x080038f4        0x8 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/stm32f1xx_it.c.obj
-                0x080038f4                UsageFault_Handler
+                0x0800391c        0x8 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/stm32f1xx_it.c.obj
+                0x0800391c                UsageFault_Handler
  .text.SVC_Handler
-                0x080038fc        0xc CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/stm32f1xx_it.c.obj
-                0x080038fc                SVC_Handler
+                0x08003924        0xc CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08003924                SVC_Handler
  .text.DebugMon_Handler
-                0x08003908        0xc CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08003908                DebugMon_Handler
+                0x08003930        0xc CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08003930                DebugMon_Handler
  .text.PendSV_Handler
-                0x08003914        0xc CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08003914                PendSV_Handler
+                0x0800393c        0xc CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/stm32f1xx_it.c.obj
+                0x0800393c                PendSV_Handler
  .text.SysTick_Handler
-                0x08003920        0xc CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08003920                SysTick_Handler
+                0x08003948        0xc CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08003948                SysTick_Handler
  .text.DMA1_Channel4_IRQHandler
-                0x0800392c       0x14 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/stm32f1xx_it.c.obj
-                0x0800392c                DMA1_Channel4_IRQHandler
- .text.DMA1_Channel5_IRQHandler
-                0x08003940       0x14 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08003940                DMA1_Channel5_IRQHandler
- .text.SPI2_IRQHandler
                 0x08003954       0x14 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08003954                SPI2_IRQHandler
+                0x08003954                DMA1_Channel4_IRQHandler
+ .text.DMA1_Channel5_IRQHandler
+                0x08003968       0x14 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08003968                DMA1_Channel5_IRQHandler
+ .text.SPI2_IRQHandler
+                0x0800397c       0x14 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/stm32f1xx_it.c.obj
+                0x0800397c                SPI2_IRQHandler
  .text.HAL_MspInit
-                0x08003968       0x64 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/stm32f1xx_hal_msp.c.obj
-                0x08003968                HAL_MspInit
- .text._sbrk    0x080039cc       0x6c CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/sysmem.c.obj
-                0x080039cc                _sbrk
- .text._read    0x08003a38       0x3a CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
-                0x08003a38                _read
- .text._close   0x08003a72       0x16 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
-                0x08003a72                _close
- .text._fstat   0x08003a88       0x1e CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
-                0x08003a88                _fstat
- .text._isatty  0x08003aa6       0x14 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
-                0x08003aa6                _isatty
- .text._lseek   0x08003aba       0x18 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
-                0x08003aba                _lseek
- *fill*         0x08003ad2        0x2 
+                0x08003990       0x64 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/stm32f1xx_hal_msp.c.obj
+                0x08003990                HAL_MspInit
+ .text._sbrk    0x080039f4       0x6c CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/sysmem.c.obj
+                0x080039f4                _sbrk
+ .text._read    0x08003a60       0x3a CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
+                0x08003a60                _read
+ .text._close   0x08003a9a       0x16 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
+                0x08003a9a                _close
+ .text._fstat   0x08003ab0       0x1e CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
+                0x08003ab0                _fstat
+ .text._isatty  0x08003ace       0x14 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
+                0x08003ace                _isatty
+ .text._lseek   0x08003ae2       0x18 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
+                0x08003ae2                _lseek
+ *fill*         0x08003afa        0x2 
  .text.Reset_Handler
-                0x08003ad4       0x48 CMakeFiles/ip7_lcd_to_rgb.dir/startup_stm32f103xb.s.obj
-                0x08003ad4                Reset_Handler
+                0x08003afc       0x48 CMakeFiles/ip7_lcd_to_rgb.dir/startup_stm32f103xb.s.obj
+                0x08003afc                Reset_Handler
  .text.Default_Handler
-                0x08003b1c        0x2 CMakeFiles/ip7_lcd_to_rgb.dir/startup_stm32f103xb.s.obj
-                0x08003b1c                RTC_Alarm_IRQHandler
-                0x08003b1c                EXTI2_IRQHandler
-                0x08003b1c                TIM1_CC_IRQHandler
-                0x08003b1c                PVD_IRQHandler
-                0x08003b1c                EXTI3_IRQHandler
-                0x08003b1c                EXTI0_IRQHandler
-                0x08003b1c                I2C2_EV_IRQHandler
-                0x08003b1c                ADC1_2_IRQHandler
-                0x08003b1c                SPI1_IRQHandler
-                0x08003b1c                TAMPER_IRQHandler
-                0x08003b1c                USART3_IRQHandler
-                0x08003b1c                RTC_IRQHandler
-                0x08003b1c                DMA1_Channel7_IRQHandler
-                0x08003b1c                CAN1_RX1_IRQHandler
-                0x08003b1c                TIM4_IRQHandler
-                0x08003b1c                I2C1_EV_IRQHandler
-                0x08003b1c                DMA1_Channel6_IRQHandler
-                0x08003b1c                TIM3_IRQHandler
-                0x08003b1c                RCC_IRQHandler
-                0x08003b1c                TIM1_TRG_COM_IRQHandler
-                0x08003b1c                DMA1_Channel1_IRQHandler
-                0x08003b1c                Default_Handler
-                0x08003b1c                EXTI15_10_IRQHandler
-                0x08003b1c                EXTI9_5_IRQHandler
-                0x08003b1c                EXTI4_IRQHandler
-                0x08003b1c                USB_LP_CAN1_RX0_IRQHandler
-                0x08003b1c                USB_HP_CAN1_TX_IRQHandler
-                0x08003b1c                DMA1_Channel3_IRQHandler
-                0x08003b1c                TIM1_UP_IRQHandler
-                0x08003b1c                WWDG_IRQHandler
-                0x08003b1c                TIM2_IRQHandler
-                0x08003b1c                TIM1_BRK_IRQHandler
-                0x08003b1c                EXTI1_IRQHandler
-                0x08003b1c                USART2_IRQHandler
-                0x08003b1c                I2C2_ER_IRQHandler
-                0x08003b1c                DMA1_Channel2_IRQHandler
-                0x08003b1c                CAN1_SCE_IRQHandler
-                0x08003b1c                FLASH_IRQHandler
-                0x08003b1c                USART1_IRQHandler
-                0x08003b1c                I2C1_ER_IRQHandler
-                0x08003b1c                USBWakeUp_IRQHandler
- *fill*         0x08003b1e        0x2 
+                0x08003b44        0x2 CMakeFiles/ip7_lcd_to_rgb.dir/startup_stm32f103xb.s.obj
+                0x08003b44                RTC_Alarm_IRQHandler
+                0x08003b44                EXTI2_IRQHandler
+                0x08003b44                TIM1_CC_IRQHandler
+                0x08003b44                PVD_IRQHandler
+                0x08003b44                EXTI3_IRQHandler
+                0x08003b44                EXTI0_IRQHandler
+                0x08003b44                I2C2_EV_IRQHandler
+                0x08003b44                ADC1_2_IRQHandler
+                0x08003b44                SPI1_IRQHandler
+                0x08003b44                TAMPER_IRQHandler
+                0x08003b44                USART3_IRQHandler
+                0x08003b44                RTC_IRQHandler
+                0x08003b44                DMA1_Channel7_IRQHandler
+                0x08003b44                CAN1_RX1_IRQHandler
+                0x08003b44                TIM4_IRQHandler
+                0x08003b44                I2C1_EV_IRQHandler
+                0x08003b44                DMA1_Channel6_IRQHandler
+                0x08003b44                TIM3_IRQHandler
+                0x08003b44                RCC_IRQHandler
+                0x08003b44                TIM1_TRG_COM_IRQHandler
+                0x08003b44                DMA1_Channel1_IRQHandler
+                0x08003b44                Default_Handler
+                0x08003b44                EXTI15_10_IRQHandler
+                0x08003b44                EXTI9_5_IRQHandler
+                0x08003b44                EXTI4_IRQHandler
+                0x08003b44                USB_LP_CAN1_RX0_IRQHandler
+                0x08003b44                USB_HP_CAN1_TX_IRQHandler
+                0x08003b44                DMA1_Channel3_IRQHandler
+                0x08003b44                TIM1_UP_IRQHandler
+                0x08003b44                WWDG_IRQHandler
+                0x08003b44                TIM2_IRQHandler
+                0x08003b44                TIM1_BRK_IRQHandler
+                0x08003b44                EXTI1_IRQHandler
+                0x08003b44                USART2_IRQHandler
+                0x08003b44                I2C2_ER_IRQHandler
+                0x08003b44                DMA1_Channel2_IRQHandler
+                0x08003b44                CAN1_SCE_IRQHandler
+                0x08003b44                FLASH_IRQHandler
+                0x08003b44                USART1_IRQHandler
+                0x08003b44                I2C1_ER_IRQHandler
+                0x08003b44                USBWakeUp_IRQHandler
+ *fill*         0x08003b46        0x2 
  .text.ssd2828_read_reg
-                0x08003b20       0x84 CMakeFiles/ip7_lcd_to_rgb.dir/User/ssd2828.c.obj
-                0x08003b20                ssd2828_read_reg
+                0x08003b48       0x84 CMakeFiles/ip7_lcd_to_rgb.dir/User/ssd2828.c.obj
+                0x08003b48                ssd2828_read_reg
  .text.ssd2828_write_reg
-                0x08003ba4       0xc4 CMakeFiles/ip7_lcd_to_rgb.dir/User/ssd2828.c.obj
-                0x08003ba4                ssd2828_write_reg
+                0x08003bcc       0xc4 CMakeFiles/ip7_lcd_to_rgb.dir/User/ssd2828.c.obj
+                0x08003bcc                ssd2828_write_reg
  .text.ssd2828_init
-                0x08003c68      0x11c CMakeFiles/ip7_lcd_to_rgb.dir/User/ssd2828.c.obj
-                0x08003c68                ssd2828_init
+                0x08003c90      0x11c CMakeFiles/ip7_lcd_to_rgb.dir/User/ssd2828.c.obj
+                0x08003c90                ssd2828_init
  .text.ip7_touch_spi_tx
-                0x08003d84       0x40 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
-                0x08003d84                ip7_touch_spi_tx
+                0x08003dac       0x40 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+                0x08003dac                ip7_touch_spi_tx
  .text.ip7_touch_spi_rx
-                0x08003dc4       0x40 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
-                0x08003dc4                ip7_touch_spi_rx
+                0x08003dec       0x40 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+                0x08003dec                ip7_touch_spi_rx
  .text.ip7_touch_spi_rx_tx
-                0x08003e04       0x44 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
-                0x08003e04                ip7_touch_spi_rx_tx
+                0x08003e2c       0x44 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+                0x08003e2c                ip7_touch_spi_rx_tx
  .text.ip7_touch_init
-                0x08003e48       0xb4 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
-                0x08003e48                ip7_touch_init
+                0x08003e70       0xb4 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+                0x08003e70                ip7_touch_init
  .text.ip7_touch_read_data
-                0x08003efc       0xc4 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+                0x08003f24       0xd4 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
  .text.ip7_touch_poll
-                0x08003fc0       0x70 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
-                0x08003fc0                ip7_touch_poll
+                0x08003ff8       0x54 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+                0x08003ff8                ip7_touch_poll
  .text.ip7_touch_validate_packet
-                0x08004030       0xd4 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+                0x0800404c       0xd4 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
  .text.ip7_touch_process_packet
-                0x08004104       0x80 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+                0x08004120      0x128 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
  .text.calc_crc8
-                0x08004184       0x70 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+                0x08004248       0x70 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
  .text.ip7_touch_send_to_host
-                0x080041f4      0x1a0 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
- .text.std      0x08004394       0x6c C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-findfp.o)
+                0x080042b8      0x19c CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+ .text.std      0x08004454       0x6c C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-findfp.o)
  .text.stdio_exit_handler
-                0x08004400       0x18 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-findfp.o)
+                0x080044c0       0x18 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-findfp.o)
  .text.cleanup_stdio
-                0x08004418       0x40 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-findfp.o)
+                0x080044d8       0x40 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-findfp.o)
  .text.global_stdio_init.part.0
-                0x08004458       0x3c C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-findfp.o)
+                0x08004518       0x3c C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-findfp.o)
  .text.__sfp_lock_acquire
-                0x08004494        0xc C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-findfp.o)
-                0x08004494                __sfp_lock_acquire
+                0x08004554        0xc C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-findfp.o)
+                0x08004554                __sfp_lock_acquire
  .text.__sfp_lock_release
-                0x080044a0        0xc C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-findfp.o)
-                0x080044a0                __sfp_lock_release
- .text.__sinit  0x080044ac       0x30 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-findfp.o)
-                0x080044ac                __sinit
+                0x08004560        0xc C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-findfp.o)
+                0x08004560                __sfp_lock_release
+ .text.__sinit  0x0800456c       0x30 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-findfp.o)
+                0x0800456c                __sinit
  .text._fwalk_sglue
-                0x080044dc       0x3c C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-fwalk.o)
-                0x080044dc                _fwalk_sglue
- .text.printf   0x08004518       0x24 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-printf.o)
-                0x08004518                iprintf
-                0x08004518                printf
- .text.putchar  0x0800453c       0x10 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-putchar.o)
-                0x0800453c                putchar
- .text._puts_r  0x0800454c       0xaa C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-puts.o)
-                0x0800454c                _puts_r
- *fill*         0x080045f6        0x2 
- .text.puts     0x080045f8       0x10 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-puts.o)
-                0x080045f8                puts
- .text.__sread  0x08004608       0x22 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-stdio.o)
-                0x08004608                __sread
+                0x0800459c       0x3c C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-fwalk.o)
+                0x0800459c                _fwalk_sglue
+ .text.printf   0x080045d8       0x24 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-printf.o)
+                0x080045d8                iprintf
+                0x080045d8                printf
+ .text.putchar  0x080045fc       0x10 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-putchar.o)
+                0x080045fc                putchar
+ .text._puts_r  0x0800460c       0xaa C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-puts.o)
+                0x0800460c                _puts_r
+ *fill*         0x080046b6        0x2 
+ .text.puts     0x080046b8       0x10 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-puts.o)
+                0x080046b8                puts
+ .text.__sread  0x080046c8       0x22 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-stdio.o)
+                0x080046c8                __sread
  .text.__swrite
-                0x0800462a       0x38 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-stdio.o)
-                0x0800462a                __swrite
- .text.__sseek  0x08004662       0x24 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-stdio.o)
-                0x08004662                __sseek
+                0x080046ea       0x38 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-stdio.o)
+                0x080046ea                __swrite
+ .text.__sseek  0x08004722       0x24 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-stdio.o)
+                0x08004722                __sseek
  .text.__sclose
-                0x08004686        0x8 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-stdio.o)
-                0x08004686                __sclose
+                0x08004746        0x8 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-stdio.o)
+                0x08004746                __sclose
  .text.__swbuf_r
-                0x0800468e       0x7c C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-wbuf.o)
-                0x0800468e                __swbuf_r
- *fill*         0x0800470a        0x2 
+                0x0800474e       0x7c C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-wbuf.o)
+                0x0800474e                __swbuf_r
+ *fill*         0x080047ca        0x2 
  .text.__swsetup_r
-                0x0800470c       0xac C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-wsetup.o)
-                0x0800470c                __swsetup_r
- .text.memset   0x080047b8       0x10 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-memset.o)
-                0x080047b8                memset
+                0x080047cc       0xac C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-wsetup.o)
+                0x080047cc                __swsetup_r
+ .text.memset   0x08004878       0x10 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-memset.o)
+                0x08004878                memset
  .text._close_r
-                0x080047c8       0x20 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-closer.o)
-                0x080047c8                _close_r
+                0x08004888       0x20 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-closer.o)
+                0x08004888                _close_r
  .text._lseek_r
-                0x080047e8       0x24 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-lseekr.o)
-                0x080047e8                _lseek_r
- .text._read_r  0x0800480c       0x24 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-readr.o)
-                0x0800480c                _read_r
+                0x080048a8       0x24 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-lseekr.o)
+                0x080048a8                _lseek_r
+ .text._read_r  0x080048cc       0x24 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-readr.o)
+                0x080048cc                _read_r
  .text._write_r
-                0x08004830       0x24 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-writer.o)
-                0x08004830                _write_r
- .text.__errno  0x08004854        0xc C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-errno.o)
-                0x08004854                __errno
+                0x080048f0       0x24 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-writer.o)
+                0x080048f0                _write_r
+ .text.__errno  0x08004914        0xc C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-errno.o)
+                0x08004914                __errno
  .text.__libc_init_array
-                0x08004860       0x48 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-init.o)
-                0x08004860                __libc_init_array
+                0x08004920       0x48 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-init.o)
+                0x08004920                __libc_init_array
  .text.__retarget_lock_init_recursive
-                0x080048a8        0x2 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-lock.o)
-                0x080048a8                __retarget_lock_init_recursive
+                0x08004968        0x2 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-lock.o)
+                0x08004968                __retarget_lock_init_recursive
  .text.__retarget_lock_acquire_recursive
-                0x080048aa        0x2 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-lock.o)
-                0x080048aa                __retarget_lock_acquire_recursive
+                0x0800496a        0x2 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-lock.o)
+                0x0800496a                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x080048ac        0x2 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-lock.o)
-                0x080048ac                __retarget_lock_release_recursive
- *fill*         0x080048ae        0x2 
- .text._free_r  0x080048b0       0x90 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-freer.o)
-                0x080048b0                _free_r
+                0x0800496c        0x2 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-lock.o)
+                0x0800496c                __retarget_lock_release_recursive
+ *fill*         0x0800496e        0x2 
+ .text._free_r  0x08004970       0x90 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-freer.o)
+                0x08004970                _free_r
  .text.sbrk_aligned
-                0x08004940       0x44 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-mallocr.o)
+                0x08004a00       0x44 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-mallocr.o)
  .text._malloc_r
-                0x08004984      0x100 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-mallocr.o)
-                0x08004984                _malloc_r
+                0x08004a44      0x100 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-mallocr.o)
+                0x08004a44                _malloc_r
  .text.__malloc_lock
-                0x08004a84        0xc C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-mlock.o)
-                0x08004a84                __malloc_lock
+                0x08004b44        0xc C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-mlock.o)
+                0x08004b44                __malloc_lock
  .text.__malloc_unlock
-                0x08004a90        0xc C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-mlock.o)
-                0x08004a90                __malloc_unlock
+                0x08004b50        0xc C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-mlock.o)
+                0x08004b50                __malloc_unlock
  .text.__sfputc_r
-                0x08004a9c       0x2a C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf.o)
+                0x08004b5c       0x2a C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf.o)
  .text.__sfputs_r
-                0x08004ac6       0x24 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf.o)
-                0x08004ac6                __sfputs_r
- *fill*         0x08004aea        0x2 
+                0x08004b86       0x24 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf.o)
+                0x08004b86                __sfputs_r
+ *fill*         0x08004baa        0x2 
  .text._vfprintf_r
-                0x08004aec      0x230 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf.o)
-                0x08004aec                _vfprintf_r
-                0x08004aec                _vfiprintf_r
+                0x08004bac      0x230 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf.o)
+                0x08004bac                _vfprintf_r
+                0x08004bac                _vfiprintf_r
  .text._printf_common
-                0x08004d1c       0xe4 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf_i.o)
-                0x08004d1c                _printf_common
+                0x08004ddc       0xe4 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf_i.o)
+                0x08004ddc                _printf_common
  .text._printf_i
-                0x08004e00      0x23c C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf_i.o)
-                0x08004e00                _printf_i
+                0x08004ec0      0x23c C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf_i.o)
+                0x08004ec0                _printf_i
  .text.__sflush_r
-                0x0800503c      0x100 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-fflush.o)
-                0x0800503c                __sflush_r
+                0x080050fc      0x100 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-fflush.o)
+                0x080050fc                __sflush_r
  .text._fflush_r
-                0x0800513c       0x50 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-fflush.o)
-                0x0800513c                _fflush_r
+                0x080051fc       0x50 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-fflush.o)
+                0x080051fc                _fflush_r
  .text.__swhatbuf_r
-                0x0800518c       0x4a C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-makebuf.o)
-                0x0800518c                __swhatbuf_r
+                0x0800524c       0x4a C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-makebuf.o)
+                0x0800524c                __swhatbuf_r
  .text.__smakebuf_r
-                0x080051d6       0x78 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-makebuf.o)
-                0x080051d6                __smakebuf_r
- .text._putc_r  0x0800524e       0x68 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-putc.o)
-                0x0800524e                _putc_r
- *fill*         0x080052b6        0x2 
+                0x08005296       0x78 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-makebuf.o)
+                0x08005296                __smakebuf_r
+ .text._putc_r  0x0800530e       0x68 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-putc.o)
+                0x0800530e                _putc_r
+ *fill*         0x08005376        0x2 
  .text._fstat_r
-                0x080052b8       0x24 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-fstatr.o)
-                0x080052b8                _fstat_r
+                0x08005378       0x24 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-fstatr.o)
+                0x08005378                _fstat_r
  .text._isatty_r
-                0x080052dc       0x20 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-isattyr.o)
-                0x080052dc                _isatty_r
- .text._sbrk_r  0x080052fc       0x20 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-sbrkr.o)
-                0x080052fc                _sbrk_r
- .text.memchr   0x0800531c       0x1c C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-memchr-stub.o)
-                0x0800531c                memchr
+                0x0800539c       0x20 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-isattyr.o)
+                0x0800539c                _isatty_r
+ .text._sbrk_r  0x080053bc       0x20 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-sbrkr.o)
+                0x080053bc                _sbrk_r
+ .text.memchr   0x080053dc       0x1c C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-memchr-stub.o)
+                0x080053dc                memchr
  *(.glue_7)
- .glue_7        0x08005338        0x0 linker stubs
+ .glue_7        0x080053f8        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x08005338        0x0 linker stubs
+ .glue_7t       0x080053f8        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x08005338        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
+ .eh_frame      0x080053f8        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
  *(.init)
- .init          0x08005338        0x4 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crti.o
-                0x08005338                _init
- .init          0x0800533c        0x8 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtn.o
+ .init          0x080053f8        0x4 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crti.o
+                0x080053f8                _init
+ .init          0x080053fc        0x8 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtn.o
  *(.fini)
- .fini          0x08005344        0x4 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crti.o
-                0x08005344                _fini
- .fini          0x08005348        0x8 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtn.o
-                0x08005350                        . = ALIGN (0x4)
-                0x08005350                        _etext = .
+ .fini          0x08005404        0x4 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crti.o
+                0x08005404                _fini
+ .fini          0x08005408        0x8 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtn.o
+                0x08005410                        . = ALIGN (0x4)
+                0x08005410                        _etext = .
 
-.vfp11_veneer   0x08005350        0x0
- .vfp11_veneer  0x08005350        0x0 linker stubs
+.vfp11_veneer   0x08005410        0x0
+ .vfp11_veneer  0x08005410        0x0 linker stubs
 
-.v4_bx          0x08005350        0x0
- .v4_bx         0x08005350        0x0 linker stubs
+.v4_bx          0x08005410        0x0
+ .v4_bx         0x08005410        0x0 linker stubs
 
-.iplt           0x08005350        0x0
- .iplt          0x08005350        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
+.iplt           0x08005410        0x0
+ .iplt          0x08005410        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
 
-.rodata         0x08005350    0x13fb8
-                0x08005350                        . = ALIGN (0x4)
+.rodata         0x08005410    0x13fac
+                0x08005410                        . = ALIGN (0x4)
  *(.rodata)
- .rodata        0x08005350       0x42 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/main.c.obj
- *fill*         0x08005392        0x2 
- .rodata        0x08005394       0xc6 CMakeFiles/ip7_lcd_to_rgb.dir/User/ssd2828.c.obj
- *fill*         0x0800545a        0x2 
- .rodata        0x0800545c      0x13f CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+ .rodata        0x08005410       0x42 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/main.c.obj
+ *fill*         0x08005452        0x2 
+ .rodata        0x08005454       0xc6 CMakeFiles/ip7_lcd_to_rgb.dir/User/ssd2828.c.obj
+ *fill*         0x0800551a        0x2 
+ .rodata        0x0800551c      0x132 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
  *(.rodata*)
- *fill*         0x0800559b        0x1 
+ *fill*         0x0800564e        0x2 
  .rodata.AHBPrescTable
-                0x0800559c       0x10 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f1xx.c.obj
-                0x0800559c                AHBPrescTable
+                0x08005650       0x10 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f1xx.c.obj
+                0x08005650                AHBPrescTable
  .rodata.APBPrescTable
-                0x080055ac        0x8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f1xx.c.obj
-                0x080055ac                APBPrescTable
+                0x08005660        0x8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f1xx.c.obj
+                0x08005660                APBPrescTable
  .rodata.aPLLMULFactorTable.1
-                0x080055b4       0x10 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x08005668       0x10 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
  .rodata.aPredivFactorTable.0
-                0x080055c4        0x2 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
- *fill*         0x080055c6        0x2 
+                0x08005678        0x2 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+ *fill*         0x0800567a        0x2 
  .rodata.__compound_literal.0
-                0x080055c8        0x4 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+                0x0800567c        0x4 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
  .rodata.__compound_literal.1
-                0x080055cc     0xe770 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+                0x08005680     0xe770 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
  .rodata.__compound_literal.2
-                0x08013d3c        0x2 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
- *fill*         0x08013d3e        0x2 
+                0x08013df0        0x2 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+ *fill*         0x08013df2        0x2 
  .rodata.__compound_literal.3
-                0x08013d40     0x42b4 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+                0x08013df4     0x42b4 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
  .rodata.__compound_literal.4
-                0x08017ff4        0x2 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
- *fill*         0x08017ff6        0x2 
+                0x080180a8        0x2 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+ *fill*         0x080180aa        0x2 
  .rodata.__compound_literal.5
-                0x08017ff8      0x410 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+                0x080180ac      0x410 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
  .rodata.__compound_literal.6
-                0x08018408        0x2 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
- *fill*         0x0801840a        0x2 
+                0x080184bc        0x2 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+ *fill*         0x080184be        0x2 
  .rodata.__compound_literal.7
-                0x0801840c      0x3f0 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+                0x080184c0      0x3f0 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
  .rodata.__compound_literal.8
-                0x080187fc        0x2 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
- *fill*         0x080187fe        0x2 
+                0x080188b0        0x2 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+ *fill*         0x080188b2        0x2 
  .rodata.__compound_literal.9
-                0x08018800      0x5d4 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+                0x080188b4      0x5d4 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
  .rodata.__compound_literal.10
-                0x08018dd4        0x2 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
- *fill*         0x08018dd6        0x2 
+                0x08018e88        0x2 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+ *fill*         0x08018e8a        0x2 
  .rodata.__compound_literal.11
-                0x08018dd8       0xe0 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+                0x08018e8c       0xe0 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
  .rodata.__compound_literal.12
-                0x08018eb8        0x2 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
- *fill*         0x08018eba        0x2 
+                0x08018f6c        0x2 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+ *fill*         0x08018f6e        0x2 
  .rodata.__compound_literal.13
-                0x08018ebc       0x10 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+                0x08018f70       0x10 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
  .rodata.__compound_literal.14
-                0x08018ecc        0x2 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
- *fill*         0x08018ece        0x2 
+                0x08018f80        0x2 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+ *fill*         0x08018f82        0x2 
  .rodata.__compound_literal.15
-                0x08018ed0       0x10 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+                0x08018f84       0x10 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
  .rodata.__compound_literal.16
-                0x08018ee0        0x2 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
- *fill*         0x08018ee2        0x2 
+                0x08018f94        0x2 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+ *fill*         0x08018f96        0x2 
  .rodata.__compound_literal.17
-                0x08018ee4       0x10 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+                0x08018f98       0x10 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
  .rodata.__compound_literal.18
-                0x08018ef4        0x2 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
- *fill*         0x08018ef6        0x2 
+                0x08018fa8        0x2 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+ *fill*         0x08018faa        0x2 
  .rodata.__compound_literal.19
-                0x08018ef8       0x10 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+                0x08018fac       0x10 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
  .rodata.__compound_literal.20
-                0x08018f08        0x2 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
- *fill*         0x08018f0a        0x2 
+                0x08018fbc        0x2 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+ *fill*         0x08018fbe        0x2 
  .rodata.__compound_literal.21
-                0x08018f0c       0x10 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+                0x08018fc0       0x10 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
  .rodata.__compound_literal.22
-                0x08018f1c        0x2 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
- *fill*         0x08018f1e        0x2 
+                0x08018fd0        0x2 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+ *fill*         0x08018fd2        0x2 
  .rodata.__compound_literal.23
-                0x08018f20        0x2 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
- *fill*         0x08018f22        0x2 
+                0x08018fd4        0x2 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+ *fill*         0x08018fd6        0x2 
  .rodata.__compound_literal.24
-                0x08018f24        0x2 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
- *fill*         0x08018f26        0x2 
+                0x08018fd8        0x2 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+ *fill*         0x08018fda        0x2 
  .rodata.__compound_literal.25
-                0x08018f28       0x10 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+                0x08018fdc       0x10 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
  .rodata.__compound_literal.26
-                0x08018f38        0x2 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
- *fill*         0x08018f3a        0x2 
+                0x08018fec        0x2 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+ *fill*         0x08018fee        0x2 
  .rodata.__compound_literal.27
-                0x08018f3c       0x10 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+                0x08018ff0       0x10 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
  .rodata.__compound_literal.28
-                0x08018f4c       0x10 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+                0x08019000       0x10 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
  .rodata.__compound_literal.29
-                0x08018f5c       0x10 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+                0x08019010       0x10 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
  .rodata.__compound_literal.30
-                0x08018f6c       0x10 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+                0x08019020       0x10 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
  .rodata.__compound_literal.31
-                0x08018f7c       0x14 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+                0x08019030       0x14 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
  .rodata.__compound_literal.32
-                0x08018f90       0x10 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+                0x08019044       0x10 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
  .rodata.__compound_literal.33
-                0x08018fa0       0x10 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+                0x08019054       0x10 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
  .rodata.__compound_literal.34
-                0x08018fb0       0x10 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+                0x08019064       0x10 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
  .rodata.__compound_literal.35
-                0x08018fc0       0x42 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
- *fill*         0x08019002        0x2 
+                0x08019074       0x42 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+ *fill*         0x080190b6        0x2 
  .rodata.__compound_literal.36
-                0x08019004       0x10 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+                0x080190b8       0x10 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
  .rodata.__compound_literal.37
-                0x08019014       0x10 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+                0x080190c8       0x10 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
  .rodata.__compound_literal.38
-                0x08019024       0x10 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+                0x080190d8       0x10 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
  .rodata.__compound_literal.39
-                0x08019034       0x15 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
- *fill*         0x08019049        0x3 
+                0x080190e8       0x15 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+ *fill*         0x080190fd        0x3 
  .rodata.__compound_literal.40
-                0x0801904c       0x10 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+                0x08019100       0x10 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
  .rodata.__compound_literal.41
-                0x0801905c       0x10 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+                0x08019110       0x10 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
  .rodata.__compound_literal.42
-                0x0801906c       0x10 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+                0x08019120       0x10 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
  .rodata.__compound_literal.43
-                0x0801907c       0x10 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+                0x08019130       0x10 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
  .rodata.__compound_literal.44
-                0x0801908c       0x10 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+                0x08019140       0x10 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
  .rodata.__compound_literal.45
-                0x0801909c       0x10 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+                0x08019150       0x10 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
  .rodata.touch_init_cmds
-                0x080190ac      0x228 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
-                0x080190ac                touch_init_cmds
+                0x08019160      0x228 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+                0x08019160                touch_init_cmds
  .rodata._vfprintf_r.str1.1
-                0x080192d4       0x33 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf.o)
+                0x08019388       0x33 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf.o)
                                  0x11 (size before relaxing)
  .rodata._printf_i.str1.1
-                0x08019307        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf_i.o)
+                0x080193bb        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf_i.o)
                                  0x22 (size before relaxing)
-                0x08019308                        . = ALIGN (0x4)
- *fill*         0x08019307        0x1 
+                0x080193bc                        . = ALIGN (0x4)
+ *fill*         0x080193bb        0x1 
 
-.ARM.extab      0x08019308        0x0
-                0x08019308                        . = ALIGN (0x4)
+.ARM.extab      0x080193bc        0x0
+                0x080193bc                        . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x08019308                        . = ALIGN (0x4)
+                0x080193bc                        . = ALIGN (0x4)
 
-.ARM            0x08019308        0x0
-                0x08019308                        . = ALIGN (0x4)
-                0x08019308                        __exidx_start = .
+.ARM            0x080193bc        0x0
+                0x080193bc                        . = ALIGN (0x4)
+                0x080193bc                        __exidx_start = .
  *(.ARM.exidx*)
-                0x08019308                        __exidx_end = .
-                0x08019308                        . = ALIGN (0x4)
+                0x080193bc                        __exidx_end = .
+                0x080193bc                        . = ALIGN (0x4)
 
-.preinit_array  0x08019308        0x0
-                0x08019308                        . = ALIGN (0x4)
-                0x08019308                        PROVIDE (__preinit_array_start = .)
+.preinit_array  0x080193bc        0x0
+                0x080193bc                        . = ALIGN (0x4)
+                0x080193bc                        PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x08019308                        PROVIDE (__preinit_array_end = .)
-                0x08019308                        . = ALIGN (0x4)
+                0x080193bc                        PROVIDE (__preinit_array_end = .)
+                0x080193bc                        . = ALIGN (0x4)
 
-.init_array     0x08019308        0x4
-                0x08019308                        . = ALIGN (0x4)
-                0x08019308                        PROVIDE (__init_array_start = .)
+.init_array     0x080193bc        0x4
+                0x080193bc                        . = ALIGN (0x4)
+                0x080193bc                        PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x08019308        0x4 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
-                0x0801930c                        PROVIDE (__init_array_end = .)
-                0x0801930c                        . = ALIGN (0x4)
+ .init_array    0x080193bc        0x4 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
+                0x080193c0                        PROVIDE (__init_array_end = .)
+                0x080193c0                        . = ALIGN (0x4)
 
-.fini_array     0x0801930c        0x4
-                0x0801930c                        . = ALIGN (0x4)
+.fini_array     0x080193c0        0x4
+                0x080193c0                        . = ALIGN (0x4)
                 [!provide]                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x0801930c        0x4 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
+ .fini_array    0x080193c0        0x4 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
                 [!provide]                        PROVIDE (__fini_array_end = .)
-                0x08019310                        . = ALIGN (0x4)
-                0x08019310                        _sidata = LOADADDR (.data)
+                0x080193c4                        . = ALIGN (0x4)
+                0x080193c4                        _sidata = LOADADDR (.data)
 
-.rel.dyn        0x08019310        0x0
- .rel.iplt      0x08019310        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
+.rel.dyn        0x080193c4        0x0
+ .rel.iplt      0x080193c4        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
 
-.data           0x20000000       0x68 load address 0x08019310
+.data           0x20000000       0x68 load address 0x080193c4
                 0x20000000                        . = ALIGN (0x4)
                 0x20000000                        _sdata = .
  *(.data)
@@ -4167,10 +4167,10 @@ LOAD C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.
  *(.RamFunc*)
                 0x20000068                        . = ALIGN (0x4)
 
-.igot.plt       0x20000068        0x0 load address 0x08019378
+.igot.plt       0x20000068        0x0 load address 0x0801942c
  .igot.plt      0x20000068        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
 
-.tdata          0x20000068        0x0 load address 0x08019378
+.tdata          0x20000068        0x0 load address 0x0801942c
  *(.tdata .tdata.* .gnu.linkonce.td.*)
                 0x20000068                        . = ALIGN (0x4)
                 0x20000068                        _edata = .
@@ -4187,7 +4187,7 @@ LOAD C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.
                 [!provide]                        PROVIDE (__data_source_end = __tdata_source_end)
                 [!provide]                        PROVIDE (__data_source_size = (__data_source_end - __data_source))
 
-.tbss           0x20000068        0x0 load address 0x08019378
+.tbss           0x20000068        0x0 load address 0x0801942c
                 0x20000068                        _sbss = .
                 0x20000068                        __bss_start__ = _sbss
  *(.tbss .tbss.*)
@@ -4204,7 +4204,7 @@ LOAD C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.
                 [!provide]                        PROVIDE (__arm32_tls_tcb_offset = MAX (0x8, __tls_align))
                 [!provide]                        PROVIDE (__arm64_tls_tcb_offset = MAX (0x10, __tls_align))
 
-.bss            0x20000068      0x534 load address 0x08019378
+.bss            0x20000068      0x534 load address 0x0801942c
  *(.bss)
  .bss           0x20000068       0x1c C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
  *(.bss*)
@@ -4235,9 +4235,9 @@ LOAD C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.
  .bss.uplink_data_buffer
                 0x200003e8       0x64 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
                 0x200003e8                uplink_data_buffer
- .bss.waiting_int_release.1
+ .bss.type_toggle.1
                 0x2000044c        0x1 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
- .bss.type_toggle.0
+ .bss.waiting_int_release.0
                 0x2000044d        0x1 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
  *fill*         0x2000044e        0x2 
  .bss.__sf      0x20000450      0x138 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-findfp.o)
@@ -4270,7 +4270,7 @@ LOAD C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.
                 [!provide]                        PROVIDE (__bss_size = (__bss_end - __bss_start))
 
 ._user_heap_stack
-                0x2000059c      0x604 load address 0x08019378
+                0x2000059c      0x604 load address 0x0801942c
                 0x200005a0                        . = ALIGN (0x8)
  *fill*         0x2000059c        0x4 
                 [!provide]                        PROVIDE (end = .)
@@ -4509,7 +4509,7 @@ LOAD linker stubs
  .comment       0x00000043        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-memchr-stub.o)
                                  0x44 (size before relaxing)
 
-.debug_info     0x00000000    0x1f183
+.debug_info     0x00000000    0x1f1b2
  .debug_info    0x00000000      0x222 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f1xx.c.obj
  .debug_info    0x00000222     0x142d cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
  .debug_info    0x0000164f      0x704 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
@@ -4532,39 +4532,39 @@ LOAD linker stubs
  .debug_info    0x0000dffb      0x6b4 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
  .debug_info    0x0000e6af       0x30 CMakeFiles/ip7_lcd_to_rgb.dir/startup_stm32f103xb.s.obj
  .debug_info    0x0000e6df      0x7f5 CMakeFiles/ip7_lcd_to_rgb.dir/User/ssd2828.c.obj
- .debug_info    0x0000eed4      0xe96 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
- .debug_info    0x0000fd6a      0xfb5 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-findfp.o)
- .debug_info    0x00010d1f      0x7d2 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-fwalk.o)
- .debug_info    0x000114f1      0x841 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-printf.o)
- .debug_info    0x00011d32      0x7c9 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-putchar.o)
- .debug_info    0x000124fb      0x950 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-puts.o)
- .debug_info    0x00012e4b      0xa90 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-stdio.o)
- .debug_info    0x000138db      0x874 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-wbuf.o)
- .debug_info    0x0001414f      0x7bb C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-wsetup.o)
- .debug_info    0x0001490a       0xe0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-memset.o)
- .debug_info    0x000149ea      0x75d C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-closer.o)
- .debug_info    0x00015147      0x8a1 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-reent.o)
- .debug_info    0x000159e8      0x715 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-impure.o)
- .debug_info    0x000160fd      0x7a8 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-lseekr.o)
- .debug_info    0x000168a5      0x7bf C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-readr.o)
- .debug_info    0x00017064      0x7c5 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-writer.o)
- .debug_info    0x00017829      0x6fb C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-errno.o)
- .debug_info    0x00017f24      0x10b C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-init.o)
- .debug_info    0x0001802f      0x218 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-lock.o)
- .debug_info    0x00018247      0x851 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-freer.o)
- .debug_info    0x00018a98      0x9bc C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-mallocr.o)
- .debug_info    0x00019454      0x76b C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-mlock.o)
- .debug_info    0x00019bbf     0x1094 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf.o)
- .debug_info    0x0001ac53      0xde2 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf_i.o)
- .debug_info    0x0001ba35      0x9ef C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-fflush.o)
- .debug_info    0x0001c424      0xb1a C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-makebuf.o)
- .debug_info    0x0001cf3e      0x8d5 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-putc.o)
- .debug_info    0x0001d813      0x981 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-fstatr.o)
- .debug_info    0x0001e194      0x75d C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-isattyr.o)
- .debug_info    0x0001e8f1      0x782 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-sbrkr.o)
- .debug_info    0x0001f073      0x110 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-memchr-stub.o)
+ .debug_info    0x0000eed4      0xec5 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+ .debug_info    0x0000fd99      0xfb5 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-findfp.o)
+ .debug_info    0x00010d4e      0x7d2 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-fwalk.o)
+ .debug_info    0x00011520      0x841 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-printf.o)
+ .debug_info    0x00011d61      0x7c9 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-putchar.o)
+ .debug_info    0x0001252a      0x950 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-puts.o)
+ .debug_info    0x00012e7a      0xa90 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-stdio.o)
+ .debug_info    0x0001390a      0x874 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-wbuf.o)
+ .debug_info    0x0001417e      0x7bb C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-wsetup.o)
+ .debug_info    0x00014939       0xe0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-memset.o)
+ .debug_info    0x00014a19      0x75d C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-closer.o)
+ .debug_info    0x00015176      0x8a1 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-reent.o)
+ .debug_info    0x00015a17      0x715 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-impure.o)
+ .debug_info    0x0001612c      0x7a8 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-lseekr.o)
+ .debug_info    0x000168d4      0x7bf C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-readr.o)
+ .debug_info    0x00017093      0x7c5 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-writer.o)
+ .debug_info    0x00017858      0x6fb C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-errno.o)
+ .debug_info    0x00017f53      0x10b C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-init.o)
+ .debug_info    0x0001805e      0x218 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-lock.o)
+ .debug_info    0x00018276      0x851 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-freer.o)
+ .debug_info    0x00018ac7      0x9bc C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-mallocr.o)
+ .debug_info    0x00019483      0x76b C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-mlock.o)
+ .debug_info    0x00019bee     0x1094 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf.o)
+ .debug_info    0x0001ac82      0xde2 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf_i.o)
+ .debug_info    0x0001ba64      0x9ef C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-fflush.o)
+ .debug_info    0x0001c453      0xb1a C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-makebuf.o)
+ .debug_info    0x0001cf6d      0x8d5 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-putc.o)
+ .debug_info    0x0001d842      0x981 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-fstatr.o)
+ .debug_info    0x0001e1c3      0x75d C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-isattyr.o)
+ .debug_info    0x0001e920      0x782 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-sbrkr.o)
+ .debug_info    0x0001f0a2      0x110 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-memchr-stub.o)
 
-.debug_abbrev   0x00000000     0x665c
+.debug_abbrev   0x00000000     0x6643
  .debug_abbrev  0x00000000      0x13f cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f1xx.c.obj
  .debug_abbrev  0x0000013f      0x27a cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
  .debug_abbrev  0x000003b9      0x201 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
@@ -4587,37 +4587,37 @@ LOAD linker stubs
  .debug_abbrev  0x00002554      0x1bc CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
  .debug_abbrev  0x00002710       0x24 CMakeFiles/ip7_lcd_to_rgb.dir/startup_stm32f103xb.s.obj
  .debug_abbrev  0x00002734      0x235 CMakeFiles/ip7_lcd_to_rgb.dir/User/ssd2828.c.obj
- .debug_abbrev  0x00002969      0x310 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
- .debug_abbrev  0x00002c79      0x424 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-findfp.o)
- .debug_abbrev  0x0000309d      0x19b C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-fwalk.o)
- .debug_abbrev  0x00003238      0x21a C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-printf.o)
- .debug_abbrev  0x00003452      0x1d0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-putchar.o)
- .debug_abbrev  0x00003622      0x2a7 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-puts.o)
- .debug_abbrev  0x000038c9      0x221 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-stdio.o)
- .debug_abbrev  0x00003aea      0x22d C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-wbuf.o)
- .debug_abbrev  0x00003d17      0x1e2 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-wsetup.o)
- .debug_abbrev  0x00003ef9       0x9e C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-memset.o)
- .debug_abbrev  0x00003f97      0x1b0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-closer.o)
- .debug_abbrev  0x00004147      0x1f7 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-reent.o)
- .debug_abbrev  0x0000433e      0x149 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-impure.o)
- .debug_abbrev  0x00004487      0x1c4 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-lseekr.o)
- .debug_abbrev  0x0000464b      0x1b0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-readr.o)
- .debug_abbrev  0x000047fb      0x1b5 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-writer.o)
- .debug_abbrev  0x000049b0      0x15e C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-errno.o)
- .debug_abbrev  0x00004b0e       0xc9 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-init.o)
- .debug_abbrev  0x00004bd7      0x115 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-lock.o)
- .debug_abbrev  0x00004cec      0x236 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-freer.o)
- .debug_abbrev  0x00004f22      0x24a C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-mallocr.o)
- .debug_abbrev  0x0000516c      0x1bf C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-mlock.o)
- .debug_abbrev  0x0000532b      0x316 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf.o)
- .debug_abbrev  0x00005641      0x28e C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf_i.o)
- .debug_abbrev  0x000058cf      0x2a8 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-fflush.o)
- .debug_abbrev  0x00005b77      0x28e C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-makebuf.o)
- .debug_abbrev  0x00005e05      0x259 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-putc.o)
- .debug_abbrev  0x0000605e      0x1c3 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-fstatr.o)
- .debug_abbrev  0x00006221      0x1b0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-isattyr.o)
- .debug_abbrev  0x000063d1      0x1da C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-sbrkr.o)
- .debug_abbrev  0x000065ab       0xb1 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-memchr-stub.o)
+ .debug_abbrev  0x00002969      0x2f7 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+ .debug_abbrev  0x00002c60      0x424 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-findfp.o)
+ .debug_abbrev  0x00003084      0x19b C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-fwalk.o)
+ .debug_abbrev  0x0000321f      0x21a C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-printf.o)
+ .debug_abbrev  0x00003439      0x1d0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-putchar.o)
+ .debug_abbrev  0x00003609      0x2a7 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-puts.o)
+ .debug_abbrev  0x000038b0      0x221 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-stdio.o)
+ .debug_abbrev  0x00003ad1      0x22d C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-wbuf.o)
+ .debug_abbrev  0x00003cfe      0x1e2 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-wsetup.o)
+ .debug_abbrev  0x00003ee0       0x9e C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-memset.o)
+ .debug_abbrev  0x00003f7e      0x1b0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-closer.o)
+ .debug_abbrev  0x0000412e      0x1f7 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-reent.o)
+ .debug_abbrev  0x00004325      0x149 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-impure.o)
+ .debug_abbrev  0x0000446e      0x1c4 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-lseekr.o)
+ .debug_abbrev  0x00004632      0x1b0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-readr.o)
+ .debug_abbrev  0x000047e2      0x1b5 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-writer.o)
+ .debug_abbrev  0x00004997      0x15e C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-errno.o)
+ .debug_abbrev  0x00004af5       0xc9 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-init.o)
+ .debug_abbrev  0x00004bbe      0x115 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-lock.o)
+ .debug_abbrev  0x00004cd3      0x236 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-freer.o)
+ .debug_abbrev  0x00004f09      0x24a C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-mallocr.o)
+ .debug_abbrev  0x00005153      0x1bf C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-mlock.o)
+ .debug_abbrev  0x00005312      0x316 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf.o)
+ .debug_abbrev  0x00005628      0x28e C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf_i.o)
+ .debug_abbrev  0x000058b6      0x2a8 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-fflush.o)
+ .debug_abbrev  0x00005b5e      0x28e C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-makebuf.o)
+ .debug_abbrev  0x00005dec      0x259 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-putc.o)
+ .debug_abbrev  0x00006045      0x1c3 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-fstatr.o)
+ .debug_abbrev  0x00006208      0x1b0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-isattyr.o)
+ .debug_abbrev  0x000063b8      0x1da C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-sbrkr.o)
+ .debug_abbrev  0x00006592       0xb1 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-memchr-stub.o)
 
 .debug_aranges  0x00000000     0x14c0
  .debug_aranges
@@ -4834,7 +4834,7 @@ LOAD linker stubs
  .debug_rnglists
                 0x00001075       0x13 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-memchr-stub.o)
 
-.debug_macro    0x00000000    0x19d5b
+.debug_macro    0x00000000    0x19d8b
  .debug_macro   0x00000000      0x1ad cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f1xx.c.obj
  .debug_macro   0x000001ad      0xacc cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f1xx.c.obj
  .debug_macro   0x00000c79       0x2e cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f1xx.c.obj
@@ -4883,74 +4883,74 @@ LOAD linker stubs
  .debug_macro   0x0001682b      0x1ad cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
  .debug_macro   0x000169d8      0x1ae cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
  .debug_macro   0x00016b86      0x2cd CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/main.c.obj
- .debug_macro   0x00016e53       0x7c CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/main.c.obj
- .debug_macro   0x00016ecf       0x74 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/main.c.obj
- .debug_macro   0x00016f43       0x24 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/main.c.obj
- .debug_macro   0x00016f67       0x3c CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/main.c.obj
- .debug_macro   0x00016fa3       0x34 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/main.c.obj
- .debug_macro   0x00016fd7       0x16 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/main.c.obj
- .debug_macro   0x00016fed       0x3c CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/main.c.obj
- .debug_macro   0x00017029      0x370 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/main.c.obj
- .debug_macro   0x00017399       0x10 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/main.c.obj
- .debug_macro   0x000173a9       0x16 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/main.c.obj
- .debug_macro   0x000173bf       0x4a CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/main.c.obj
- .debug_macro   0x00017409       0x34 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/main.c.obj
- .debug_macro   0x0001743d       0x10 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/main.c.obj
- .debug_macro   0x0001744d       0x58 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/main.c.obj
- .debug_macro   0x000174a5      0x1e5 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/main.c.obj
- .debug_macro   0x0001768a       0x16 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/main.c.obj
- .debug_macro   0x000176a0       0x16 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/main.c.obj
- .debug_macro   0x000176b6      0x170 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/main.c.obj
- .debug_macro   0x00017826       0x82 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/main.c.obj
- .debug_macro   0x000178a8       0x1c CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/main.c.obj
- .debug_macro   0x000178c4      0x1c6 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/gpio.c.obj
- .debug_macro   0x00017a8a      0x1c6 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/dma.c.obj
- .debug_macro   0x00017c50      0x1c6 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/spi.c.obj
- .debug_macro   0x00017e16      0x1c6 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/tim.c.obj
- .debug_macro   0x00017fdc      0x1c6 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/usart.c.obj
- .debug_macro   0x000181a2      0x1c6 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/stm32f1xx_it.c.obj
- .debug_macro   0x00018368      0x1bc CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/stm32f1xx_hal_msp.c.obj
- .debug_macro   0x00018524      0x103 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/sysmem.c.obj
- .debug_macro   0x00018627       0x10 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/sysmem.c.obj
- .debug_macro   0x00018637       0x6e CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/sysmem.c.obj
- .debug_macro   0x000186a5       0x94 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/sysmem.c.obj
- .debug_macro   0x00018739       0x57 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/sysmem.c.obj
- .debug_macro   0x00018790      0x23c CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/sysmem.c.obj
- .debug_macro   0x000189cc      0x265 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
- .debug_macro   0x00018c31       0x10 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
- .debug_macro   0x00018c41       0x10 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
- .debug_macro   0x00018c51       0x10 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
+ .debug_macro   0x00016e53       0xac CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/main.c.obj
+ .debug_macro   0x00016eff       0x74 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/main.c.obj
+ .debug_macro   0x00016f73       0x24 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/main.c.obj
+ .debug_macro   0x00016f97       0x3c CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/main.c.obj
+ .debug_macro   0x00016fd3       0x34 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/main.c.obj
+ .debug_macro   0x00017007       0x16 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/main.c.obj
+ .debug_macro   0x0001701d       0x3c CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/main.c.obj
+ .debug_macro   0x00017059      0x370 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/main.c.obj
+ .debug_macro   0x000173c9       0x10 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/main.c.obj
+ .debug_macro   0x000173d9       0x16 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/main.c.obj
+ .debug_macro   0x000173ef       0x4a CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/main.c.obj
+ .debug_macro   0x00017439       0x34 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/main.c.obj
+ .debug_macro   0x0001746d       0x10 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/main.c.obj
+ .debug_macro   0x0001747d       0x58 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/main.c.obj
+ .debug_macro   0x000174d5      0x1e5 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/main.c.obj
+ .debug_macro   0x000176ba       0x16 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/main.c.obj
+ .debug_macro   0x000176d0       0x16 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/main.c.obj
+ .debug_macro   0x000176e6      0x170 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/main.c.obj
+ .debug_macro   0x00017856       0x82 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/main.c.obj
+ .debug_macro   0x000178d8       0x1c CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/main.c.obj
+ .debug_macro   0x000178f4      0x1c6 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/gpio.c.obj
+ .debug_macro   0x00017aba      0x1c6 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/dma.c.obj
+ .debug_macro   0x00017c80      0x1c6 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/spi.c.obj
+ .debug_macro   0x00017e46      0x1c6 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/tim.c.obj
+ .debug_macro   0x0001800c      0x1c6 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/usart.c.obj
+ .debug_macro   0x000181d2      0x1c6 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/stm32f1xx_it.c.obj
+ .debug_macro   0x00018398      0x1bc CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/stm32f1xx_hal_msp.c.obj
+ .debug_macro   0x00018554      0x103 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/sysmem.c.obj
+ .debug_macro   0x00018657       0x10 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/sysmem.c.obj
+ .debug_macro   0x00018667       0x6e CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/sysmem.c.obj
+ .debug_macro   0x000186d5       0x94 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/sysmem.c.obj
+ .debug_macro   0x00018769       0x57 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/sysmem.c.obj
+ .debug_macro   0x000187c0      0x23c CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/sysmem.c.obj
+ .debug_macro   0x000189fc      0x265 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
  .debug_macro   0x00018c61       0x10 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
- .debug_macro   0x00018c71       0x1c CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
- .debug_macro   0x00018c8d       0x52 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
- .debug_macro   0x00018cdf       0x22 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
- .debug_macro   0x00018d01       0x10 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
- .debug_macro   0x00018d11       0x52 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
- .debug_macro   0x00018d63       0xcf CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
- .debug_macro   0x00018e32       0x1c CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
- .debug_macro   0x00018e4e       0x3d CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
- .debug_macro   0x00018e8b       0x35 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
- .debug_macro   0x00018ec0      0x12c CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
- .debug_macro   0x00018fec       0x16 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
- .debug_macro   0x00019002       0x16 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
- .debug_macro   0x00019018       0x29 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
- .debug_macro   0x00019041      0x242 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
- .debug_macro   0x00019283       0x1c CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
- .debug_macro   0x0001929f       0x10 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
- .debug_macro   0x000192af      0x18a CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
- .debug_macro   0x00019439       0x16 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
- .debug_macro   0x0001944f       0xce CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
- .debug_macro   0x0001951d      0x29e CMakeFiles/ip7_lcd_to_rgb.dir/User/ssd2828.c.obj
- .debug_macro   0x000197bb       0x9e CMakeFiles/ip7_lcd_to_rgb.dir/User/ssd2828.c.obj
- .debug_macro   0x00019859      0x112 CMakeFiles/ip7_lcd_to_rgb.dir/User/ssd2828.c.obj
- .debug_macro   0x0001996b       0x56 CMakeFiles/ip7_lcd_to_rgb.dir/User/ssd2828.c.obj
- .debug_macro   0x000199c1       0x7c CMakeFiles/ip7_lcd_to_rgb.dir/User/ssd2828.c.obj
- .debug_macro   0x00019a3d      0x2d2 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
- .debug_macro   0x00019d0f       0x16 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
- .debug_macro   0x00019d25       0x16 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
- .debug_macro   0x00019d3b       0x20 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+ .debug_macro   0x00018c71       0x10 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
+ .debug_macro   0x00018c81       0x10 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
+ .debug_macro   0x00018c91       0x10 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
+ .debug_macro   0x00018ca1       0x1c CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
+ .debug_macro   0x00018cbd       0x52 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
+ .debug_macro   0x00018d0f       0x22 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
+ .debug_macro   0x00018d31       0x10 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
+ .debug_macro   0x00018d41       0x52 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
+ .debug_macro   0x00018d93       0xcf CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
+ .debug_macro   0x00018e62       0x1c CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
+ .debug_macro   0x00018e7e       0x3d CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
+ .debug_macro   0x00018ebb       0x35 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
+ .debug_macro   0x00018ef0      0x12c CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
+ .debug_macro   0x0001901c       0x16 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
+ .debug_macro   0x00019032       0x16 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
+ .debug_macro   0x00019048       0x29 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
+ .debug_macro   0x00019071      0x242 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
+ .debug_macro   0x000192b3       0x1c CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
+ .debug_macro   0x000192cf       0x10 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
+ .debug_macro   0x000192df      0x18a CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
+ .debug_macro   0x00019469       0x16 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
+ .debug_macro   0x0001947f       0xce CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
+ .debug_macro   0x0001954d      0x29e CMakeFiles/ip7_lcd_to_rgb.dir/User/ssd2828.c.obj
+ .debug_macro   0x000197eb       0x9e CMakeFiles/ip7_lcd_to_rgb.dir/User/ssd2828.c.obj
+ .debug_macro   0x00019889      0x112 CMakeFiles/ip7_lcd_to_rgb.dir/User/ssd2828.c.obj
+ .debug_macro   0x0001999b       0x56 CMakeFiles/ip7_lcd_to_rgb.dir/User/ssd2828.c.obj
+ .debug_macro   0x000199f1       0x7c CMakeFiles/ip7_lcd_to_rgb.dir/User/ssd2828.c.obj
+ .debug_macro   0x00019a6d      0x2d2 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+ .debug_macro   0x00019d3f       0x16 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+ .debug_macro   0x00019d55       0x16 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+ .debug_macro   0x00019d6b       0x20 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
 
-.debug_line     0x00000000    0x19b0e
+.debug_line     0x00000000    0x19b53
  .debug_line    0x00000000      0x8a2 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f1xx.c.obj
  .debug_line    0x000008a2     0x1d6a cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
  .debug_line    0x0000260c      0xad3 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
@@ -4962,155 +4962,155 @@ LOAD linker stubs
  .debug_line    0x00009cd6     0x1997 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
  .debug_line    0x0000b66d     0x25ef cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
  .debug_line    0x0000dc5c      0x9eb CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/main.c.obj
- .debug_line    0x0000e647      0x865 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/gpio.c.obj
- .debug_line    0x0000eeac      0x821 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/dma.c.obj
- .debug_line    0x0000f6cd      0x970 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/spi.c.obj
- .debug_line    0x0001003d      0x8ef CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/tim.c.obj
- .debug_line    0x0001092c      0x897 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/usart.c.obj
- .debug_line    0x000111c3      0x91a CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/stm32f1xx_it.c.obj
- .debug_line    0x00011add      0x824 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/stm32f1xx_hal_msp.c.obj
- .debug_line    0x00012301      0x3f0 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/sysmem.c.obj
- .debug_line    0x000126f1      0x714 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
- .debug_line    0x00012e05       0x78 CMakeFiles/ip7_lcd_to_rgb.dir/startup_stm32f103xb.s.obj
- .debug_line    0x00012e7d      0x98d CMakeFiles/ip7_lcd_to_rgb.dir/User/ssd2828.c.obj
- .debug_line    0x0001380a      0xc23 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
- .debug_line    0x0001442d      0x5e5 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-findfp.o)
- .debug_line    0x00014a12      0x23d C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-fwalk.o)
- .debug_line    0x00014c4f      0x254 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-printf.o)
- .debug_line    0x00014ea3      0x207 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-putchar.o)
- .debug_line    0x000150aa      0x352 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-puts.o)
- .debug_line    0x000153fc      0x2f0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-stdio.o)
- .debug_line    0x000156ec      0x2cf C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-wbuf.o)
- .debug_line    0x000159bb      0x2e9 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-wsetup.o)
- .debug_line    0x00015ca4      0x17e C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-memset.o)
- .debug_line    0x00015e22      0x21f C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-closer.o)
- .debug_line    0x00016041      0x2f7 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-reent.o)
- .debug_line    0x00016338      0x163 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-impure.o)
- .debug_line    0x0001649b      0x219 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-lseekr.o)
- .debug_line    0x000166b4      0x218 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-readr.o)
- .debug_line    0x000168cc      0x219 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-writer.o)
- .debug_line    0x00016ae5      0x185 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-errno.o)
- .debug_line    0x00016c6a      0x165 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-init.o)
- .debug_line    0x00016dcf      0x19b C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-lock.o)
- .debug_line    0x00016f6a      0x316 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-freer.o)
- .debug_line    0x00017280      0x4f1 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-mallocr.o)
- .debug_line    0x00017771      0x1ed C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-mlock.o)
- .debug_line    0x0001795e      0x6e5 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf.o)
- .debug_line    0x00018043      0x722 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf_i.o)
- .debug_line    0x00018765      0x46b C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-fflush.o)
- .debug_line    0x00018bd0      0x3b8 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-makebuf.o)
- .debug_line    0x00018f88      0x296 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-putc.o)
- .debug_line    0x0001921e      0x2b3 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-fstatr.o)
- .debug_line    0x000194d1      0x220 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-isattyr.o)
- .debug_line    0x000196f1      0x21f C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-sbrkr.o)
- .debug_line    0x00019910      0x1fe C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-memchr-stub.o)
+ .debug_line    0x0000e647      0x872 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/gpio.c.obj
+ .debug_line    0x0000eeb9      0x821 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/dma.c.obj
+ .debug_line    0x0000f6da      0x970 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/spi.c.obj
+ .debug_line    0x0001004a      0x8ef CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/tim.c.obj
+ .debug_line    0x00010939      0x897 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/usart.c.obj
+ .debug_line    0x000111d0      0x91a CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/stm32f1xx_it.c.obj
+ .debug_line    0x00011aea      0x824 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/stm32f1xx_hal_msp.c.obj
+ .debug_line    0x0001230e      0x3f0 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/sysmem.c.obj
+ .debug_line    0x000126fe      0x714 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
+ .debug_line    0x00012e12       0x78 CMakeFiles/ip7_lcd_to_rgb.dir/startup_stm32f103xb.s.obj
+ .debug_line    0x00012e8a      0x98d CMakeFiles/ip7_lcd_to_rgb.dir/User/ssd2828.c.obj
+ .debug_line    0x00013817      0xc5b CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+ .debug_line    0x00014472      0x5e5 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-findfp.o)
+ .debug_line    0x00014a57      0x23d C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-fwalk.o)
+ .debug_line    0x00014c94      0x254 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-printf.o)
+ .debug_line    0x00014ee8      0x207 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-putchar.o)
+ .debug_line    0x000150ef      0x352 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-puts.o)
+ .debug_line    0x00015441      0x2f0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-stdio.o)
+ .debug_line    0x00015731      0x2cf C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-wbuf.o)
+ .debug_line    0x00015a00      0x2e9 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-wsetup.o)
+ .debug_line    0x00015ce9      0x17e C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-memset.o)
+ .debug_line    0x00015e67      0x21f C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-closer.o)
+ .debug_line    0x00016086      0x2f7 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-reent.o)
+ .debug_line    0x0001637d      0x163 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-impure.o)
+ .debug_line    0x000164e0      0x219 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-lseekr.o)
+ .debug_line    0x000166f9      0x218 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-readr.o)
+ .debug_line    0x00016911      0x219 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-writer.o)
+ .debug_line    0x00016b2a      0x185 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-errno.o)
+ .debug_line    0x00016caf      0x165 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-init.o)
+ .debug_line    0x00016e14      0x19b C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-lock.o)
+ .debug_line    0x00016faf      0x316 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-freer.o)
+ .debug_line    0x000172c5      0x4f1 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-mallocr.o)
+ .debug_line    0x000177b6      0x1ed C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-mlock.o)
+ .debug_line    0x000179a3      0x6e5 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf.o)
+ .debug_line    0x00018088      0x722 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf_i.o)
+ .debug_line    0x000187aa      0x46b C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-fflush.o)
+ .debug_line    0x00018c15      0x3b8 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-makebuf.o)
+ .debug_line    0x00018fcd      0x296 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-putc.o)
+ .debug_line    0x00019263      0x2b3 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-fstatr.o)
+ .debug_line    0x00019516      0x220 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-isattyr.o)
+ .debug_line    0x00019736      0x21f C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-sbrkr.o)
+ .debug_line    0x00019955      0x1fe C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-memchr-stub.o)
 
-.debug_str      0x00000000    0x8fdf6
- .debug_str     0x00000000    0x8fdf6 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f1xx.c.obj
+.debug_str      0x00000000    0x8fea1
+ .debug_str     0x00000000    0x8fea1 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f1xx.c.obj
                               0x84c1d (size before relaxing)
- .debug_str     0x0008fdf6        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
+ .debug_str     0x0008fea1        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
                               0x85543 (size before relaxing)
- .debug_str     0x0008fdf6        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+ .debug_str     0x0008fea1        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
                               0x85350 (size before relaxing)
- .debug_str     0x0008fdf6        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+ .debug_str     0x0008fea1        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
                               0x8504c (size before relaxing)
- .debug_str     0x0008fdf6        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+ .debug_str     0x0008fea1        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
                               0x84fa3 (size before relaxing)
- .debug_str     0x0008fdf6        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+ .debug_str     0x0008fea1        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
                               0x84fc6 (size before relaxing)
- .debug_str     0x0008fdf6        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+ .debug_str     0x0008fea1        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
                               0x8529c (size before relaxing)
- .debug_str     0x0008fdf6        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+ .debug_str     0x0008fea1        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
                               0x8604e (size before relaxing)
- .debug_str     0x0008fdf6        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+ .debug_str     0x0008fea1        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
                               0x8585a (size before relaxing)
- .debug_str     0x0008fdf6        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+ .debug_str     0x0008fea1        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
                               0x856bd (size before relaxing)
- .debug_str     0x0008fdf6        0x0 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/main.c.obj
-                              0x88c13 (size before relaxing)
- .debug_str     0x0008fdf6        0x0 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/gpio.c.obj
-                              0x84e83 (size before relaxing)
- .debug_str     0x0008fdf6        0x0 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/dma.c.obj
-                              0x850e1 (size before relaxing)
- .debug_str     0x0008fdf6        0x0 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/spi.c.obj
-                              0x855f8 (size before relaxing)
- .debug_str     0x0008fdf6        0x0 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/tim.c.obj
-                              0x85524 (size before relaxing)
- .debug_str     0x0008fdf6        0x0 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/usart.c.obj
-                              0x852cb (size before relaxing)
- .debug_str     0x0008fdf6        0x0 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/stm32f1xx_it.c.obj
-                              0x8528f (size before relaxing)
- .debug_str     0x0008fdf6        0x0 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/stm32f1xx_hal_msp.c.obj
-                              0x84e0b (size before relaxing)
- .debug_str     0x0008fdf6        0x0 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/sysmem.c.obj
+ .debug_str     0x0008fea1        0x0 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/main.c.obj
+                              0x88cb6 (size before relaxing)
+ .debug_str     0x0008fea1        0x0 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/gpio.c.obj
+                              0x84f27 (size before relaxing)
+ .debug_str     0x0008fea1        0x0 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/dma.c.obj
+                              0x85185 (size before relaxing)
+ .debug_str     0x0008fea1        0x0 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/spi.c.obj
+                              0x8569c (size before relaxing)
+ .debug_str     0x0008fea1        0x0 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/tim.c.obj
+                              0x855c8 (size before relaxing)
+ .debug_str     0x0008fea1        0x0 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/usart.c.obj
+                              0x8536f (size before relaxing)
+ .debug_str     0x0008fea1        0x0 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/stm32f1xx_it.c.obj
+                              0x85333 (size before relaxing)
+ .debug_str     0x0008fea1        0x0 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/stm32f1xx_hal_msp.c.obj
+                              0x84eaf (size before relaxing)
+ .debug_str     0x0008fea1        0x0 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/sysmem.c.obj
                                0x7130 (size before relaxing)
- .debug_str     0x0008fdf6        0x0 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
+ .debug_str     0x0008fea1        0x0 CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/syscalls.c.obj
                                0x9437 (size before relaxing)
- .debug_str     0x0008fdf6        0x0 CMakeFiles/ip7_lcd_to_rgb.dir/startup_stm32f103xb.s.obj
+ .debug_str     0x0008fea1        0x0 CMakeFiles/ip7_lcd_to_rgb.dir/startup_stm32f103xb.s.obj
                                  0xd4 (size before relaxing)
- .debug_str     0x0008fdf6        0x0 CMakeFiles/ip7_lcd_to_rgb.dir/User/ssd2828.c.obj
-                              0x8869c (size before relaxing)
- .debug_str     0x0008fdf6        0x0 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
-                              0x888c3 (size before relaxing)
- .debug_str     0x0008fdf6        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-findfp.o)
+ .debug_str     0x0008fea1        0x0 CMakeFiles/ip7_lcd_to_rgb.dir/User/ssd2828.c.obj
+                              0x8873f (size before relaxing)
+ .debug_str     0x0008fea1        0x0 CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj
+                              0x8896a (size before relaxing)
+ .debug_str     0x0008fea1        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-findfp.o)
                                 0x7ac (size before relaxing)
- .debug_str     0x0008fdf6        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-fwalk.o)
+ .debug_str     0x0008fea1        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-fwalk.o)
                                 0x539 (size before relaxing)
- .debug_str     0x0008fdf6        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-printf.o)
+ .debug_str     0x0008fea1        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-printf.o)
                                 0x564 (size before relaxing)
- .debug_str     0x0008fdf6        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-putchar.o)
+ .debug_str     0x0008fea1        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-putchar.o)
                                 0x543 (size before relaxing)
- .debug_str     0x0008fdf6        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-puts.o)
+ .debug_str     0x0008fea1        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-puts.o)
                                 0x5b4 (size before relaxing)
- .debug_str     0x0008fdf6        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-stdio.o)
+ .debug_str     0x0008fea1        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-stdio.o)
                                 0x596 (size before relaxing)
- .debug_str     0x0008fdf6        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-wbuf.o)
+ .debug_str     0x0008fea1        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-wbuf.o)
                                 0x55f (size before relaxing)
- .debug_str     0x0008fdf6        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-wsetup.o)
+ .debug_str     0x0008fea1        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-wsetup.o)
                                 0x55a (size before relaxing)
- .debug_str     0x0008fdf6        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-memset.o)
+ .debug_str     0x0008fea1        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-memset.o)
                                 0x209 (size before relaxing)
- .debug_str     0x0008fdf6        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-closer.o)
+ .debug_str     0x0008fea1        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-closer.o)
                                 0x51f (size before relaxing)
- .debug_str     0x0008fdf6        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-reent.o)
+ .debug_str     0x0008fea1        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-reent.o)
                                 0x548 (size before relaxing)
- .debug_str     0x0008fdf6        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-impure.o)
+ .debug_str     0x0008fea1        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-impure.o)
                                 0x529 (size before relaxing)
- .debug_str     0x0008fdf6        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-lseekr.o)
+ .debug_str     0x0008fea1        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-lseekr.o)
                                 0x52d (size before relaxing)
- .debug_str     0x0008fdf6        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-readr.o)
+ .debug_str     0x0008fea1        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-readr.o)
                                 0x52d (size before relaxing)
- .debug_str     0x0008fdf6        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-writer.o)
+ .debug_str     0x0008fea1        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-writer.o)
                                 0x52f (size before relaxing)
- .debug_str     0x0008fdf6        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-errno.o)
+ .debug_str     0x0008fea1        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-errno.o)
                                 0x523 (size before relaxing)
- .debug_str     0x0008fdf6        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-init.o)
+ .debug_str     0x0008fea1        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-init.o)
                                 0x26a (size before relaxing)
- .debug_str     0x0008fdf6        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-lock.o)
+ .debug_str     0x0008fea1        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-lock.o)
                                 0x3a0 (size before relaxing)
- .debug_str     0x0008fdf6        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-freer.o)
+ .debug_str     0x0008fea1        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-freer.o)
                                 0x5a9 (size before relaxing)
- .debug_str     0x0008fdf6        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-mallocr.o)
+ .debug_str     0x0008fea1        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-mallocr.o)
                                 0x60a (size before relaxing)
- .debug_str     0x0008fdf6        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-mlock.o)
+ .debug_str     0x0008fea1        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-mlock.o)
                                 0x5ab (size before relaxing)
- .debug_str     0x0008fdf6        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf.o)
+ .debug_str     0x0008fea1        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf.o)
                                 0x8da (size before relaxing)
- .debug_str     0x0008fdf6        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf_i.o)
+ .debug_str     0x0008fea1        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-nano-vfprintf_i.o)
                                 0x808 (size before relaxing)
- .debug_str     0x0008fdf6        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-fflush.o)
+ .debug_str     0x0008fea1        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-fflush.o)
                                 0x5f4 (size before relaxing)
- .debug_str     0x0008fdf6        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-makebuf.o)
+ .debug_str     0x0008fea1        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-makebuf.o)
                                 0x6bc (size before relaxing)
- .debug_str     0x0008fdf6        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-putc.o)
+ .debug_str     0x0008fea1        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-putc.o)
                                 0x5a8 (size before relaxing)
- .debug_str     0x0008fdf6        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-fstatr.o)
+ .debug_str     0x0008fea1        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-fstatr.o)
                                 0x671 (size before relaxing)
- .debug_str     0x0008fdf6        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-isattyr.o)
+ .debug_str     0x0008fea1        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-isattyr.o)
                                 0x529 (size before relaxing)
- .debug_str     0x0008fdf6        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-sbrkr.o)
+ .debug_str     0x0008fea1        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-sbrkr.o)
                                 0x532 (size before relaxing)
- .debug_str     0x0008fdf6        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-memchr-stub.o)
+ .debug_str     0x0008fea1        0x0 C:/Users/rui/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/13.3.1+st.9/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(libc_a-memchr-stub.o)
                                 0x223 (size before relaxing)
 
 .debug_frame    0x00000000     0x488c

@@ -1,5 +1,5 @@
 Fitter report for rgb_fpga
-Sun Jan 25 13:38:51 2026
+Sat Jan 31 13:22:40 2026
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -68,15 +68,15 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Sun Jan 25 13:38:50 2026       ;
+; Fitter Status                      ; Successful - Sat Jan 31 13:22:40 2026       ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                      ; rgb_fpga                                    ;
 ; Top-level Entity Name              ; rgb_fpga                                    ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE10F17C8                                ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 694 / 10,320 ( 7 % )                        ;
-;     Total combinational functions  ; 675 / 10,320 ( 7 % )                        ;
+; Total logic elements               ; 696 / 10,320 ( 7 % )                        ;
+;     Total combinational functions  ; 673 / 10,320 ( 7 % )                        ;
 ;     Dedicated logic registers      ; 78 / 10,320 ( < 1 % )                       ;
 ; Total registers                    ; 78                                          ;
 ; Total pins                         ; 33 / 180 ( 18 % )                           ;
@@ -155,12 +155,12 @@ applicable agreement for further details.
 ; Number detected on machine ; 24          ;
 ; Maximum allowed            ; 16          ;
 ;                            ;             ;
-; Average used               ; 4.00        ;
+; Average used               ; 1.00        ;
 ; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-16        ;  20.0%      ;
+;     Processors 2-16        ; < 0.1%      ;
 ;     Processors 17-24       ;   0.0%      ;
 +----------------------------+-------------+
 
@@ -209,8 +209,8 @@ applicable agreement for further details.
 ; Type                ; Total [A + B]      ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+--------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                    ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 833 ) ; 0.00 % ( 0 / 833 )         ; 0.00 % ( 0 / 833 )       ;
-;     -- Achieved     ; 0.00 % ( 0 / 833 ) ; 0.00 % ( 0 / 833 )         ; 0.00 % ( 0 / 833 )       ;
+;     -- Requested    ; 0.00 % ( 0 / 831 ) ; 0.00 % ( 0 / 831 )         ; 0.00 % ( 0 / 831 )       ;
+;     -- Achieved     ; 0.00 % ( 0 / 831 ) ; 0.00 % ( 0 / 831 )         ; 0.00 % ( 0 / 831 )       ;
 ;                     ;                    ;                            ;                          ;
 ; Routing (by net)    ;                    ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -233,7 +233,7 @@ applicable agreement for further details.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 821 )    ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 819 )    ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 12 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -241,7 +241,7 @@ applicable agreement for further details.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/rui/Desktop/iphone_screen/altera_fpga/rgb_fpga/output_files/rgb_fpga.pin.
+The pin-out file can be found in C:/Users/rui/Desktop/iphone-screen-bridge/platforms/altera_fpga/rgb_fpga/output_files/rgb_fpga.pin.
 
 
 +---------------------------------------------------------------------+
@@ -249,26 +249,26 @@ The pin-out file can be found in C:/Users/rui/Desktop/iphone_screen/altera_fpga/
 +---------------------------------------------+-----------------------+
 ; Resource                                    ; Usage                 ;
 +---------------------------------------------+-----------------------+
-; Total logic elements                        ; 694 / 10,320 ( 7 % )  ;
-;     -- Combinational with no register       ; 616                   ;
-;     -- Register only                        ; 19                    ;
-;     -- Combinational with a register        ; 59                    ;
+; Total logic elements                        ; 696 / 10,320 ( 7 % )  ;
+;     -- Combinational with no register       ; 618                   ;
+;     -- Register only                        ; 23                    ;
+;     -- Combinational with a register        ; 55                    ;
 ;                                             ;                       ;
 ; Logic element usage by number of LUT inputs ;                       ;
-;     -- 4 input functions                    ; 150                   ;
-;     -- 3 input functions                    ; 168                   ;
-;     -- <=2 input functions                  ; 357                   ;
-;     -- Register only                        ; 19                    ;
+;     -- 4 input functions                    ; 152                   ;
+;     -- 3 input functions                    ; 165                   ;
+;     -- <=2 input functions                  ; 356                   ;
+;     -- Register only                        ; 23                    ;
 ;                                             ;                       ;
 ; Logic elements by mode                      ;                       ;
-;     -- normal mode                          ; 448                   ;
+;     -- normal mode                          ; 446                   ;
 ;     -- arithmetic mode                      ; 227                   ;
 ;                                             ;                       ;
 ; Total registers*                            ; 78 / 11,172 ( < 1 % ) ;
 ;     -- Dedicated logic registers            ; 78 / 10,320 ( < 1 % ) ;
 ;     -- I/O registers                        ; 0 / 852 ( 0 % )       ;
 ;                                             ;                       ;
-; Total LABs:  partially or completely used   ; 55 / 645 ( 9 % )      ;
+; Total LABs:  partially or completely used   ; 53 / 645 ( 8 % )      ;
 ; Virtual pins                                ; 0                     ;
 ; I/O pins                                    ; 33 / 180 ( 18 % )     ;
 ;     -- Clock pins                           ; 2 / 3 ( 67 % )        ;
@@ -286,11 +286,11 @@ The pin-out file can be found in C:/Users/rui/Desktop/iphone_screen/altera_fpga/
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )         ;
 ; Impedance control blocks                    ; 0 / 4 ( 0 % )         ;
 ; Average interconnect usage (total/H/V)      ; 1% / 1% / 1%          ;
-; Peak interconnect usage (total/H/V)         ; 3% / 3% / 4%          ;
+; Peak interconnect usage (total/H/V)         ; 2% / 2% / 2%          ;
 ; Maximum fan-out                             ; 79                    ;
 ; Highest non-global fan-out                  ; 27                    ;
-; Total fan-out                               ; 2125                  ;
-; Average fan-out                             ; 2.50                  ;
+; Total fan-out                               ; 2112                  ;
+; Average fan-out                             ; 2.52                  ;
 +---------------------------------------------+-----------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -303,26 +303,26 @@ The pin-out file can be found in C:/Users/rui/Desktop/iphone_screen/altera_fpga/
 +---------------------------------------------+----------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                  ; Low                            ;
 ;                                             ;                      ;                                ;
-; Total logic elements                        ; 694 / 10320 ( 7 % )  ; 0 / 10320 ( 0 % )              ;
-;     -- Combinational with no register       ; 616                  ; 0                              ;
-;     -- Register only                        ; 19                   ; 0                              ;
-;     -- Combinational with a register        ; 59                   ; 0                              ;
+; Total logic elements                        ; 696 / 10320 ( 7 % )  ; 0 / 10320 ( 0 % )              ;
+;     -- Combinational with no register       ; 618                  ; 0                              ;
+;     -- Register only                        ; 23                   ; 0                              ;
+;     -- Combinational with a register        ; 55                   ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic element usage by number of LUT inputs ;                      ;                                ;
-;     -- 4 input functions                    ; 150                  ; 0                              ;
-;     -- 3 input functions                    ; 168                  ; 0                              ;
-;     -- <=2 input functions                  ; 357                  ; 0                              ;
-;     -- Register only                        ; 19                   ; 0                              ;
+;     -- 4 input functions                    ; 152                  ; 0                              ;
+;     -- 3 input functions                    ; 165                  ; 0                              ;
+;     -- <=2 input functions                  ; 356                  ; 0                              ;
+;     -- Register only                        ; 23                   ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic elements by mode                      ;                      ;                                ;
-;     -- normal mode                          ; 448                  ; 0                              ;
+;     -- normal mode                          ; 446                  ; 0                              ;
 ;     -- arithmetic mode                      ; 227                  ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Total registers                             ; 78                   ; 0                              ;
 ;     -- Dedicated logic registers            ; 78 / 10320 ( < 1 % ) ; 0 / 10320 ( 0 % )              ;
 ;     -- I/O registers                        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
-; Total LABs:  partially or completely used   ; 55 / 645 ( 9 % )     ; 0 / 645 ( 0 % )                ;
+; Total LABs:  partially or completely used   ; 53 / 645 ( 8 % )     ; 0 / 645 ( 0 % )                ;
 ;                                             ;                      ;                                ;
 ; Virtual pins                                ; 0                    ; 0                              ;
 ; I/O pins                                    ; 33                   ; 0                              ;
@@ -339,7 +339,7 @@ The pin-out file can be found in C:/Users/rui/Desktop/iphone_screen/altera_fpga/
 ;     -- Registered Output Connections        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Internal Connections                        ;                      ;                                ;
-;     -- Total Connections                    ; 2118                 ; 88                             ;
+;     -- Total Connections                    ; 2105                 ; 88                             ;
 ;     -- Registered Connections               ; 297                  ; 0                              ;
 ;                                             ;                      ;                                ;
 ; External Connections                        ;                      ;                                ;
@@ -388,30 +388,30 @@ The pin-out file can be found in C:/Users/rui/Desktop/iphone_screen/altera_fpga/
 ; lcd_bl    ; R1    ; 2        ; 0            ; 5            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; lcd_reset ; L1    ; 2        ; 0            ; 8            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; pclk      ; R3    ; 3        ; 1            ; 0            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; rgb[0]    ; B9    ; 7        ; 16           ; 24           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; rgb[0]    ; K8    ; 3        ; 9            ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
 ; rgb[10]   ; T9    ; 4        ; 18           ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; rgb[11]   ; R8    ; 3        ; 16           ; 0            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; rgb[12]   ; T8    ; 3        ; 16           ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; rgb[13]   ; R7    ; 3        ; 11           ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; rgb[14]   ; T7    ; 3        ; 13           ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; rgb[15]   ; R6    ; 3        ; 11           ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; rgb[16]   ; A15   ; 7        ; 21           ; 24           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; rgb[17]   ; M9    ; 4        ; 21           ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; rgb[18]   ; A10   ; 7        ; 21           ; 24           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; rgb[16]   ; A11   ; 7        ; 25           ; 24           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; rgb[17]   ; J12   ; 5        ; 34           ; 11           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; rgb[18]   ; J13   ; 5        ; 34           ; 11           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
 ; rgb[19]   ; R11   ; 4        ; 23           ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; rgb[1]    ; A9    ; 7        ; 16           ; 24           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; rgb[1]    ; N5    ; 3        ; 7            ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
 ; rgb[20]   ; T11   ; 4        ; 23           ; 0            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; rgb[21]   ; R10   ; 4        ; 21           ; 0            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; rgb[22]   ; T10   ; 4        ; 21           ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; rgb[23]   ; R9    ; 4        ; 18           ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; rgb[2]    ; B8    ; 8        ; 16           ; 24           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; rgb[2]    ; M7    ; 3        ; 9            ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
 ; rgb[3]    ; T6    ; 3        ; 11           ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; rgb[4]    ; R5    ; 3        ; 9            ; 0            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; rgb[5]    ; T5    ; 3        ; 9            ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; rgb[6]    ; R4    ; 3        ; 5            ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; rgb[7]    ; T4    ; 3        ; 5            ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; rgb[8]    ; C9    ; 7        ; 18           ; 24           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; rgb[9]    ; B16   ; 6        ; 34           ; 18           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; rgb[8]    ; K9    ; 4        ; 18           ; 0            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; rgb[9]    ; L9    ; 4        ; 18           ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
 ; vs        ; P3    ; 3        ; 1            ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 +-----------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
 
@@ -444,12 +444,12 @@ The pin-out file can be found in C:/Users/rui/Desktop/iphone_screen/altera_fpga/
 +----------+------------------+---------------+--------------+
 ; 1        ; 4 / 17 ( 24 % )  ; 2.5V          ; --           ;
 ; 2        ; 4 / 19 ( 21 % )  ; 2.5V          ; --           ;
-; 3        ; 14 / 26 ( 54 % ) ; 2.5V          ; --           ;
-; 4        ; 7 / 27 ( 26 % )  ; 2.5V          ; --           ;
-; 5        ; 1 / 25 ( 4 % )   ; 2.5V          ; --           ;
-; 6        ; 2 / 14 ( 14 % )  ; 2.5V          ; --           ;
-; 7        ; 5 / 26 ( 19 % )  ; 2.5V          ; --           ;
-; 8        ; 1 / 26 ( 4 % )   ; 2.5V          ; --           ;
+; 3        ; 17 / 26 ( 65 % ) ; 2.5V          ; --           ;
+; 4        ; 8 / 27 ( 30 % )  ; 2.5V          ; --           ;
+; 5        ; 3 / 25 ( 12 % )  ; 2.5V          ; --           ;
+; 6        ; 1 / 14 ( 7 % )   ; 2.5V          ; --           ;
+; 7        ; 1 / 26 ( 4 % )   ; 2.5V          ; --           ;
+; 8        ; 0 / 26 ( 0 % )   ; 2.5V          ; --           ;
 +----------+------------------+---------------+--------------+
 
 
@@ -466,13 +466,13 @@ The pin-out file can be found in C:/Users/rui/Desktop/iphone_screen/altera_fpga/
 ; A6       ; 188        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; A7       ; 183        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; A8       ; 177        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; A9       ; 175        ; 7        ; rgb[1]                                                    ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; A10      ; 168        ; 7        ; rgb[18]                                                   ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; A11      ; 161        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; A9       ; 175        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; A10      ; 168        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; A11      ; 161        ; 7        ; rgb[16]                                                   ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; A12      ; 159        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; A13      ; 153        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; A14      ; 155        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; A15      ; 167        ; 7        ; rgb[16]                                                   ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; A15      ; 167        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; A16      ;            ; 7        ; VCCIO7                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; B1       ; 3          ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; B2       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -481,15 +481,15 @@ The pin-out file can be found in C:/Users/rui/Desktop/iphone_screen/altera_fpga/
 ; B5       ; 195        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; B6       ; 189        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; B7       ; 184        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; B8       ; 178        ; 8        ; rgb[2]                                                    ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; B9       ; 176        ; 7        ; rgb[0]                                                    ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; B8       ; 178        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; B9       ; 176        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; B10      ; 169        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; B11      ; 162        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; B12      ; 160        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; B13      ; 154        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; B14      ; 156        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; B15      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; B16      ; 141        ; 6        ; rgb[9]                                                    ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; B16      ; 141        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; C1       ; 5          ; 1        ; ~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP     ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; On           ;
 ; C2       ; 4          ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; C3       ; 202        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -498,7 +498,7 @@ The pin-out file can be found in C:/Users/rui/Desktop/iphone_screen/altera_fpga/
 ; C6       ; 187        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; C7       ;            ; 8        ; VCCIO8                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; C8       ; 179        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; C9       ; 172        ; 7        ; rgb[8]                                                    ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; C9       ; 172        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; C10      ;            ; 7        ; VCCIO7                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; C11      ; 163        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; C12      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -598,8 +598,8 @@ The pin-out file can be found in C:/Users/rui/Desktop/iphone_screen/altera_fpga/
 ; J9       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; J10      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; J11      ; 117        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; J12      ; 123        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; J13      ; 124        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; J12      ; 123        ; 5        ; rgb[17]                                                   ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; J13      ; 124        ; 5        ; rgb[18]                                                   ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; J14      ; 122        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; J15      ; 121        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; J16      ; 120        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -610,8 +610,8 @@ The pin-out file can be found in C:/Users/rui/Desktop/iphone_screen/altera_fpga/
 ; K5       ; 39         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; K6       ; 30         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; K7       ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
-; K8       ; 60         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; K9       ; 76         ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; K8       ; 60         ; 3        ; rgb[0]                                                    ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; K9       ; 76         ; 4        ; rgb[8]                                                    ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; K10      ; 87         ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; K11      ; 110        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; K12      ; 105        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -627,7 +627,7 @@ The pin-out file can be found in C:/Users/rui/Desktop/iphone_screen/altera_fpga/
 ; L6       ; 31         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; L7       ; 65         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; L8       ; 68         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; L9       ; 77         ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; L9       ; 77         ; 4        ; rgb[9]                                                    ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; L10      ; 88         ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; L11      ; 99         ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; L12      ; 104        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -641,9 +641,9 @@ The pin-out file can be found in C:/Users/rui/Desktop/iphone_screen/altera_fpga/
 ; M4       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; M5       ;            ;          ; GNDA1                                                     ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; M6       ; 57         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; M7       ; 59         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; M7       ; 59         ; 3        ; rgb[2]                                                    ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; M8       ; 69         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; M9       ; 78         ; 4        ; rgb[17]                                                   ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; M9       ; 78         ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; M10      ; 93         ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; M11      ; 100        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; M12      ; 103        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -655,7 +655,7 @@ The pin-out file can be found in C:/Users/rui/Desktop/iphone_screen/altera_fpga/
 ; N2       ; 37         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; N3       ; 45         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; N4       ;            ;          ; VCCD_PLL1                                                 ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
-; N5       ; 55         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; N5       ; 55         ; 3        ; rgb[1]                                                    ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; N6       ; 56         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; N7       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; N8       ; 70         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -774,8 +774,8 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +-------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+----------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                                                                                                    ; Library Name ;
 +-------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+----------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |rgb_fpga                                 ; 694 (0)     ; 78 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 33   ; 0            ; 616 (0)      ; 19 (0)            ; 59 (0)           ; |rgb_fpga                                                                                                                              ; work         ;
-;    |DisplaySignal:display_signal|         ; 571 (48)    ; 29 (8)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 536 (40)     ; 1 (1)             ; 34 (7)           ; |rgb_fpga|DisplaySignal:display_signal                                                                                                 ; work         ;
+; |rgb_fpga                                 ; 696 (0)     ; 78 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 33   ; 0            ; 618 (0)      ; 23 (0)            ; 55 (0)           ; |rgb_fpga                                                                                                                              ; work         ;
+;    |DisplaySignal:display_signal|         ; 571 (48)    ; 29 (8)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 540 (38)     ; 1 (1)             ; 30 (9)           ; |rgb_fpga|DisplaySignal:display_signal                                                                                                 ; work         ;
 ;       |KeyDebounce:key_debounce|          ; 31 (31)     ; 21 (21)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 10 (10)      ; 0 (0)             ; 21 (21)          ; |rgb_fpga|DisplaySignal:display_signal|KeyDebounce:key_debounce                                                                        ; work         ;
 ;       |lpm_divide:Div0|                   ; 91 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 91 (0)       ; 0 (0)             ; 0 (0)            ; |rgb_fpga|DisplaySignal:display_signal|lpm_divide:Div0                                                                                 ; work         ;
 ;          |lpm_divide_0jm:auto_generated|  ; 91 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 91 (0)       ; 0 (0)             ; 0 (0)            ; |rgb_fpga|DisplaySignal:display_signal|lpm_divide:Div0|lpm_divide_0jm:auto_generated                                                   ; work         ;
@@ -785,10 +785,10 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ;          |lpm_divide_0jm:auto_generated|  ; 82 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 82 (0)       ; 0 (0)             ; 0 (0)            ; |rgb_fpga|DisplaySignal:display_signal|lpm_divide:Div1|lpm_divide_0jm:auto_generated                                                   ; work         ;
 ;             |sign_div_unsign_olh:divider| ; 82 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 82 (0)       ; 0 (0)             ; 0 (0)            ; |rgb_fpga|DisplaySignal:display_signal|lpm_divide:Div1|lpm_divide_0jm:auto_generated|sign_div_unsign_olh:divider                       ; work         ;
 ;                |alt_u_div_47f:divider|    ; 82 (82)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 82 (82)      ; 0 (0)             ; 0 (0)            ; |rgb_fpga|DisplaySignal:display_signal|lpm_divide:Div1|lpm_divide_0jm:auto_generated|sign_div_unsign_olh:divider|alt_u_div_47f:divider ; work         ;
-;       |lpm_divide:Div3|                   ; 92 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 86 (0)       ; 0 (0)             ; 6 (0)            ; |rgb_fpga|DisplaySignal:display_signal|lpm_divide:Div3                                                                                 ; work         ;
-;          |lpm_divide_bkm:auto_generated|  ; 92 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 86 (0)       ; 0 (0)             ; 6 (0)            ; |rgb_fpga|DisplaySignal:display_signal|lpm_divide:Div3|lpm_divide_bkm:auto_generated                                                   ; work         ;
-;             |sign_div_unsign_3nh:divider| ; 92 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 86 (0)       ; 0 (0)             ; 6 (0)            ; |rgb_fpga|DisplaySignal:display_signal|lpm_divide:Div3|lpm_divide_bkm:auto_generated|sign_div_unsign_3nh:divider                       ; work         ;
-;                |alt_u_div_q9f:divider|    ; 92 (92)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 86 (86)      ; 0 (0)             ; 6 (6)            ; |rgb_fpga|DisplaySignal:display_signal|lpm_divide:Div3|lpm_divide_bkm:auto_generated|sign_div_unsign_3nh:divider|alt_u_div_q9f:divider ; work         ;
+;       |lpm_divide:Div3|                   ; 92 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 92 (0)       ; 0 (0)             ; 0 (0)            ; |rgb_fpga|DisplaySignal:display_signal|lpm_divide:Div3                                                                                 ; work         ;
+;          |lpm_divide_bkm:auto_generated|  ; 92 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 92 (0)       ; 0 (0)             ; 0 (0)            ; |rgb_fpga|DisplaySignal:display_signal|lpm_divide:Div3|lpm_divide_bkm:auto_generated                                                   ; work         ;
+;             |sign_div_unsign_3nh:divider| ; 92 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 92 (0)       ; 0 (0)             ; 0 (0)            ; |rgb_fpga|DisplaySignal:display_signal|lpm_divide:Div3|lpm_divide_bkm:auto_generated|sign_div_unsign_3nh:divider                       ; work         ;
+;                |alt_u_div_q9f:divider|    ; 92 (92)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 92 (92)      ; 0 (0)             ; 0 (0)            ; |rgb_fpga|DisplaySignal:display_signal|lpm_divide:Div3|lpm_divide_bkm:auto_generated|sign_div_unsign_3nh:divider|alt_u_div_q9f:divider ; work         ;
 ;       |lpm_divide:Mod0|                   ; 95 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 95 (0)       ; 0 (0)             ; 0 (0)            ; |rgb_fpga|DisplaySignal:display_signal|lpm_divide:Mod0                                                                                 ; work         ;
 ;          |lpm_divide_3bm:auto_generated|  ; 95 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 95 (0)       ; 0 (0)             ; 0 (0)            ; |rgb_fpga|DisplaySignal:display_signal|lpm_divide:Mod0|lpm_divide_3bm:auto_generated                                                   ; work         ;
 ;             |sign_div_unsign_olh:divider| ; 95 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 95 (0)       ; 0 (0)             ; 0 (0)            ; |rgb_fpga|DisplaySignal:display_signal|lpm_divide:Mod0|lpm_divide_3bm:auto_generated|sign_div_unsign_olh:divider                       ; work         ;
@@ -801,7 +801,7 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ;          |lpm_divide_4bm:auto_generated|  ; 38 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 38 (0)       ; 0 (0)             ; 0 (0)            ; |rgb_fpga|DisplaySignal:display_signal|lpm_divide:Mod2|lpm_divide_4bm:auto_generated                                                   ; work         ;
 ;             |sign_div_unsign_plh:divider| ; 38 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 38 (0)       ; 0 (0)             ; 0 (0)            ; |rgb_fpga|DisplaySignal:display_signal|lpm_divide:Mod2|lpm_divide_4bm:auto_generated|sign_div_unsign_plh:divider                       ; work         ;
 ;                |alt_u_div_07f:divider|    ; 38 (38)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 38 (38)      ; 0 (0)             ; 0 (0)            ; |rgb_fpga|DisplaySignal:display_signal|lpm_divide:Mod2|lpm_divide_4bm:auto_generated|sign_div_unsign_plh:divider|alt_u_div_07f:divider ; work         ;
-;    |LcdDriver:lcd_driver|                 ; 129 (129)   ; 49 (49)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 80 (80)      ; 18 (18)           ; 31 (31)          ; |rgb_fpga|LcdDriver:lcd_driver                                                                                                         ; work         ;
+;    |LcdDriver:lcd_driver|                 ; 127 (127)   ; 49 (49)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 78 (78)      ; 22 (22)           ; 27 (27)          ; |rgb_fpga|LcdDriver:lcd_driver                                                                                                         ; work         ;
 ;    |pll:pll_70m|                          ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |rgb_fpga|pll:pll_70m                                                                                                                  ; work         ;
 ;       |altpll:altpll_component|           ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |rgb_fpga|pll:pll_70m|altpll:altpll_component                                                                                          ; work         ;
 ;          |pll_altpll:auto_generated|      ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |rgb_fpga|pll:pll_70m|altpll:altpll_component|pll_altpll:auto_generated                                                                ; work         ;
@@ -866,8 +866,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------------------------------------------------+-------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 ; Name                                                                           ; Location          ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +--------------------------------------------------------------------------------+-------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; DisplaySignal:display_signal|Equal0~0                                          ; LCCOMB_X23_Y18_N4 ; 4       ; Sync. load   ; no     ; --                   ; --               ; --                        ;
-; DisplaySignal:display_signal|KeyDebounce:key_debounce|always0~7                ; LCCOMB_X32_Y10_N0 ; 20      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; DisplaySignal:display_signal|Equal0~0                                          ; LCCOMB_X24_Y9_N22 ; 4       ; Sync. load   ; no     ; --                   ; --               ; --                        ;
+; DisplaySignal:display_signal|KeyDebounce:key_debounce|always0~7                ; LCCOMB_X31_Y10_N2 ; 20      ; Clock enable ; no     ; --                   ; --               ; --                        ;
 ; btn_next_img                                                                   ; PIN_M15           ; 21      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
 ; clk                                                                            ; PIN_M2            ; 1       ; Clock        ; no     ; --                   ; --               ; --                        ;
 ; pll:pll_70m|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[0] ; PLL_1             ; 79      ; Clock        ; yes    ; Global Clock         ; GCLK3            ; --                        ;
@@ -880,7 +880,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------------------------------------------------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 ; Name                                                                           ; Location ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +--------------------------------------------------------------------------------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; pll:pll_70m|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[0] ; PLL_1    ; 79      ; 8                                    ; Global Clock         ; GCLK3            ; --                        ;
+; pll:pll_70m|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[0] ; PLL_1    ; 79      ; 9                                    ; Global Clock         ; GCLK3            ; --                        ;
 ; rst_n                                                                          ; PIN_M1   ; 79      ; 0                                    ; Global Clock         ; GCLK0            ; --                        ;
 +--------------------------------------------------------------------------------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
@@ -912,13 +912,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; DisplaySignal:display_signal|lpm_divide:Mod0|lpm_divide_3bm:auto_generated|sign_div_unsign_olh:divider|alt_u_div_47f:divider|add_sub_9_result_int[8]~12   ; 15      ;
 ; DisplaySignal:display_signal|lpm_divide:Div0|lpm_divide_0jm:auto_generated|sign_div_unsign_olh:divider|alt_u_div_47f:divider|add_sub_9_result_int[8]~12   ; 13      ;
 ; DisplaySignal:display_signal|lpm_divide:Div1|lpm_divide_0jm:auto_generated|sign_div_unsign_olh:divider|alt_u_div_47f:divider|add_sub_9_result_int[8]~12   ; 13      ;
-; LcdDriver:lcd_driver|Equal0~3                                                                                                                             ; 12      ;
 ; LcdDriver:lcd_driver|Add4~4                                                                                                                               ; 12      ;
+; LcdDriver:lcd_driver|Equal0~3                                                                                                                             ; 11      ;
+; LcdDriver:lcd_driver|LessThan1~4                                                                                                                          ; 11      ;
 ; DisplaySignal:display_signal|lpm_divide:Mod2|lpm_divide_4bm:auto_generated|sign_div_unsign_plh:divider|alt_u_div_07f:divider|op_10~10                     ; 11      ;
 ; LcdDriver:lcd_driver|Add4~8                                                                                                                               ; 11      ;
 ; LcdDriver:lcd_driver|Add4~6                                                                                                                               ; 11      ;
 ; DisplaySignal:display_signal|img_id[1]                                                                                                                    ; 10      ;
-; LcdDriver:lcd_driver|Add3~0                                                                                                                               ; 10      ;
 ; LcdDriver:lcd_driver|Add4~16                                                                                                                              ; 9       ;
 ; LcdDriver:lcd_driver|Add4~14                                                                                                                              ; 9       ;
 ; LcdDriver:lcd_driver|Add4~12                                                                                                                              ; 9       ;
@@ -949,34 +949,34 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; LcdDriver:lcd_driver|h_count[9]                                                                                                                           ; 5       ;
 ; LcdDriver:lcd_driver|h_count[2]                                                                                                                           ; 5       ;
 ; LcdDriver:lcd_driver|v_count[1]                                                                                                                           ; 5       ;
-; LcdDriver:lcd_driver|v_count[3]                                                                                                                           ; 5       ;
-; LcdDriver:lcd_driver|v_count[6]                                                                                                                           ; 5       ;
-; LcdDriver:lcd_driver|v_count[8]                                                                                                                           ; 5       ;
+; LcdDriver:lcd_driver|v_count[5]                                                                                                                           ; 5       ;
 ; LcdDriver:lcd_driver|v_count[10]                                                                                                                          ; 5       ;
-; LcdDriver:lcd_driver|v_count[7]                                                                                                                           ; 5       ;
+; LcdDriver:lcd_driver|v_count[3]                                                                                                                           ; 5       ;
+; LcdDriver:lcd_driver|v_count[4]                                                                                                                           ; 5       ;
+; LcdDriver:lcd_driver|v_count[8]                                                                                                                           ; 5       ;
 ; LcdDriver:lcd_driver|v_count[9]                                                                                                                           ; 5       ;
 ; DisplaySignal:display_signal|lpm_divide:Mod2|lpm_divide_4bm:auto_generated|sign_div_unsign_plh:divider|alt_u_div_07f:divider|op_2~10                      ; 5       ;
 ; LcdDriver:lcd_driver|Add5~2                                                                                                                               ; 5       ;
 ; LcdDriver:lcd_driver|Add4~0                                                                                                                               ; 5       ;
 ; DisplaySignal:display_signal|Equal0~0                                                                                                                     ; 4       ;
 ; DisplaySignal:display_signal|pixel_data~6                                                                                                                 ; 4       ;
-; LcdDriver:lcd_driver|Add3~33                                                                                                                              ; 4       ;
-; LcdDriver:lcd_driver|Add3~30                                                                                                                              ; 4       ;
+; LcdDriver:lcd_driver|Add3~32                                                                                                                              ; 4       ;
 ; LcdDriver:lcd_driver|Add3~29                                                                                                                              ; 4       ;
 ; LcdDriver:lcd_driver|Add3~28                                                                                                                              ; 4       ;
-; LcdDriver:lcd_driver|Add3~27                                                                                                                              ; 4       ;
+; LcdDriver:lcd_driver|Add3~25                                                                                                                              ; 4       ;
 ; LcdDriver:lcd_driver|Add3~24                                                                                                                              ; 4       ;
 ; LcdDriver:lcd_driver|Add3~23                                                                                                                              ; 4       ;
 ; LcdDriver:lcd_driver|Add3~22                                                                                                                              ; 4       ;
-; LcdDriver:lcd_driver|Add3~21                                                                                                                              ; 4       ;
+; LcdDriver:lcd_driver|Add3~17                                                                                                                              ; 4       ;
+; LcdDriver:lcd_driver|Add3~16                                                                                                                              ; 4       ;
 ; LcdDriver:lcd_driver|h_count[1]                                                                                                                           ; 4       ;
 ; LcdDriver:lcd_driver|h_count[5]                                                                                                                           ; 4       ;
 ; LcdDriver:lcd_driver|h_count[6]                                                                                                                           ; 4       ;
 ; LcdDriver:lcd_driver|h_count[7]                                                                                                                           ; 4       ;
 ; LcdDriver:lcd_driver|h_count[10]                                                                                                                          ; 4       ;
 ; LcdDriver:lcd_driver|v_count[0]                                                                                                                           ; 4       ;
-; LcdDriver:lcd_driver|v_count[4]                                                                                                                           ; 4       ;
-; LcdDriver:lcd_driver|v_count[5]                                                                                                                           ; 4       ;
+; LcdDriver:lcd_driver|v_count[6]                                                                                                                           ; 4       ;
+; LcdDriver:lcd_driver|v_count[7]                                                                                                                           ; 4       ;
 ; LcdDriver:lcd_driver|Add5~18                                                                                                                              ; 4       ;
 ; LcdDriver:lcd_driver|Add0~20                                                                                                                              ; 4       ;
 ; LcdDriver:lcd_driver|Add0~18                                                                                                                              ; 4       ;
@@ -994,8 +994,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; DisplaySignal:display_signal|lpm_divide:Mod2|lpm_divide_4bm:auto_generated|sign_div_unsign_plh:divider|alt_u_div_07f:divider|StageOut[51]~34              ; 3       ;
 ; DisplaySignal:display_signal|lpm_divide:Mod2|lpm_divide_4bm:auto_generated|sign_div_unsign_plh:divider|alt_u_div_07f:divider|StageOut[52]~33              ; 3       ;
 ; DisplaySignal:display_signal|pixel_data~8                                                                                                                 ; 3       ;
-; LcdDriver:lcd_driver|Add3~32                                                                                                                              ; 3       ;
 ; LcdDriver:lcd_driver|Add3~31                                                                                                                              ; 3       ;
+; LcdDriver:lcd_driver|Add3~30                                                                                                                              ; 3       ;
 ; LcdDriver:lcd_driver|h_count[0]                                                                                                                           ; 3       ;
 ; LcdDriver:lcd_driver|Equal0~0                                                                                                                             ; 3       ;
 ; DisplaySignal:display_signal|KeyDebounce:key_debounce|cnt_20ms[6]                                                                                         ; 3       ;
@@ -1071,11 +1071,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; DisplaySignal:display_signal|lpm_divide:Mod0|lpm_divide_3bm:auto_generated|sign_div_unsign_olh:divider|alt_u_div_47f:divider|StageOut[76]~102             ; 2       ;
 ; DisplaySignal:display_signal|lpm_divide:Mod0|lpm_divide_3bm:auto_generated|sign_div_unsign_olh:divider|alt_u_div_47f:divider|StageOut[77]~101             ; 2       ;
 ; LcdDriver:lcd_driver|pixel_x[0]~0                                                                                                                         ; 2       ;
-; LcdDriver:lcd_driver|LessThan1~2                                                                                                                          ; 2       ;
 ; LcdDriver:lcd_driver|LessThan4~0                                                                                                                          ; 2       ;
 ; LcdDriver:lcd_driver|LessThan2~0                                                                                                                          ; 2       ;
-; LcdDriver:lcd_driver|LessThan6~2                                                                                                                          ; 2       ;
-; LcdDriver:lcd_driver|LessThan6~0                                                                                                                          ; 2       ;
+; LcdDriver:lcd_driver|LessThan6~1                                                                                                                          ; 2       ;
+; LcdDriver:lcd_driver|LessThan1~0                                                                                                                          ; 2       ;
 ; DisplaySignal:display_signal|KeyDebounce:key_debounce|cnt_20ms[19]                                                                                        ; 2       ;
 ; DisplaySignal:display_signal|KeyDebounce:key_debounce|cnt_20ms[18]                                                                                        ; 2       ;
 ; DisplaySignal:display_signal|KeyDebounce:key_debounce|cnt_20ms[15]                                                                                        ; 2       ;
@@ -1438,13 +1437,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; DisplaySignal:display_signal|lpm_divide:Mod0|lpm_divide_3bm:auto_generated|sign_div_unsign_olh:divider|alt_u_div_47f:divider|StageOut[53]~72              ; 1       ;
 ; DisplaySignal:display_signal|lpm_divide:Mod0|lpm_divide_3bm:auto_generated|sign_div_unsign_olh:divider|alt_u_div_47f:divider|StageOut[54]~71              ; 1       ;
 ; DisplaySignal:display_signal|lpm_divide:Mod0|lpm_divide_3bm:auto_generated|sign_div_unsign_olh:divider|alt_u_div_47f:divider|StageOut[54]~70              ; 1       ;
-; LcdDriver:lcd_driver|LessThan10~3                                                                                                                         ; 1       ;
-; LcdDriver:lcd_driver|LessThan10~2                                                                                                                         ; 1       ;
-; LcdDriver:lcd_driver|LessThan10~1                                                                                                                         ; 1       ;
 ; LcdDriver:lcd_driver|LessThan11~1                                                                                                                         ; 1       ;
 ; LcdDriver:lcd_driver|LessThan11~0                                                                                                                         ; 1       ;
-; LcdDriver:lcd_driver|LessThan10~0                                                                                                                         ; 1       ;
 ; LcdDriver:lcd_driver|pixel_request~2                                                                                                                      ; 1       ;
+; LcdDriver:lcd_driver|LessThan10~2                                                                                                                         ; 1       ;
+; LcdDriver:lcd_driver|LessThan10~1                                                                                                                         ; 1       ;
+; LcdDriver:lcd_driver|LessThan10~0                                                                                                                         ; 1       ;
 ; LcdDriver:lcd_driver|pixel_request~1                                                                                                                      ; 1       ;
 ; LcdDriver:lcd_driver|LessThan8~1                                                                                                                          ; 1       ;
 ; LcdDriver:lcd_driver|LessThan8~0                                                                                                                          ; 1       ;
@@ -1462,25 +1460,25 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; LcdDriver:lcd_driver|next_h_count[7]~1                                                                                                                    ; 1       ;
 ; LcdDriver:lcd_driver|next_h_count[10]~0                                                                                                                   ; 1       ;
 ; LcdDriver:lcd_driver|LessThan0~0                                                                                                                          ; 1       ;
-; LcdDriver:lcd_driver|LessThan1~1                                                                                                                          ; 1       ;
-; LcdDriver:lcd_driver|LessThan1~0                                                                                                                          ; 1       ;
 ; LcdDriver:lcd_driver|Equal0~2                                                                                                                             ; 1       ;
 ; LcdDriver:lcd_driver|Equal0~1                                                                                                                             ; 1       ;
+; LcdDriver:lcd_driver|LessThan1~3                                                                                                                          ; 1       ;
+; LcdDriver:lcd_driver|LessThan1~2                                                                                                                          ; 1       ;
+; LcdDriver:lcd_driver|LessThan1~1                                                                                                                          ; 1       ;
 ; DisplaySignal:display_signal|pixel_data[15]                                                                                                               ; 1       ;
 ; DisplaySignal:display_signal|pixel_data[7]                                                                                                                ; 1       ;
-; LcdDriver:lcd_driver|always3~1                                                                                                                            ; 1       ;
+; LcdDriver:lcd_driver|always3~2                                                                                                                            ; 1       ;
 ; LcdDriver:lcd_driver|LessThan4~2                                                                                                                          ; 1       ;
 ; LcdDriver:lcd_driver|LessThan4~1                                                                                                                          ; 1       ;
-; LcdDriver:lcd_driver|always3~0                                                                                                                            ; 1       ;
-; LcdDriver:lcd_driver|LessThan6~3                                                                                                                          ; 1       ;
-; LcdDriver:lcd_driver|LessThan5~1                                                                                                                          ; 1       ;
-; LcdDriver:lcd_driver|LessThan5~0                                                                                                                          ; 1       ;
-; LcdDriver:lcd_driver|LessThan7~2                                                                                                                          ; 1       ;
 ; LcdDriver:lcd_driver|LessThan7~1                                                                                                                          ; 1       ;
 ; LcdDriver:lcd_driver|LessThan7~0                                                                                                                          ; 1       ;
+; LcdDriver:lcd_driver|always3~1                                                                                                                            ; 1       ;
+; LcdDriver:lcd_driver|LessThan5~1                                                                                                                          ; 1       ;
+; LcdDriver:lcd_driver|LessThan5~0                                                                                                                          ; 1       ;
+; LcdDriver:lcd_driver|always3~0                                                                                                                            ; 1       ;
 ; LcdDriver:lcd_driver|LessThan2~1                                                                                                                          ; 1       ;
 ; LcdDriver:lcd_driver|LessThan3~0                                                                                                                          ; 1       ;
-; LcdDriver:lcd_driver|LessThan6~1                                                                                                                          ; 1       ;
+; LcdDriver:lcd_driver|LessThan6~0                                                                                                                          ; 1       ;
 ; LcdDriver:lcd_driver|rgb[23]                                                                                                                              ; 1       ;
 ; LcdDriver:lcd_driver|rgb[22]                                                                                                                              ; 1       ;
 ; LcdDriver:lcd_driver|rgb[21]                                                                                                                              ; 1       ;
@@ -1811,12 +1809,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; LcdDriver:lcd_driver|Add0~5                                                                                                                               ; 1       ;
 ; LcdDriver:lcd_driver|Add0~3                                                                                                                               ; 1       ;
 ; LcdDriver:lcd_driver|Add0~1                                                                                                                               ; 1       ;
-; LcdDriver:lcd_driver|Add3~25                                                                                                                              ; 1       ;
+; LcdDriver:lcd_driver|Add3~26                                                                                                                              ; 1       ;
+; LcdDriver:lcd_driver|Add3~21                                                                                                                              ; 1       ;
 ; LcdDriver:lcd_driver|Add3~20                                                                                                                              ; 1       ;
 ; LcdDriver:lcd_driver|Add3~19                                                                                                                              ; 1       ;
 ; LcdDriver:lcd_driver|Add3~18                                                                                                                              ; 1       ;
-; LcdDriver:lcd_driver|Add3~17                                                                                                                              ; 1       ;
-; LcdDriver:lcd_driver|Add3~16                                                                                                                              ; 1       ;
 ; LcdDriver:lcd_driver|Add3~15                                                                                                                              ; 1       ;
 ; LcdDriver:lcd_driver|Add3~14                                                                                                                              ; 1       ;
 ; LcdDriver:lcd_driver|Add3~13                                                                                                                              ; 1       ;
@@ -1832,6 +1829,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; LcdDriver:lcd_driver|Add3~3                                                                                                                               ; 1       ;
 ; LcdDriver:lcd_driver|Add3~2                                                                                                                               ; 1       ;
 ; LcdDriver:lcd_driver|Add3~1                                                                                                                               ; 1       ;
+; LcdDriver:lcd_driver|Add3~0                                                                                                                               ; 1       ;
 ; DisplaySignal:display_signal|pixel_data[23]                                                                                                               ; 1       ;
 ; pll:pll_70m|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_fbout                                                                             ; 1       ;
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
@@ -1842,145 +1840,148 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+------------------------+
 ; Routing Resource Type ; Usage                  ;
 +-----------------------+------------------------+
-; Block interconnects   ; 720 / 32,401 ( 2 % )   ;
-; C16 interconnects     ; 18 / 1,326 ( 1 % )     ;
-; C4 interconnects      ; 283 / 21,816 ( 1 % )   ;
-; Direct links          ; 244 / 32,401 ( < 1 % ) ;
+; Block interconnects   ; 705 / 32,401 ( 2 % )   ;
+; C16 interconnects     ; 9 / 1,326 ( < 1 % )    ;
+; C4 interconnects      ; 259 / 21,816 ( 1 % )   ;
+; Direct links          ; 201 / 32,401 ( < 1 % ) ;
 ; Global clocks         ; 2 / 10 ( 20 % )        ;
-; Local interconnects   ; 343 / 10,320 ( 3 % )   ;
-; R24 interconnects     ; 9 / 1,289 ( < 1 % )    ;
-; R4 interconnects      ; 320 / 28,186 ( 1 % )   ;
+; Local interconnects   ; 345 / 10,320 ( 3 % )   ;
+; R24 interconnects     ; 7 / 1,289 ( < 1 % )    ;
+; R4 interconnects      ; 324 / 28,186 ( 1 % )   ;
 +-----------------------+------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Logic Elements                                                         ;
 +---------------------------------------------+------------------------------+
-; Number of Logic Elements  (Average = 12.62) ; Number of LABs  (Total = 55) ;
+; Number of Logic Elements  (Average = 13.13) ; Number of LABs  (Total = 53) ;
 +---------------------------------------------+------------------------------+
-; 1                                           ; 5                            ;
+; 1                                           ; 2                            ;
 ; 2                                           ; 0                            ;
-; 3                                           ; 0                            ;
-; 4                                           ; 1                            ;
-; 5                                           ; 2                            ;
-; 6                                           ; 0                            ;
-; 7                                           ; 4                            ;
+; 3                                           ; 2                            ;
+; 4                                           ; 0                            ;
+; 5                                           ; 1                            ;
+; 6                                           ; 2                            ;
+; 7                                           ; 5                            ;
 ; 8                                           ; 0                            ;
-; 9                                           ; 1                            ;
-; 10                                          ; 2                            ;
-; 11                                          ; 1                            ;
-; 12                                          ; 2                            ;
-; 13                                          ; 2                            ;
-; 14                                          ; 0                            ;
+; 9                                           ; 0                            ;
+; 10                                          ; 0                            ;
+; 11                                          ; 2                            ;
+; 12                                          ; 0                            ;
+; 13                                          ; 1                            ;
+; 14                                          ; 2                            ;
 ; 15                                          ; 3                            ;
-; 16                                          ; 32                           ;
+; 16                                          ; 33                           ;
 +---------------------------------------------+------------------------------+
 
 
 +-------------------------------------------------------------------+
 ; LAB-wide Signals                                                  ;
 +------------------------------------+------------------------------+
-; LAB-wide Signals  (Average = 0.56) ; Number of LABs  (Total = 55) ;
+; LAB-wide Signals  (Average = 0.55) ; Number of LABs  (Total = 53) ;
 +------------------------------------+------------------------------+
 ; 1 Async. clear                     ; 13                           ;
 ; 1 Clock                            ; 13                           ;
-; 1 Clock enable                     ; 2                            ;
+; 1 Clock enable                     ; 1                            ;
 ; 1 Sync. clear                      ; 2                            ;
-; 1 Sync. load                       ; 1                            ;
 +------------------------------------+------------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Signals Sourced  (Average = 13.33) ; Number of LABs  (Total = 55) ;
+; Number of Signals Sourced  (Average = 13.60) ; Number of LABs  (Total = 53) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
-; 1                                            ; 4                            ;
+; 1                                            ; 1                            ;
 ; 2                                            ; 1                            ;
-; 3                                            ; 0                            ;
-; 4                                            ; 1                            ;
-; 5                                            ; 2                            ;
-; 6                                            ; 1                            ;
-; 7                                            ; 1                            ;
-; 8                                            ; 1                            ;
-; 9                                            ; 1                            ;
-; 10                                           ; 4                            ;
-; 11                                           ; 0                            ;
-; 12                                           ; 3                            ;
-; 13                                           ; 0                            ;
-; 14                                           ; 3                            ;
+; 3                                            ; 2                            ;
+; 4                                            ; 0                            ;
+; 5                                            ; 1                            ;
+; 6                                            ; 3                            ;
+; 7                                            ; 4                            ;
+; 8                                            ; 0                            ;
+; 9                                            ; 0                            ;
+; 10                                           ; 2                            ;
+; 11                                           ; 2                            ;
+; 12                                           ; 0                            ;
+; 13                                           ; 1                            ;
+; 14                                           ; 4                            ;
 ; 15                                           ; 16                           ;
-; 16                                           ; 8                            ;
+; 16                                           ; 7                            ;
 ; 17                                           ; 0                            ;
-; 18                                           ; 0                            ;
-; 19                                           ; 2                            ;
-; 20                                           ; 1                            ;
-; 21                                           ; 1                            ;
-; 22                                           ; 1                            ;
-; 23                                           ; 2                            ;
+; 18                                           ; 2                            ;
+; 19                                           ; 0                            ;
+; 20                                           ; 0                            ;
+; 21                                           ; 2                            ;
+; 22                                           ; 2                            ;
+; 23                                           ; 0                            ;
 ; 24                                           ; 1                            ;
 ; 25                                           ; 0                            ;
-; 26                                           ; 1                            ;
+; 26                                           ; 2                            ;
 +----------------------------------------------+------------------------------+
 
 
 +--------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                        ;
 +-------------------------------------------------+------------------------------+
-; Number of Signals Sourced Out  (Average = 8.13) ; Number of LABs  (Total = 55) ;
+; Number of Signals Sourced Out  (Average = 8.23) ; Number of LABs  (Total = 53) ;
 +-------------------------------------------------+------------------------------+
 ; 0                                               ; 0                            ;
 ; 1                                               ; 8                            ;
-; 2                                               ; 0                            ;
-; 3                                               ; 5                            ;
+; 2                                               ; 2                            ;
+; 3                                               ; 2                            ;
 ; 4                                               ; 2                            ;
-; 5                                               ; 4                            ;
-; 6                                               ; 1                            ;
-; 7                                               ; 4                            ;
-; 8                                               ; 4                            ;
-; 9                                               ; 5                            ;
-; 10                                              ; 5                            ;
-; 11                                              ; 5                            ;
+; 5                                               ; 2                            ;
+; 6                                               ; 0                            ;
+; 7                                               ; 6                            ;
+; 8                                               ; 3                            ;
+; 9                                               ; 6                            ;
+; 10                                              ; 7                            ;
+; 11                                              ; 3                            ;
 ; 12                                              ; 2                            ;
-; 13                                              ; 1                            ;
+; 13                                              ; 2                            ;
 ; 14                                              ; 1                            ;
 ; 15                                              ; 1                            ;
-; 16                                              ; 6                            ;
-; 17                                              ; 0                            ;
-; 18                                              ; 1                            ;
+; 16                                              ; 4                            ;
+; 17                                              ; 2                            ;
 +-------------------------------------------------+------------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Distinct Inputs  (Average = 12.04) ; Number of LABs  (Total = 55) ;
+; Number of Distinct Inputs  (Average = 12.15) ; Number of LABs  (Total = 53) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
 ; 1                                            ; 0                            ;
-; 2                                            ; 3                            ;
-; 3                                            ; 3                            ;
-; 4                                            ; 4                            ;
-; 5                                            ; 1                            ;
+; 2                                            ; 2                            ;
+; 3                                            ; 4                            ;
+; 4                                            ; 2                            ;
+; 5                                            ; 2                            ;
 ; 6                                            ; 1                            ;
-; 7                                            ; 1                            ;
-; 8                                            ; 3                            ;
+; 7                                            ; 3                            ;
+; 8                                            ; 2                            ;
 ; 9                                            ; 2                            ;
-; 10                                           ; 4                            ;
-; 11                                           ; 2                            ;
-; 12                                           ; 1                            ;
-; 13                                           ; 2                            ;
-; 14                                           ; 7                            ;
-; 15                                           ; 3                            ;
+; 10                                           ; 3                            ;
+; 11                                           ; 3                            ;
+; 12                                           ; 2                            ;
+; 13                                           ; 4                            ;
+; 14                                           ; 2                            ;
+; 15                                           ; 4                            ;
 ; 16                                           ; 3                            ;
-; 17                                           ; 6                            ;
-; 18                                           ; 2                            ;
-; 19                                           ; 3                            ;
+; 17                                           ; 5                            ;
+; 18                                           ; 4                            ;
+; 19                                           ; 1                            ;
 ; 20                                           ; 1                            ;
-; 21                                           ; 2                            ;
+; 21                                           ; 0                            ;
 ; 22                                           ; 0                            ;
-; 23                                           ; 1                            ;
+; 23                                           ; 0                            ;
+; 24                                           ; 1                            ;
+; 25                                           ; 0                            ;
+; 26                                           ; 1                            ;
+; 27                                           ; 0                            ;
+; 28                                           ; 1                            ;
 +----------------------------------------------+------------------------------+
 
 
@@ -2190,8 +2191,8 @@ Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
 Info (170193): Fitter routing operations beginning
-Info (170195): Router estimated average interconnect usage is 1% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 2% of the available device resources in the region that extends from location X23_Y12 to location X34_Y24
+Info (170195): Router estimated average interconnect usage is 0% of the available device resources
+    Info (170196): Router estimated peak interconnect usage is 1% of the available device resources in the region that extends from location X11_Y0 to location X22_Y11
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
@@ -2201,17 +2202,17 @@ Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
-Info (144001): Generated suppressed messages file C:/Users/rui/Desktop/iphone_screen/altera_fpga/rgb_fpga/output_files/rgb_fpga.fit.smsg
+Info (144001): Generated suppressed messages file C:/Users/rui/Desktop/iphone-screen-bridge/platforms/altera_fpga/rgb_fpga/output_files/rgb_fpga.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 10 warnings
-    Info: Peak virtual memory: 6180 megabytes
-    Info: Processing ended: Sun Jan 25 13:38:51 2026
+    Info: Peak virtual memory: 6170 megabytes
+    Info: Processing ended: Sat Jan 31 13:22:40 2026
     Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:09
+    Info: Total CPU time (on all processors): 00:00:10
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/rui/Desktop/iphone_screen/altera_fpga/rgb_fpga/output_files/rgb_fpga.fit.smsg.
+The suppressed messages can be found in C:/Users/rui/Desktop/iphone-screen-bridge/platforms/altera_fpga/rgb_fpga/output_files/rgb_fpga.fit.smsg.
 
 

@@ -87,7 +87,7 @@ module LcdDriver(
     parameter V_SYNC_CYCLES     = 3;    // 垂直同步周期
     parameter V_BACK_PORCH      = 3;    // 垂直後膺
     parameter V_ACTIVE_VIDEO    = 1334; // 垂直有效顯示區
-    parameter V_FRONT_PORCH     = 10;   // 垂直前膺
+    parameter V_FRONT_PORCH     = 500;   // 垂直前膺
 
     // 計數器
     reg [10:0] h_count = 0;    // 水平計數器

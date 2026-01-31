@@ -169,17 +169,21 @@ static void ip7_touch_send_to_host(touch_state_t *state, touch_point_t *points[]
 
 
 // 讀取觸摸數據到 spi_buffer
-static uint8_t ip7_touch_read_data(uint8_t cmd_type) {
+static uint8_t ip7_touch_read_data() {
+    // 這兩個交替的命令一定要按照此順發送，否則會讀取失敗，神奇的IPHONE7觸摸IC
+    static uint8_t type_toggle = 0;
+
     uint8_t cmd0[16] = {0xeb, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xec, 0x00};
     uint8_t cmd1[16] = {0xeb, 0x02, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xed, 0x00};
     uint8_t cmd_reply[16] = {0};
     
     // 查詢數據大小
-    if (cmd_type == 0) {
+    if (type_toggle) {
         ip7_touch_spi_rx_tx(cmd0, cmd_reply, 16);
     } else {
         ip7_touch_spi_rx_tx(cmd1, cmd_reply, 16);
     }
+    type_toggle = !type_toggle;
     
     uint16_t read_size = cmd_reply[2] << 8 | cmd_reply[1];
     read_size += 5;
@@ -196,14 +200,12 @@ static uint8_t ip7_touch_read_data(uint8_t cmd_type) {
 // 輪詢觸摸中斷並處理觸摸事件
 void ip7_touch_poll() {
     static uint8_t waiting_int_release = 0;
-    static uint8_t type_toggle = 0;
 
     if (!waiting_int_release && HAL_GPIO_ReadPin(TOUCH_INT_GPIO_Port, TOUCH_INT_Pin) == GPIO_PIN_RESET) {
         waiting_int_release = 1;
         
         // 讀取觸摸數據
-        ip7_touch_read_data(type_toggle);
-        type_toggle = !type_toggle;
+        ip7_touch_read_data();
         
         // 處理數據
         ip7_touch_process_packet();
@@ -270,6 +272,19 @@ static void ip7_touch_process_packet() {
     //     printf("P%d[ID:%d X:%d Y:%d ST:%d] ", i, pt->finger_id, pt->x, pt->y, pt->distance_state);
     // }
     
+
+    // set low active led led2 3 4 to finger count
+    uint8_t contant_cnt = 0;
+    for (uint8_t i = 0; i < finger_count; i++) {
+        touch_point_t *pt = points[i];
+        if(pt->distance_state != 0) {
+            contant_cnt++;
+        }
+    }
+    HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin, (contant_cnt & 1<<2) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+    HAL_GPIO_WritePin(LED3_GPIO_Port, LED3_Pin, (contant_cnt & 1<<1) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+    HAL_GPIO_WritePin(LED4_GPIO_Port, LED4_Pin, (contant_cnt & 1<<0) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+
     // 發送給上位機
     ip7_touch_send_to_host(state, points);
     
@@ -334,13 +349,13 @@ static void ip7_touch_send_to_host(touch_state_t *state, touch_point_t *points[]
     HAL_GPIO_WritePin(UPLINK_INT_GPIO_Port, UPLINK_INT_Pin, GPIO_PIN_RESET);
     
     // 使用輪詢模式傳輸（Slave 模式會等待 Master 的時鐘）
-    HAL_StatusTypeDef status = HAL_SPI_Transmit(&hspi2, uplink_data_buffer, sizeof(spi_touch_packet_t), 100);
+    HAL_StatusTypeDef status = HAL_SPI_Transmit(&hspi2, uplink_data_buffer, sizeof(spi_touch_packet_t), 5);
     
     // 傳輸完成後拉高 INT 引腳
     HAL_GPIO_WritePin(UPLINK_INT_GPIO_Port, UPLINK_INT_Pin, GPIO_PIN_SET);
     
     if (status != HAL_OK) {
-        printf("[SPI2 Transmit Error: %d]\n", status);
+        printf("[SPI2 TX err]\n");
     }
 }
 

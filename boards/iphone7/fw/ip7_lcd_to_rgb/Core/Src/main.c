@@ -138,6 +138,9 @@ int main(void)
     
     printf("done\r\n");
     
+    // turn low active led1
+    HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_RESET);
+
     while(1){
       ip7_touch_poll();
       // HAL_Delay(1);

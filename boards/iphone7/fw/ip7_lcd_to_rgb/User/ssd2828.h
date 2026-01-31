@@ -9,7 +9,7 @@
 #define DISP_HSA    3
 #define DISP_HBP    3
 #define DISP_HACT   750
-#define DISP_HFP    600
+#define DISP_HFP    40
 
 #define DISP_VSA    3
 #define DISP_VBP    3
