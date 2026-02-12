@@ -18,7 +18,9 @@ void app() {
 
     ADV7611_Init();
 
-    lcd_reset();
+    // 不要reset 因為有些 lcd 上電後只能reset一次，再reset會進入異常狀態
+    // 要等hdmi訊號穩定後再reset唯一一次
+    // lcd_reset();
 
     // enable PWM for backlight
     HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1);

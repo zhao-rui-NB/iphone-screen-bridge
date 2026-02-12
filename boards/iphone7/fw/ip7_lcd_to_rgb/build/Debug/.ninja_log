@@ -32,3 +32,6 @@
 1004	1414	7915429886777564	ip7_lcd_to_rgb.elf	40d46d8df363103f
 16	355	7925994030419131	build.ninja	aa33458ffb57deeb
 29	846	7915429877021655	CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/dma.c.obj	3ed62cf950b6bd8b
+11	357	7926088498187451	CMakeFiles/ip7_lcd_to_rgb.dir/Core/Src/main.c.obj	3bc0779c398bb5a8
+16	452	7926088498242906	CMakeFiles/ip7_lcd_to_rgb.dir/User/ip7_touch.c.obj	f390399cb8abac79
+452	730	7926088502603320	ip7_lcd_to_rgb.elf	40d46d8df363103f
