@@ -2,6 +2,7 @@
 #define _ADV7611_H_
 
 #include "i2c.h"
+#include <sys/types.h>
 
 /*
 98 F4 80 CEC Map I2C address
@@ -26,6 +27,7 @@
 
 void ADV7611_Init();
 void ADV7611_Print_Debug_Status();
+uint8_t ADV7611_CheckSignal();
 
 
 

@@ -235,6 +235,16 @@ void ADV7611_Init(){
 
 }
 
+uint8_t ADV7611_CheckSignal() {
+    uint8_t val;
+    // 6. 檢查 Free Run 狀態 - CP Map 0xFF [4] CP_FREE_RUN
+    // 0 - The CP is not free running (有訊號)
+    // 1 - The CP is free running (無訊號)
+    ADV7611_read_reg(ADV7611_CP_ADDR, 0xFF, &val);
+    uint8_t hdmi_ok = (val & (1 << 4)) ? 0 : 1; // free run bit is 1 when no signal, so invert it
+    // printf("ADV7611_CheckSignal: %d\n", hdmi_ok);
+    return hdmi_ok;
+}
 
 
 
