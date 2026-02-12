@@ -7,6 +7,7 @@
 #include "stm32f1xx_hal_gpio.h"
 #include "tim.h"
 #include "ADV7611.h"
+#include "usart.h"
 
 #include "usbd_hid.h"
 
@@ -59,6 +60,30 @@ void app() {
             }
             last_hdmi_cp_lock = cp_lock;
         }
+
+        // read uart input for set dll phase
+        // read 'p' followed by digits, e.g., "p10" sets phase to 10
+        // if (HAL_UART_Receive(&huart1, (uint8_t*)&last_hdmi_cp_lock, 1, 0) == HAL_OK) {
+        //     if (last_hdmi_cp_lock == 'p') {
+        //         uint8_t phase = 0;
+        //         uint8_t byte;
+                
+        //         // Read digits and convert to integer
+        //         while (HAL_UART_Receive(&huart1, &byte, 1, 10) == HAL_OK) {
+        //             if (byte >= '0' && byte <= '9') {
+        //                 phase = phase * 10 + (byte - '0');
+        //             } else {
+        //                 break;
+        //             }
+        //         }
+        //         printf("Setting DLL phase to %d\n", phase);
+        //         ADV7611_set_dll_phase(phase);
+
+        //         HAL_Delay(10);
+        //         // lcd reset
+        //         lcd_reset();
+        //     }
+        // }
             
     }
 }

@@ -28,6 +28,7 @@
 void ADV7611_Init();
 void ADV7611_Print_Debug_Status();
 uint8_t ADV7611_CheckSignal();
+void ADV7611_set_dll_phase(uint8_t phase);
 
 
 
