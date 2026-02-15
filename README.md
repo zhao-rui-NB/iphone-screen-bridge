@@ -110,8 +110,8 @@ FPGA RGB 輸出 → [PCB1: SSD2828] → MIPI DSI → iPhone 7 螢幕
   - PCB1 BOM: [PCB1 BOM](boards/iphone7/pcb/ip7_lcd_to_rgb/InteractiveBOM_PCB1_2025-9-3.html)
   - PCB2 BOM: [PCB2 BOM](boards/iphone7/pcb/hdmi_rgb_adv7611/InteractiveBOM_PCB2_2026-1-5.html)
 
-![PCB 總覽](img/01電路板總覽_正反面.jpeg)
-![元件排列](img/02硬體零件排列.jpeg)
+<img src="img/01電路板總覽_正反面.jpeg" alt="PCB 總覽" width="720" />
+<img src="img/02硬體零件排列.jpeg" alt="元件排列" width="720" />
 
 ### 組裝步驟 (PCB1)
 
@@ -127,7 +127,7 @@ FPGA RGB 輸出 → [PCB1: SSD2828] → MIPI DSI → iPhone 7 螢幕
    - 插入 FPC 後確實鎖扣。
    - LCD 排線避免折損與過度拉扯。
 
-![LCD 組裝過程](img/03lcd模組_組裝過程.jpeg)
+<img src="img/03lcd模組_組裝過程.jpeg" alt="LCD 組裝過程" width="520" />
 
 ### 組裝步驟 (PCB2, 選配)
 
@@ -140,7 +140,7 @@ FPGA RGB 輸出 → [PCB1: SSD2828] → MIPI DSI → iPhone 7 螢幕
 3. **與 PCB1 連接**
    - RGB 信號排線與 SPI2/INT 訊號依絲印對應。
 
-![HDMI 轉 RGB 完成](img/04hdmi轉rgb_安裝完成.jpeg)
+<img src="img/04hdmi轉rgb_安裝完成.jpeg" alt="HDMI 轉 RGB 完成" width="720" />
 
 ### 組裝完成檢查
 
@@ -150,9 +150,9 @@ FPGA RGB 輸出 → [PCB1: SSD2828] → MIPI DSI → iPhone 7 螢幕
 
 ### 組裝成果與展示
 
-![LCD 展示](img/展示.jpeg)
-![iPhone LCD Demo](img/iphone_lcd_demo.gif)
-![樹莓派觸控展示](img/樹莓派_觸控展示.jpeg)
+<img src="img/展示.jpeg" alt="LCD 展示" width="720" />
+<img src="img/iphone_lcd_demo.gif" alt="iPhone LCD Demo" width="320" />
+<img src="img/樹莓派_觸控展示.jpeg" alt="樹莓派觸控展示" width="720" />
 
 ## LCD 時序參數與觸控重要說明
 
