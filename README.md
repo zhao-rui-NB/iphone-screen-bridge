@@ -44,6 +44,8 @@ iPhone 7 觸控 IC → SPI (STM32 讀取) → SPI2 (轉發) → PCB2
 
 **互動式 BOM：** [PCB1 BOM](boards/iphone7/pcb/ip7_lcd_to_rgb/InteractiveBOM_PCB1_2025-9-3.html)
 
+**原理圖：** [PCB1 SCH](boards/iphone7/pcb/ip7_lcd_to_rgb/SCH_iphone7_mipi_rgb_2025-09-04.pdf)
+
 ---
 
 ### PCB2 - HDMI to RGB 轉接板 (`hdmi_rgb_adv7611`)
@@ -69,6 +71,14 @@ PCB1 (SPI2 Master) → INT 中斷通知 → PCB2 (SPI2 Slave) → USB HID → �
 
 **互動式 BOM：** [PCB2 BOM](boards/iphone7/pcb/hdmi_rgb_adv7611/InteractiveBOM_PCB2_2026-1-5.html)
 
+**原理圖：** [PCB2 SCH](boards/iphone7/pcb/hdmi_rgb_adv7611/SCH_hdmi_rgb_adv7611_2026-01-05.pdf)
+
+**PCB2 已知問題：**
+- BL 接到無 PWM 的 pin，需要手動飛線修改
+   - PA6 改到 PA7
+   - PA5 改到 PA6
+- 螺絲孔誤畫為 M2，需手動將兩個孔鑽成 M3
+
 ---
 
 ## 使用流程
@@ -78,14 +88,9 @@ PCB1 (SPI2 Master) → INT 中斷通知 → PCB2 (SPI2 Slave) → USB HID → �
 HDMI 訊號源 → [PCB2: ADV7611] → RGB 信號 → [PCB1: SSD2828] → MIPI DSI → iPhone 7 螢幕
 ```
 
-### 方案 B：FPGA 直接輸入（僅需一塊板）
+### 方案 B：FPGA 直接輸入 or 其他 RGB 信號源（僅需一塊板）
 ```
 FPGA RGB 輸出 → [PCB1: SSD2828] → MIPI DSI → iPhone 7 螢幕
-```
-
-### 方案 C：其他 RGB 信號源（僅需一塊板）
-```
-任何 RGB 信號源 → [PCB1: SSD2828] → MIPI DSI → iPhone 7 螢幕
 ```
 
 **說明：**
