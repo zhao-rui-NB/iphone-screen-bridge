@@ -97,6 +97,63 @@ FPGA RGB 輸出 → [PCB1: SSD2828] → MIPI DSI → iPhone 7 螢幕
 - **PCB2 是可選的**，僅在需要 HDMI 輸入時使用
 - 如使用 FPGA 或其他可直接產生 RGB 信號的設備，可以跳過 PCB2
 
+## 硬體組裝指南
+
+這裡補齊實際硬體組裝流程與注意事項，讓你可以完成 PCB1/PCB2 與 iPhone 7 螢幕的整合。
+
+### 組裝前準備
+
+- **PCB1 必備**：ip7_lcd_to_rgb
+- **PCB2 選配**：hdmi_rgb_adv7611 (只在需要 HDMI 輸入時)
+- **iPhone 7 螢幕模組**：原廠或副廠皆可
+- **依互動式 BOM 準備元件**：
+  - PCB1 BOM: [PCB1 BOM](boards/iphone7/pcb/ip7_lcd_to_rgb/InteractiveBOM_PCB1_2025-9-3.html)
+  - PCB2 BOM: [PCB2 BOM](boards/iphone7/pcb/hdmi_rgb_adv7611/InteractiveBOM_PCB2_2026-1-5.html)
+
+![PCB 總覽](img/01電路板總覽_正反面.jpeg)
+![元件排列](img/02硬體零件排列.jpeg)
+
+### 組裝步驟 (PCB1)
+
+1. **焊接 SMT 元件**
+   - 先焊接電阻/電容/小封裝 IC，再焊接 SSD2828 與 STM32。
+   - 注意 IC 方向與絲印標記一致。
+
+2. **焊接連接器與排針**
+   - LCD FPC 連接器、RGB 輸入排針、電源輸入端子。
+   - 先確認 FPC 方向，避免反插。
+
+3. **安裝 iPhone 7 LCD 模組**
+   - 插入 FPC 後確實鎖扣。
+   - LCD 排線避免折損與過度拉扯。
+
+![LCD 組裝過程](img/03lcd模組_組裝過程.jpeg)
+
+### 組裝步驟 (PCB2, 選配)
+
+1. **焊接 SMT 元件**
+   - ADV7611、STM32 與周邊電源電路。
+
+2. **焊接 HDMI 與 USB 端子**
+   - HDMI 端子與 USB 連接器要完全貼合 PCB，避免機構應力。
+
+3. **與 PCB1 連接**
+   - RGB 信號排線與 SPI2/INT 訊號依絲印對應。
+
+![HDMI 轉 RGB 完成](img/04hdmi轉rgb_安裝完成.jpeg)
+
+### 組裝完成檢查
+
+- 目視檢查焊點是否短路或虛焊，特別是 SSD2828、ADV7611、STM32 的細腳位。
+- 先只接上電源，確認板上電源軌電壓正常，再接 LCD 與訊號線。
+- 若使用 HDMI 方案，先確認 EDID 燒錄或設定完成。
+
+### 組裝成果與展示
+
+![LCD 展示](img/展示.jpeg)
+![iPhone LCD Demo](img/iphone_lcd_demo.gif)
+![樹莓派觸控展示](img/樹莓派_觸控展示.jpeg)
+
 ## LCD 時序參數與觸控重要說明
 
 ### iPhone 7 原廠 LCD 時序
@@ -146,7 +203,7 @@ iPhone 7 螢幕解析度為 **1334x750**，支援的時序參數如下：
    - 可正常使用 HDMI 輸入
    - V_FRONT_PORCH 可設定在 EDID 範圍內（≤ 63）
 
-###觸控系統架構
+### 觸控系統架構
 
 本專案實現了完整的 **iPhone 7 原廠觸控 → USB HID 多點觸控** 轉換：
 
